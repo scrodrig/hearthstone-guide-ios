@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545A91C1216F900089CC9 /* AppDelegate.swift */; };
+		2A2545AC1C1216F900089CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545AB1C1216F900089CC9 /* ViewController.swift */; };
+		2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545AD1C1216F900089CC9 /* Main.storyboard */; };
+		2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B01C1216F900089CC9 /* Assets.xcassets */; };
+		2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */; };
+		2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */; };
+		2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A2545BB1C1216F900089CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A25459E1C1216F900089CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A2545A51C1216F900089CC9;
+			remoteInfo = "Hearthstone Beginners Guide";
+		};
+		2A2545C61C1216F900089CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A25459E1C1216F900089CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A2545A51C1216F900089CC9;
+			remoteInfo = "Hearthstone Beginners Guide";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A2545A61C1216F900089CC9 /* Hearthstone Beginners Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hearthstone Beginners Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2545A91C1216F900089CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A2545AB1C1216F900089CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A2545AE1C1216F900089CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A2545B01C1216F900089CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A2545B31C1216F900089CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A2545B51C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A2545BA1C1216F900089CC9 /* Hearthstone Beginners GuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone Beginners GuideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hearthstone_Beginners_GuideTests.swift; sourceTree = "<group>"; };
+		2A2545C01C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone Beginners GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hearthstone_Beginners_GuideUITests.swift; sourceTree = "<group>"; };
+		2A2545CB1C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A2545A31C1216F900089CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545B71C1216F900089CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545C21C1216F900089CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A25459D1C1216F900089CC9 = {
+			isa = PBXGroup;
+			children = (
+				2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */,
+				2A2545BD1C1216F900089CC9 /* Hearthstone Beginners GuideTests */,
+				2A2545C81C1216F900089CC9 /* Hearthstone Beginners GuideUITests */,
+				2A2545A71C1216F900089CC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A2545A71C1216F900089CC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A2545A61C1216F900089CC9 /* Hearthstone Beginners Guide.app */,
+				2A2545BA1C1216F900089CC9 /* Hearthstone Beginners GuideTests.xctest */,
+				2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
+			isa = PBXGroup;
+			children = (
+				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
+				2A2545AB1C1216F900089CC9 /* ViewController.swift */,
+				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
+				2A2545B01C1216F900089CC9 /* Assets.xcassets */,
+				2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */,
+				2A2545B51C1216F900089CC9 /* Info.plist */,
+			);
+			path = "Hearthstone Beginners Guide";
+			sourceTree = "<group>";
+		};
+		2A2545BD1C1216F900089CC9 /* Hearthstone Beginners GuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */,
+				2A2545C01C1216F900089CC9 /* Info.plist */,
+			);
+			path = "Hearthstone Beginners GuideTests";
+			sourceTree = "<group>";
+		};
+		2A2545C81C1216F900089CC9 /* Hearthstone Beginners GuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */,
+				2A2545CB1C1216F900089CC9 /* Info.plist */,
+			);
+			path = "Hearthstone Beginners GuideUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A2545A51C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2545CE1C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners Guide" */;
+			buildPhases = (
+				2A2545A21C1216F900089CC9 /* Sources */,
+				2A2545A31C1216F900089CC9 /* Frameworks */,
+				2A2545A41C1216F900089CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hearthstone Beginners Guide";
+			productName = "Hearthstone Beginners Guide";
+			productReference = 2A2545A61C1216F900089CC9 /* Hearthstone Beginners Guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A2545B91C1216F900089CC9 /* Hearthstone Beginners GuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2545D11C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners GuideTests" */;
+			buildPhases = (
+				2A2545B61C1216F900089CC9 /* Sources */,
+				2A2545B71C1216F900089CC9 /* Frameworks */,
+				2A2545B81C1216F900089CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A2545BC1C1216F900089CC9 /* PBXTargetDependency */,
+			);
+			name = "Hearthstone Beginners GuideTests";
+			productName = "Hearthstone Beginners GuideTests";
+			productReference = 2A2545BA1C1216F900089CC9 /* Hearthstone Beginners GuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A2545C41C1216F900089CC9 /* Hearthstone Beginners GuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A2545D41C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners GuideUITests" */;
+			buildPhases = (
+				2A2545C11C1216F900089CC9 /* Sources */,
+				2A2545C21C1216F900089CC9 /* Frameworks */,
+				2A2545C31C1216F900089CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A2545C71C1216F900089CC9 /* PBXTargetDependency */,
+			);
+			name = "Hearthstone Beginners GuideUITests";
+			productName = "Hearthstone Beginners GuideUITests";
+			productReference = 2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A25459E1C1216F900089CC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Schubert David Rodríguez";
+				TargetAttributes = {
+					2A2545A51C1216F900089CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T26366CZ44;
+					};
+					2A2545B91C1216F900089CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T26366CZ44;
+						TestTargetID = 2A2545A51C1216F900089CC9;
+					};
+					2A2545C41C1216F900089CC9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = T26366CZ44;
+						TestTargetID = 2A2545A51C1216F900089CC9;
+					};
+				};
+			};
+			buildConfigurationList = 2A2545A11C1216F900089CC9 /* Build configuration list for PBXProject "Hearthstone Beginners Guide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A25459D1C1216F900089CC9;
+			productRefGroup = 2A2545A71C1216F900089CC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A2545A51C1216F900089CC9 /* Hearthstone Beginners Guide */,
+				2A2545B91C1216F900089CC9 /* Hearthstone Beginners GuideTests */,
+				2A2545C41C1216F900089CC9 /* Hearthstone Beginners GuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A2545A41C1216F900089CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
+				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
+				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545B81C1216F900089CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545C31C1216F900089CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A2545A21C1216F900089CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2545AC1C1216F900089CC9 /* ViewController.swift in Sources */,
+				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545B61C1216F900089CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A2545C11C1216F900089CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A2545BC1C1216F900089CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A2545A51C1216F900089CC9 /* Hearthstone Beginners Guide */;
+			targetProxy = 2A2545BB1C1216F900089CC9 /* PBXContainerItemProxy */;
+		};
+		2A2545C71C1216F900089CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A2545A51C1216F900089CC9 /* Hearthstone Beginners Guide */;
+			targetProxy = 2A2545C61C1216F900089CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A2545AD1C1216F900089CC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2545AE1C1216F900089CC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2545B31C1216F900089CC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A2545CC1C1216F900089CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A2545CD1C1216F900089CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A2545CF1C1216F900089CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hearthstone Beginners Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A2545D01C1216F900089CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hearthstone Beginners Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A2545D21C1216F900089CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hearthstone Beginners GuideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-GuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearthstone Beginners Guide.app/Hearthstone Beginners Guide";
+			};
+			name = Debug;
+		};
+		2A2545D31C1216F900089CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hearthstone Beginners GuideTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-GuideTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearthstone Beginners Guide.app/Hearthstone Beginners Guide";
+			};
+			name = Release;
+		};
+		2A2545D51C1216F900089CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hearthstone Beginners GuideUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-GuideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hearthstone Beginners Guide";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2A2545D61C1216F900089CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hearthstone Beginners GuideUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IPL.Hearthstone-Beginners-GuideUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hearthstone Beginners Guide";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A2545A11C1216F900089CC9 /* Build configuration list for PBXProject "Hearthstone Beginners Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2545CC1C1216F900089CC9 /* Debug */,
+				2A2545CD1C1216F900089CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A2545CE1C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2545CF1C1216F900089CC9 /* Debug */,
+				2A2545D01C1216F900089CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A2545D11C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners GuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2545D21C1216F900089CC9 /* Debug */,
+				2A2545D31C1216F900089CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A2545D41C1216F900089CC9 /* Build configuration list for PBXNativeTarget "Hearthstone Beginners GuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2545D51C1216F900089CC9 /* Debug */,
+				2A2545D61C1216F900089CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A25459E1C1216F900089CC9 /* Project object */;
+}
