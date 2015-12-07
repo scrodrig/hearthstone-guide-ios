@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */; };
 		2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545A91C1216F900089CC9 /* AppDelegate.swift */; };
-		2A2545AC1C1216F900089CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545AB1C1216F900089CC9 /* ViewController.swift */; };
 		2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545AD1C1216F900089CC9 /* Main.storyboard */; };
 		2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B01C1216F900089CC9 /* Assets.xcassets */; };
 		2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */; };
 		2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */; };
 		2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */; };
+		2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
+		2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
+		2A8BF62B1C1602A500300E39 /* InfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF62A1C1602A500300E39 /* InfoTest.swift */; };
+		2A8BF62D1C1602BA00300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
+		2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
+		2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
 		2AA93AAC1C127D090067E970 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */; };
 		2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */; };
 		2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */; };
+		2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2A2545A61C1216F900089CC9 /* Hearthstone Beginners Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hearthstone Beginners Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2545A91C1216F900089CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A2545AB1C1216F900089CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
 		2A2545AE1C1216F900089CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A2545B01C1216F900089CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A2545B31C1216F900089CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,9 +57,13 @@
 		2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone Beginners GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hearthstone_Beginners_GuideUITests.swift; sourceTree = "<group>"; };
 		2A2545CB1C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
+		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
+		2A8BF62A1C1602A500300E39 /* InfoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTest.swift; sourceTree = "<group>"; };
 		2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
+		2AACC7451C15E47600ABD538 /* InfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +117,11 @@
 		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
 			isa = PBXGroup;
 			children = (
+				2A8BF6231C15E9E000300E39 /* Enums */,
+				2AACC7441C15E46A00ABD538 /* Model */,
+				2A8BF6201C15E8FA00300E39 /* Client */,
 				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
-				2A2545AB1C1216F900089CC9 /* ViewController.swift */,
+				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
 				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
 				2A2545B01C1216F900089CC9 /* Assets.xcassets */,
 				2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */,
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */,
+				2A8BF6291C16026100300E39 /* Client */,
 				2A2545C01C1216F900089CC9 /* Info.plist */,
 			);
 			path = "Hearthstone Beginners GuideTests";
@@ -143,6 +158,38 @@
 				2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A8BF6201C15E8FA00300E39 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2A8BF6211C15E92500300E39 /* InfoClient.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		2A8BF6231C15E9E000300E39 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		2A8BF6291C16026100300E39 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2A8BF62A1C1602A500300E39 /* InfoTest.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		2AACC7441C15E46A00ABD538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AACC7451C15E47600ABD538 /* InfoModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A2545AC1C1216F900089CC9 /* ViewController.swift in Sources */,
 				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
+				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
+				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
+				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
+				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */,
+				2A8BF62B1C1602A500300E39 /* InfoTest.swift in Sources */,
+				2A8BF62D1C1602BA00300E39 /* InfoClient.swift in Sources */,
+				2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */,
+				2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
