@@ -8,7 +8,7 @@
 
 import XCTest
 
-class CardbackTest: XCTestCase {
+class CardbackClientTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -37,7 +37,7 @@ class CardbackTest: XCTestCase {
     func testSearchInfo(){
         let expectation = expectationWithDescription("going to fetch info")
         //static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
-        CardbackClient.searchCardbacks("enUS") { (info, error) -> Void in
+        CardbackClient.searchCardbacks(Location.USAEnglish.rawValue) { (info, error) -> Void in
             XCTAssertNotNil(info);
             XCTAssertNil(error);
             expectation.fulfill();

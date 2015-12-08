@@ -8,7 +8,7 @@
 
 import XCTest
 
-class InfoTest: XCTestCase {
+class InfoClientTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
