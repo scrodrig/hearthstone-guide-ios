@@ -16,7 +16,7 @@ class InfoClient {
             return;
         }
         //Headers
-        let headers = ["X-Mashape-Key": "jlQxY22Lxumsh2Vqko4EVx4n7k8Op1mxKSijsnLIOAnYmPmaba"]
+        let headers = ["X-Mashape-Key": "28ZQzzNN3wmshDn0xeezaFdlEJB2p1MNp1ijsnk5PgHIgp0c1k"]
         let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
         sessionConfiguration.HTTPAdditionalHeaders = headers;
         let session = NSURLSession(configuration: sessionConfiguration);
@@ -26,6 +26,9 @@ class InfoClient {
             completionHandler(info, error);
         }
         sessionTask.resume();
+        
+        
+        
     }
     
     

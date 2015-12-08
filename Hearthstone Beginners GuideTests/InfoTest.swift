@@ -34,25 +34,19 @@ class InfoTest: XCTestCase {
     }
     
     func testSearchInfo(){
-//        let query = "Happy";
-//        let expectation = expectationWithDescription("going to fetch movies")
-        
-//        InfoClient.searchInfo() { info, error) -> Void in
-//        
-//        }
-        
-//        OMDBClient.searchMovieBy(query) { (movies, error) -> Void in
-//            XCTAssertNotNil(movies);
-//            XCTAssertNil(error);
-//            XCTAssertEqual(movies!.count, 10);
-//            expectation.fulfill();
-//        }
+        let expectation = expectationWithDescription("going to fetch info")
+        //static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
+        InfoClient.searchInfo() { (info, error) -> Void in
+            XCTAssertNotNil(info);
+            XCTAssertNil(error);
+            expectation.fulfill();
+        }
         
         waitForExpectationsWithTimeout(5) {(error) -> Void in
             XCTAssertNil(error);
         }
     }
-
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
