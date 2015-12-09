@@ -26,8 +26,8 @@ class CardbackClient {
         let session = NSURLSession(configuration: sessionConfiguration);
         
         let sessionTask = session.dataTaskWithURL(url) { (data, response, error) -> Void in
-            let info = parseCardbacks(data);
-            completionHandler(info, error);
+            let cardbacks = parseCardbacks(data);
+            completionHandler(cardbacks, error);
         }
         sessionTask.resume();
 
