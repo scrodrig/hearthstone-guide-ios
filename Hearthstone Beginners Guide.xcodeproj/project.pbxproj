@@ -22,6 +22,7 @@
 		2A8BF62D1C1602BA00300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
 		2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
 		2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
+		2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
 		2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440C1C1704C200A1B891 /* CardbackModel.swift */; };
 		2A99440F1C17068400A1B891 /* CardbackClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440E1C17068400A1B891 /* CardbackClient.swift */; };
 		2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9944101C17079200A1B891 /* LocationEnum.swift */; };
@@ -71,6 +72,7 @@
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
 		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
 		2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClientTest.swift; sourceTree = "<group>"; };
+		2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtil.swift; sourceTree = "<group>"; };
 		2A99440C1C1704C200A1B891 /* CardbackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackModel.swift; sourceTree = "<group>"; };
 		2A99440E1C17068400A1B891 /* CardbackClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClient.swift; sourceTree = "<group>"; };
 		2A9944101C17079200A1B891 /* LocationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnum.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				2A8BF6231C15E9E000300E39 /* Enums */,
 				2AACC7441C15E46A00ABD538 /* Model */,
 				2A8BF6201C15E8FA00300E39 /* Client */,
+				2A8F80E81C1915BB00EC01F9 /* Utils */,
 				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
 				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
 				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
@@ -200,6 +203,14 @@
 				2A9944121C1716F100A1B891 /* CardbackClientTest.swift */,
 			);
 			name = Client;
+			sourceTree = "<group>";
+		};
+		2A8F80E81C1915BB00EC01F9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		2AACC7441C15E46A00ABD538 /* Model */ = {
@@ -354,6 +365,7 @@
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
 				2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */,
 				2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */,
+				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
