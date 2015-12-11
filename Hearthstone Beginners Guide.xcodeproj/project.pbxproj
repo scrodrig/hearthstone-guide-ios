@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
 		2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */; };
 		2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D571C1875F800F3216F /* CardModel.swift */; };
 		2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D591C18787900F3216F /* MechanicModel.swift */; };
@@ -16,6 +17,14 @@
 		2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */; };
 		2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */; };
 		2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */; };
+		2A709FAD1C19D3640091E08F /* CardUtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FAC1C19D3640091E08F /* CardUtilTest.swift */; };
+		2A709FAE1C19D3690091E08F /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
+		2A709FAF1C19D7D80091E08F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D571C1875F800F3216F /* CardModel.swift */; };
+		2A709FB01C19D7DB0091E08F /* MechanicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D591C18787900F3216F /* MechanicModel.swift */; };
+		2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
+		2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
+		2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
+		2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */; };
 		2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
 		2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
 		2A8BF62B1C1602A500300E39 /* InfoClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */; };
@@ -69,6 +78,10 @@
 		2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone Beginners GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hearthstone_Beginners_GuideUITests.swift; sourceTree = "<group>"; };
 		2A2545CB1C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A709FAC1C19D3640091E08F /* CardUtilTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtilTest.swift; sourceTree = "<group>"; };
+		2A709FB11C19E2400091E08F /* SearchByClassClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClient.swift; sourceTree = "<group>"; };
+		2A709FB41C19EC020091E08F /* ParameterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterConstants.swift; sourceTree = "<group>"; };
+		2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClientTest.swift; sourceTree = "<group>"; };
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
 		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
 		2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClientTest.swift; sourceTree = "<group>"; };
@@ -134,6 +147,7 @@
 		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
 			isa = PBXGroup;
 			children = (
+				2A709FB31C19EA750091E08F /* Consts */,
 				2A8BF6231C15E9E000300E39 /* Enums */,
 				2AACC7441C15E46A00ABD538 /* Model */,
 				2A8BF6201C15E8FA00300E39 /* Client */,
@@ -154,6 +168,7 @@
 			children = (
 				2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */,
 				2A8BF6291C16026100300E39 /* Client */,
+				2A709FAB1C19D3370091E08F /* Util */,
 				2A2545C01C1216F900089CC9 /* Info.plist */,
 			);
 			path = "Hearthstone Beginners GuideTests";
@@ -178,11 +193,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A709FAB1C19D3370091E08F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2A709FAC1C19D3640091E08F /* CardUtilTest.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		2A709FB31C19EA750091E08F /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				2A709FB41C19EC020091E08F /* ParameterConstants.swift */,
+			);
+			name = Consts;
+			sourceTree = "<group>";
+		};
 		2A8BF6201C15E8FA00300E39 /* Client */ = {
 			isa = PBXGroup;
 			children = (
 				2A8BF6211C15E92500300E39 /* InfoClient.swift */,
 				2A99440E1C17068400A1B891 /* CardbackClient.swift */,
+				2A709FB11C19E2400091E08F /* SearchByClassClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -201,6 +233,7 @@
 			children = (
 				2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */,
 				2A9944121C1716F100A1B891 /* CardbackClientTest.swift */,
+				2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -362,10 +395,12 @@
 				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
 				2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */,
+				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
 				2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */,
 				2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */,
 				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
+				2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */,
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
@@ -376,14 +411,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */,
 				2A9944141C1716F600A1B891 /* CardbackClient.swift in Sources */,
+				2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */,
 				2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */,
 				2A9944151C1716FB00A1B891 /* CardbackModel.swift in Sources */,
 				2A8BF62B1C1602A500300E39 /* InfoClientTest.swift in Sources */,
 				2A9944131C1716F100A1B891 /* CardbackClientTest.swift in Sources */,
+				2A709FAF1C19D7D80091E08F /* CardModel.swift in Sources */,
+				2A709FAD1C19D3640091E08F /* CardUtilTest.swift in Sources */,
 				2A8BF62D1C1602BA00300E39 /* InfoClient.swift in Sources */,
+				2A709FAE1C19D3690091E08F /* CardUtil.swift in Sources */,
 				2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */,
+				2A709FB01C19D7DB0091E08F /* MechanicModel.swift in Sources */,
 				2A9944161C1740EA00A1B891 /* LocationEnum.swift in Sources */,
+				2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */,
 				2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

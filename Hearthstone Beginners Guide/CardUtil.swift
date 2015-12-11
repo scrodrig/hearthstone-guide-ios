@@ -28,15 +28,15 @@ class CardUtil {
                         
                         let name = cardJson.objectForKey("name") as! String;
                         
-                        let cardSet = cardJson.objectForKey("cardSet") as! String;
+                        let cardSet = cardJson.objectForKey("cardSet") as? String;
                         
-                        let type = cardJson.objectForKey("type") as! String;
+                        let type = cardJson.objectForKey("type") as? String;
                         
                         let faction = cardJson.objectForKey("faction") as? String;
                         
-                        let rarity = cardJson.objectForKey("rarity") as! String;
+                        let rarity = cardJson.objectForKey("rarity") as? String;
                         
-                        let cost = cardJson.objectForKey("cost") as! Int;
+                        let cost = cardJson.objectForKey("cost") as? Int;
                         
                         let attack = cardJson.objectForKey("attack") as? Int;
                         
@@ -52,9 +52,9 @@ class CardUtil {
                         
                         let artist = cardJson.objectForKey("artist") as? String;
                         
-                        let collectible = cardJson.objectForKey("collectible") as! Bool;
+                        let collectible = cardJson.objectForKey("collectible") as? Bool;
                         
-                        let elite = cardJson.objectForKey("elite") as! Bool;
+                        let elite = cardJson.objectForKey("elite") as? Bool;
                         
                         let img = cardJson.objectForKey("img") as? String;
                         
@@ -68,11 +68,11 @@ class CardUtil {
                         
                         let howToGetGold = cardJson.objectForKey("howToGetGold") as? String;
                         
-                        let locale = cardJson.objectForKey("locale") as! String;
+                        let locale = Location(rawValue: cardJson.objectForKey("locale") as! String)
                         
                         //For mechanics
                         var mechanics = [Mechanic]();
-                        if let mechanicsJson = cardJson.objectForKey("locale") as? NSArray{
+                        if let mechanicsJson = cardJson.objectForKey("mechanics") as? NSArray{
                             for(var j = 0; j < mechanicsJson.count; j++){
                                 if let mechanic = mechanicsJson.objectAtIndex(j) as? NSDictionary{
                                     let name = mechanic.objectForKey("name") as! String;
@@ -83,7 +83,7 @@ class CardUtil {
                         }
                         
                         
-                        cards.append(Card(cardId: cardId,name: name,cardSet: cardSet,type: type,faction: faction, rarity: rarity,cost: cost,attack: attack,health: health,durability: durability,text: text,inPlayText: inPlayText, flavor: flavor,artist: artist,collectible: collectible,elite: elite, img: img,imgGold: imgGold,race: race,playerClass: playerClass,howToGet: howToGet,howToGetGold: howToGetGold,locale: locale,mechanics: mechanics));
+                        cards.append(Card(cardId: cardId,name: name,cardSet: cardSet,type: type,faction: faction, rarity: rarity,cost: cost,attack: attack,health: health,durability: durability,text: text,inPlayText: inPlayText, flavor: flavor,artist: artist,collectible: collectible,elite: elite, img: img,imgGold: imgGold,race: race,playerClass: playerClass,howToGet: howToGet,howToGetGold: howToGetGold,locale: locale!,mechanics: mechanics));
                         
                         
                     }

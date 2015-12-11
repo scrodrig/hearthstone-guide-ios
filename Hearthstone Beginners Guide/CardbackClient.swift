@@ -10,17 +10,17 @@ import Foundation
 
 class CardbackClient {
     
-    static func searchCardbacks(query: String?,completionHandler: ([Cardback]?, NSError?) -> Void) -> Void {
+    static func searchCardbacks(location: Location?,completionHandler: ([Cardback]?, NSError?) -> Void) -> Void {
         
-        guard let queryString:String = query else {
+        guard let locationQuery:Location = location else {
             return;
         }
         
-        guard let url = NSURL(string: "https://omgvamp-hearthstone-v1.p.mashape.com/cardbacks?locale="+queryString) else{
-            return;
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + ParameterConstants.HEARTHSTONE_API_CARDBACK_ENDPOINT + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+            return;            
         }
         //Headers
-        let headers = ["X-Mashape-Key": "28ZQzzNN3wmshDn0xeezaFdlEJB2p1MNp1ijsnk5PgHIgp0c1k"]
+        let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
         let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
         sessionConfiguration.HTTPAdditionalHeaders = headers;
         let session = NSURLSession(configuration: sessionConfiguration);
@@ -55,11 +55,13 @@ class CardbackClient {
                         let imgAnimated = cardBackJson.objectForKey("imgAnimated") as! String;
                         let sortCategory = cardBackJson.objectForKey("sortCategory") as! String;
                         let sortOrder = cardBackJson.objectForKey("sortOrder") as! String;
-                        let locale = cardBackJson.objectForKey("locale") as! String;
+                        let locale = Location(rawValue: cardBackJson.objectForKey("locale") as! String);
+                        
+                    
                         
                         
                         cardbacks.append(Cardback(cardBackId:cardBackId,name: name
-                            ,description: description, source: source, sourceDescription: sourceDescription,howToGet: howToGet, enabled: enabled,img:img,imgAnimated: imgAnimated, sortCategory: sortCategory, sortOrder: sortOrder,locale: locale));
+                            ,description: description, source: source, sourceDescription: sourceDescription,howToGet: howToGet, enabled: enabled,img:img,imgAnimated: imgAnimated, sortCategory: sortCategory, sortOrder: sortOrder,locale: locale!));
                     }
                     
                 }

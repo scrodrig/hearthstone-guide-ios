@@ -33,6 +33,6 @@ struct Cardback {
     
     let sortOrder:String;
     
-    let locale:String;
+    let locale:Location;
     
 }

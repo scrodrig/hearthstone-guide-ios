@@ -14,15 +14,15 @@ struct Card {
     
     let name:String;
     
-    let cardSet:String;
+    let cardSet:String?;
     
-    let type:String;
+    let type:String?;
     
     let faction:String?;
     
-    let rarity:String;
+    let rarity:String?;
     
-    let cost:Int;
+    let cost:Int?;
     
     let attack:Int?;
     
@@ -38,9 +38,9 @@ struct Card {
     
     let artist:String?;
     
-    let collectible:Bool;
+    let collectible:Bool?;
     
-    let elite:Bool;
+    let elite:Bool?;
     
     let img:String?;
     
@@ -54,7 +54,7 @@ struct Card {
     
     let howToGetGold:String?;
     
-    let locale:String;
+    let locale:Location;
     
     let mechanics:[Mechanic]?;
     

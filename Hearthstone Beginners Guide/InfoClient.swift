@@ -12,11 +12,11 @@ class InfoClient {
     
     static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
         //Check query has a valid value
-        guard let url = NSURL(string: "https://omgvamp-hearthstone-v1.p.mashape.com/info") else{
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + ParameterConstants.HEARTHSTONE_API_INFO_ENDPOINT) else{
             return;
         }
         //Headers
-        let headers = ["X-Mashape-Key": "28ZQzzNN3wmshDn0xeezaFdlEJB2p1MNp1ijsnk5PgHIgp0c1k"]
+        let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
         let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
         sessionConfiguration.HTTPAdditionalHeaders = headers;
         let session = NSURLSession(configuration: sessionConfiguration);

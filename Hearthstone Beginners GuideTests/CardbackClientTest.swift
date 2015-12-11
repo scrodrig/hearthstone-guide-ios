@@ -37,7 +37,7 @@ class CardbackClientTest: XCTestCase {
     func testSearchInfo(){
         let expectation = expectationWithDescription("going to fetch info")
         //static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
-        CardbackClient.searchCardbacks(Location.USAEnglish.rawValue) { (info, error) -> Void in
+        CardbackClient.searchCardbacks(Location.USAEnglish) { (info, error) -> Void in
             XCTAssertNotNil(info);
             XCTAssertNil(error);
             expectation.fulfill();
