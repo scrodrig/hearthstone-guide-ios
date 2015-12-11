@@ -12,7 +12,7 @@ class InfoClient {
     
     static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
         //Check query has a valid value
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + ParameterConstants.HEARTHSTONE_API_INFO_ENDPOINT) else{
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_INFO_ENDPOINT.rawValue) else{
             return;
         }
         //Headers

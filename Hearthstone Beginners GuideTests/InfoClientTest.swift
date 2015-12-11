@@ -45,6 +45,7 @@ class InfoClientTest: XCTestCase {
         waitForExpectationsWithTimeout(5) {(error) -> Void in
             XCTAssertNil(error);
         }
+        
     }
     
     

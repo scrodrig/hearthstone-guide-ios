@@ -25,15 +25,16 @@ class SearchByClassClientTest: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let expectation = expectationWithDescription("going to fetch info")
         //static func searchInfo(completionHandler: (Info?, NSError?) -> Void) -> Void {
-        SearchByClassClient.searchCardsByClass(Heroes.Paladin, location: Location.USAEnglish) { (info, error) -> Void in
-            XCTAssertNotNil(info);
+        SearchByClassClient.searchCardsByClass(Heroes.Paladin, location: Location.USAEnglish) { (cards, error) -> Void in
+            XCTAssertNotNil(cards);
             XCTAssertNil(error);
             expectation.fulfill();
         }
-        
-        waitForExpectationsWithTimeout(10) {(error) -> Void in
+       
+        waitForExpectationsWithTimeout(100) {(error) -> Void in
             XCTAssertNil(error);
         }
+   
     }
 
     func testPerformanceExample() {

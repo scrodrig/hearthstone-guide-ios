@@ -11,20 +11,23 @@ import Foundation
 class CardbackClient {
     
     static func searchCardbacks(location: Location?,completionHandler: ([Cardback]?, NSError?) -> Void) -> Void {
-        
+        //Check veracity for location selection
         guard let locationQuery:Location = location else {
             return;
         }
-        
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + ParameterConstants.HEARTHSTONE_API_CARDBACK_ENDPOINT + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+        //Build a URL to connect with the server
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CARDBACK_ENDPOINT.rawValue + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
             return;            
         }
-        //Headers
-        let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
+        //Add headers for session
+        let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API];
+        //Create a configuration with default data
         let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
+        //Add Headers for session configurations (Dictionary pair/value)
         sessionConfiguration.HTTPAdditionalHeaders = headers;
+        //Create session with session configiguration
         let session = NSURLSession(configuration: sessionConfiguration);
-        
+        //Resume the task to wait for asynchronuos methods
         let sessionTask = session.dataTaskWithURL(url) { (data, response, error) -> Void in
             let cardbacks = parseCardbacks(data);
             completionHandler(cardbacks, error);
@@ -39,7 +42,7 @@ class CardbackClient {
             guard let dta = data else {
                 return nil;
             }
-            
+            //Build a URL to connect with the server
             if let searchDictionary = try NSJSONSerialization.JSONObjectWithData(dta, options: NSJSONReadingOptions.AllowFragments) as? NSArray{
                 var cardbacks = [Cardback]();
                 for(var i = 0; i < searchDictionary.count; i++){

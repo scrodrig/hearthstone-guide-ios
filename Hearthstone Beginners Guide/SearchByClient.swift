@@ -2,27 +2,31 @@
 //  SearchByNameClient.swift
 //  Hearthstone Beginners Guide
 //
-//  Created by Schubert David Rodríguez on 10/12/15.
+//  Created by Schubert David Rodríguez on 11/12/15.
 //  Copyright © 2015 Schubert David Rodríguez. All rights reserved.
 //
 
 import Foundation
 
-class SearchByClassClient {
+class SeacrchByNameClient {
  
     
-    static func searchCardsByClass(hero: Heroes?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {
-    
+    static func searchCardsBy(endpoint: Endpoints?, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {
+        //Check veracity for location selection
+        guard let endPointQuery:Endpoints = endpoint else {
+            return;
+        }
+        
         //Check veracity for location selection
         guard let locationQuery:Location = location else {
             return;
         }
         //Check veracity for hero selection
-        guard let heroQuery:Heroes = hero else {
+        guard let nameQuery:String = query else {
             return;
         }
         //Build a URL to connect with the server
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CLASS_CARDS_ENDPOINT.rawValue + heroQuery.rawValue + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
             return;
         }
         //Add headers for session
@@ -35,15 +39,12 @@ class SearchByClassClient {
         let session = NSURLSession(configuration: sessionConfiguration);
         //Resume the task to wait for asynchronuos methods
         let sessionTask = session.dataTaskWithURL(url) { (data, response, error) -> Void in
-            let cards = CardUtil.parseCards(data);
-            completionHandler(cards, error);
+            let cardbacks = CardUtil.parseCards(data);
+            completionHandler(cardbacks, error);
         }
         
         //Resume the task to waiti for asynchronuos methods
         sessionTask.resume();
-
-        
-    
     }
     
     
