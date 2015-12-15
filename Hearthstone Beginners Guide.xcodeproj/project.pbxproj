@@ -41,11 +41,21 @@
 		2A9944141C1716F600A1B891 /* CardbackClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440E1C17068400A1B891 /* CardbackClient.swift */; };
 		2A9944151C1716FB00A1B891 /* CardbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440C1C1704C200A1B891 /* CardbackModel.swift */; };
 		2A9944161C1740EA00A1B891 /* LocationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9944101C17079200A1B891 /* LocationEnum.swift */; };
+		2A9A062C1C20637200E0CEC1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */; };
 		2AA93AAC1C127D090067E970 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */; };
 		2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */; };
 		2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */; };
 		2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
 		2ACE133E1C1B34580089DE29 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
+		2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B661C1F092E007D98E3 /* Druid.png */; };
+		2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B671C1F092E007D98E3 /* Hunter.png */; };
+		2AD72B711C1F092E007D98E3 /* Mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B681C1F092E007D98E3 /* Mage.png */; };
+		2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B691C1F092E007D98E3 /* Paladin.png */; };
+		2AD72B731C1F092E007D98E3 /* Priest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B6A1C1F092E007D98E3 /* Priest.png */; };
+		2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B6B1C1F092E007D98E3 /* Rogue.png */; };
+		2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B6C1C1F092E007D98E3 /* Shaman.png */; };
+		2AD72B761C1F092E007D98E3 /* Warlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B6D1C1F092E007D98E3 /* Warlock.png */; };
+		2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B6E1C1F092E007D98E3 /* Warrior.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,10 +105,26 @@
 		2A99440E1C17068400A1B891 /* CardbackClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClient.swift; sourceTree = "<group>"; };
 		2A9944101C17079200A1B891 /* LocationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnum.swift; sourceTree = "<group>"; };
 		2A9944121C1716F100A1B891 /* CardbackClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClientTest.swift; sourceTree = "<group>"; };
+		2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2A9A062D1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		2A9A062E1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2A9A062F1C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A9A06301C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2A9A06311C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A9A06321C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
 		2AACC7451C15E47600ABD538 /* InfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		2AD72B661C1F092E007D98E3 /* Druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Druid.png; sourceTree = "<group>"; };
+		2AD72B671C1F092E007D98E3 /* Hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hunter.png; sourceTree = "<group>"; };
+		2AD72B681C1F092E007D98E3 /* Mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mage.png; sourceTree = "<group>"; };
+		2AD72B691C1F092E007D98E3 /* Paladin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paladin.png; sourceTree = "<group>"; };
+		2AD72B6A1C1F092E007D98E3 /* Priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Priest.png; sourceTree = "<group>"; };
+		2AD72B6B1C1F092E007D98E3 /* Rogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rogue.png; sourceTree = "<group>"; };
+		2AD72B6C1C1F092E007D98E3 /* Shaman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shaman.png; sourceTree = "<group>"; };
+		2AD72B6D1C1F092E007D98E3 /* Warlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warlock.png; sourceTree = "<group>"; };
+		2AD72B6E1C1F092E007D98E3 /* Warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warrior.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +184,10 @@
 				2A8BF6201C15E8FA00300E39 /* Client */,
 				2A8F80E81C1915BB00EC01F9 /* Utils */,
 				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
-				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
 				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
 				2A2545B01C1216F900089CC9 /* Assets.xcassets */,
+				2AD72B781C1F09F8007D98E3 /* Views */,
+				2AD72B641C1F06BE007D98E3 /* Images */,
 				2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */,
 				2A2545B51C1216F900089CC9 /* Info.plist */,
 				2A30A2061C127A4E0035EFA8 /* Frameworks */,
@@ -262,6 +289,39 @@
 				2A1E2D591C18787900F3216F /* MechanicModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2AD72B641C1F06BE007D98E3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AD72B651C1F06C9007D98E3 /* Heroes */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2AD72B651C1F06C9007D98E3 /* Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				2AD72B661C1F092E007D98E3 /* Druid.png */,
+				2AD72B671C1F092E007D98E3 /* Hunter.png */,
+				2AD72B681C1F092E007D98E3 /* Mage.png */,
+				2AD72B691C1F092E007D98E3 /* Paladin.png */,
+				2AD72B6A1C1F092E007D98E3 /* Priest.png */,
+				2AD72B6B1C1F092E007D98E3 /* Rogue.png */,
+				2AD72B6C1C1F092E007D98E3 /* Shaman.png */,
+				2AD72B6D1C1F092E007D98E3 /* Warlock.png */,
+				2AD72B6E1C1F092E007D98E3 /* Warrior.png */,
+			);
+			name = Heroes;
+			sourceTree = "<group>";
+		};
+		2AD72B781C1F09F8007D98E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
+				2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,9 +431,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
+				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
+				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
 				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
+				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
+				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
+				2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */,
+				2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */,
 				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
+				2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */,
+				2AD72B761C1F092E007D98E3 /* Warlock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +474,7 @@
 				2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */,
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
+				2A9A062C1C20637200E0CEC1 /* MenuViewController.swift in Sources */,
 				2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */,
 				2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */,
 				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
@@ -468,6 +538,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545AE1C1216F900089CC9 /* Base */,
+				2A9A062D1C20701800E0CEC1 /* es */,
+				2A9A062F1C20703300E0CEC1 /* pt-PT */,
+				2A9A06311C20705E00E0CEC1 /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -476,6 +549,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545B31C1216F900089CC9 /* Base */,
+				2A9A062E1C20701800E0CEC1 /* es */,
+				2A9A06301C20703300E0CEC1 /* pt-PT */,
+				2A9A06321C20705E00E0CEC1 /* es-MX */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Access whitout loggin"; ObjectID = "31u-XY-kwU"; */
+"31u-XY-kwU.normalTitle" = "Access whitout loggin";
+
+/* Class = "UIButton"; normalTitle = "Druid"; ObjectID = "AJe-cB-dKv"; */
+"AJe-cB-dKv.normalTitle" = "Druid";
+
+/* Class = "UIButton"; normalTitle = "Hunter"; ObjectID = "DNe-8A-gGd"; */
+"DNe-8A-gGd.normalTitle" = "Hunter";
+
+/* Class = "UIButton"; normalTitle = "Warlock"; ObjectID = "MgM-ub-p17"; */
+"MgM-ub-p17.normalTitle" = "Warlock";
+
+/* Class = "UIButton"; normalTitle = "Shaman"; ObjectID = "QnI-du-yUb"; */
+"QnI-du-yUb.normalTitle" = "Shaman";
+
+/* Class = "UIButton"; normalTitle = "Priest"; ObjectID = "V0j-bY-cCD"; */
+"V0j-bY-cCD.normalTitle" = "Priest";
+
+/* Class = "UIButton"; normalTitle = "Paladin"; ObjectID = "ZhN-yS-lYM"; */
+"ZhN-yS-lYM.normalTitle" = "Paladin";
+
+/* Class = "UIButton"; normalTitle = "Warrior"; ObjectID = "cuU-gj-n9q"; */
+"cuU-gj-n9q.normalTitle" = "Warrior";
+
+/* Class = "UIButton"; normalTitle = "Rogue"; ObjectID = "oVF-0d-EHk"; */
+"oVF-0d-EHk.normalTitle" = "Rogue";
+
+/* Class = "UIButton"; normalTitle = "Mage"; ObjectID = "qAe-5v-1HF"; */
+"qAe-5v-1HF.normalTitle" = "Mage";
