@@ -89,7 +89,12 @@ class CardUtil {
                     }
                     
                 }
-                return cards;
+                return cards.filter({ (card:Card) -> Bool in
+                    if(card.img != nil && card.cost != nil && card.rarity != nil){
+                        return true;
+                    }
+                    return false;
+                });
                 
             }
         }catch{

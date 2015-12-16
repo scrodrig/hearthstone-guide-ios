@@ -25,6 +25,10 @@
 		2A709FB01C19D7DB0091E08F /* MechanicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D591C18787900F3216F /* MechanicModel.swift */; };
 		2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
+		2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664C1C20C5E300D43550 /* mana-crystal.png */; };
+		2A7D664F1C20C5EA00D43550 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664E1C20C5EA00D43550 /* health.png */; };
+		2A7D66511C20C5F400D43550 /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D66501C20C5F400D43550 /* attack.png */; };
+		2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */; };
 		2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */; };
 		2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
@@ -41,7 +45,10 @@
 		2A9944141C1716F600A1B891 /* CardbackClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440E1C17068400A1B891 /* CardbackClient.swift */; };
 		2A9944151C1716FB00A1B891 /* CardbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440C1C1704C200A1B891 /* CardbackModel.swift */; };
 		2A9944161C1740EA00A1B891 /* LocationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9944101C17079200A1B891 /* LocationEnum.swift */; };
-		2A9A062C1C20637200E0CEC1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */; };
+		2A9A062C1C20637200E0CEC1 /* ClassesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A062B1C20637200E0CEC1 /* ClassesMenuViewController.swift */; };
+		2A9A06341C207CAE00E0CEC1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */; };
+		2A9A06391C20888600E0CEC1 /* ClassesBackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */; };
+		2A9A063B1C208DF500E0CEC1 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */; };
 		2AA93AAC1C127D090067E970 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */; };
 		2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */; };
 		2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */; };
@@ -96,6 +103,10 @@
 		2A709FAC1C19D3640091E08F /* CardUtilTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtilTest.swift; sourceTree = "<group>"; };
 		2A709FB11C19E2400091E08F /* SearchByClassClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClient.swift; sourceTree = "<group>"; };
 		2A709FB41C19EC020091E08F /* ParameterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterConstants.swift; sourceTree = "<group>"; };
+		2A7D664C1C20C5E300D43550 /* mana-crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mana-crystal.png"; sourceTree = "<group>"; };
+		2A7D664E1C20C5EA00D43550 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
+		2A7D66501C20C5F400D43550 /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
+		2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClientTest.swift; sourceTree = "<group>"; };
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
 		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
@@ -105,13 +116,16 @@
 		2A99440E1C17068400A1B891 /* CardbackClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClient.swift; sourceTree = "<group>"; };
 		2A9944101C17079200A1B891 /* LocationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnum.swift; sourceTree = "<group>"; };
 		2A9944121C1716F100A1B891 /* CardbackClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClientTest.swift; sourceTree = "<group>"; };
-		2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2A9A062B1C20637200E0CEC1 /* ClassesMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesMenuViewController.swift; sourceTree = "<group>"; };
 		2A9A062D1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		2A9A062E1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2A9A062F1C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
 		2A9A06301C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2A9A06311C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
 		2A9A06321C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ClassesBackground.jpeg; sourceTree = "<group>"; };
+		2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
 		2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
@@ -241,6 +255,16 @@
 			name = Consts;
 			sourceTree = "<group>";
 		};
+		2A7D664B1C20C5D400D43550 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				2A7D664C1C20C5E300D43550 /* mana-crystal.png */,
+				2A7D664E1C20C5EA00D43550 /* health.png */,
+				2A7D66501C20C5F400D43550 /* attack.png */,
+			);
+			name = Attributes;
+			sourceTree = "<group>";
+		};
 		2A8BF6201C15E8FA00300E39 /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +304,14 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		2A9A06351C20872100E0CEC1 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
 		2AACC7441C15E46A00ABD538 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +326,8 @@
 		2AD72B641C1F06BE007D98E3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2A7D664B1C20C5D400D43550 /* Attributes */,
+				2A9A06351C20872100E0CEC1 /* Backgrounds */,
 				2AD72B651C1F06C9007D98E3 /* Heroes */,
 			);
 			name = Images;
@@ -319,7 +353,10 @@
 			isa = PBXGroup;
 			children = (
 				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
-				2A9A062B1C20637200E0CEC1 /* MenuViewController.swift */,
+				2A9A062B1C20637200E0CEC1 /* ClassesMenuViewController.swift */,
+				2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */,
+				2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */,
+				2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -431,9 +468,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9A06391C20888600E0CEC1 /* ClassesBackground.jpeg in Resources */,
+				2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */,
 				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
+				2A7D66511C20C5F400D43550 /* attack.png in Resources */,
 				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
@@ -442,6 +482,7 @@
 				2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */,
 				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
 				2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */,
+				2A7D664F1C20C5EA00D43550 /* health.png in Resources */,
 				2AD72B761C1F092E007D98E3 /* Warlock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,17 +513,20 @@
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
 				2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */,
 				2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */,
+				2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */,
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
-				2A9A062C1C20637200E0CEC1 /* MenuViewController.swift in Sources */,
+				2A9A062C1C20637200E0CEC1 /* ClassesMenuViewController.swift in Sources */,
 				2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */,
 				2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */,
 				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
+				2A9A06341C207CAE00E0CEC1 /* MenuTableViewController.swift in Sources */,
 				2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */,
 				2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */,
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
+				2A9A063B1C208DF500E0CEC1 /* CardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

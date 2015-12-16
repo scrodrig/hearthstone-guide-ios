@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class ClassesMenuViewController: UIViewController {
     
     @IBOutlet weak var druidButton: UIButton!
     @IBOutlet weak var hunterButton: UIButton!
@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
     //Class selected
     
     var heroSelected:Heroes?;
-    
+    var cards: [Card]?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,12 +76,21 @@ class MenuViewController: UIViewController {
             break;
         }
         print("Heroe " + (heroSelected?.rawValue)!);
-        //performSegueWithIdentifier("heroCardSegue", sender: nil)
+        
+        SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
+            self.cards = cards;
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                //cardTableViewController.tableView.reloadData();
+                self.performSegueWithIdentifier("classSelectedSegue", sender: nil);
+            })
+            
+        })        
     }
     
-    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    let cards = [Card];
-    //        if let coltrollador = segue.destinationViewController as? CardListVC {}
-    
-    }*/
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cardTableViewController = segue.destinationViewController as? CardTableViewController {
+            cardTableViewController.cards = cards;
+        }
+        
+    }
 }
