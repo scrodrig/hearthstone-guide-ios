@@ -41,7 +41,17 @@ class CardTableViewController: UITableViewController {
         cell.cardName.text = card.name;
         cell.cardCost.text = String(card.cost!);
         cell.cardType.text = card.rarity!;
-        cell.cardText.text = card.text;
+        if let text:String = card.text {
+            let attrStr = try! NSAttributedString(
+                data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
+                options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+                documentAttributes: nil);
+            cell.cardText.attributedText = attrStr;
+        }
+        
+        
+        
+        //cell.cardText.attributedText =
         
         if let imageString = card.img {
             
