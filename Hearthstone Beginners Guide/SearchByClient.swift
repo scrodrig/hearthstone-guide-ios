@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SeacrchByNameClient {
+class SearchByClient {
  
     
     static func searchCardsBy(endpoint: Endpoints?, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {

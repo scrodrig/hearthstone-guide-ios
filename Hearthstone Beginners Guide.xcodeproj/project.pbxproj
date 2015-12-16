@@ -37,7 +37,9 @@
 		2A8BF62D1C1602BA00300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
 		2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
 		2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
+		2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8ED99A1C2180A9003CA96F /* CardExampleName.png */; };
 		2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
+		2A993BD61C219F9300C2EF99 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A993BD51C219F9300C2EF99 /* SearchByNameViewController.swift */; };
 		2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440C1C1704C200A1B891 /* CardbackModel.swift */; };
 		2A99440F1C17068400A1B891 /* CardbackClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440E1C17068400A1B891 /* CardbackClient.swift */; };
 		2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9944101C17079200A1B891 /* LocationEnum.swift */; };
@@ -111,18 +113,20 @@
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
 		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
 		2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClientTest.swift; sourceTree = "<group>"; };
+		2A8ED99A1C2180A9003CA96F /* CardExampleName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardExampleName.png; sourceTree = "<group>"; };
 		2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtil.swift; sourceTree = "<group>"; };
+		2A993BCF1C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A993BD01C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2A993BD11C219C6A00C2EF99 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A993BD21C219C6A00C2EF99 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2A993BD31C219C7000C2EF99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		2A993BD41C219C7000C2EF99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2A993BD51C219F9300C2EF99 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
 		2A99440C1C1704C200A1B891 /* CardbackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackModel.swift; sourceTree = "<group>"; };
 		2A99440E1C17068400A1B891 /* CardbackClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClient.swift; sourceTree = "<group>"; };
 		2A9944101C17079200A1B891 /* LocationEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEnum.swift; sourceTree = "<group>"; };
 		2A9944121C1716F100A1B891 /* CardbackClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClientTest.swift; sourceTree = "<group>"; };
 		2A9A062B1C20637200E0CEC1 /* ClassesMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesMenuViewController.swift; sourceTree = "<group>"; };
-		2A9A062D1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		2A9A062E1C20701800E0CEC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		2A9A062F1C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
-		2A9A06301C20703300E0CEC1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2A9A06311C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
-		2A9A06321C20705E00E0CEC1 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ClassesBackground.jpeg; sourceTree = "<group>"; };
 		2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +300,14 @@
 			name = Client;
 			sourceTree = "<group>";
 		};
+		2A8ED9971C218061003CA96F /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2A8ED99A1C2180A9003CA96F /* CardExampleName.png */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
 		2A8F80E81C1915BB00EC01F9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +340,7 @@
 			children = (
 				2A7D664B1C20C5D400D43550 /* Attributes */,
 				2A9A06351C20872100E0CEC1 /* Backgrounds */,
+				2A8ED9971C218061003CA96F /* Cards */,
 				2AD72B651C1F06C9007D98E3 /* Heroes */,
 			);
 			name = Images;
@@ -357,6 +370,7 @@
 				2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */,
 				2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */,
 				2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */,
+				2A993BD51C219F9300C2EF99 /* SearchByNameViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -479,6 +493,7 @@
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
 				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
 				2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */,
+				2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */,
 				2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */,
 				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
 				2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */,
@@ -512,6 +527,7 @@
 				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
 				2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */,
+				2A993BD61C219F9300C2EF99 /* SearchByNameViewController.swift in Sources */,
 				2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */,
 				2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */,
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
@@ -582,9 +598,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545AE1C1216F900089CC9 /* Base */,
-				2A9A062D1C20701800E0CEC1 /* es */,
-				2A9A062F1C20703300E0CEC1 /* pt-PT */,
-				2A9A06311C20705E00E0CEC1 /* es-MX */,
+				2A993BCF1C219C3100C2EF99 /* es-MX */,
+				2A993BD11C219C6A00C2EF99 /* pt-PT */,
+				2A993BD31C219C7000C2EF99 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -593,9 +609,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545B31C1216F900089CC9 /* Base */,
-				2A9A062E1C20701800E0CEC1 /* es */,
-				2A9A06301C20703300E0CEC1 /* pt-PT */,
-				2A9A06321C20705E00E0CEC1 /* es-MX */,
+				2A993BD01C219C3100C2EF99 /* es-MX */,
+				2A993BD21C219C6A00C2EF99 /* pt-PT */,
+				2A993BD41C219C7000C2EF99 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

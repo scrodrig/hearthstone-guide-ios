@@ -339,7 +339,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E09-L4-yfj">
                                             <rect key="frame" x="155" y="8" width="183.5" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-JN-OCp">
@@ -358,7 +358,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-Sr-3CB">
                                             <rect key="frame" x="241" y="62" width="28" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJX-ul-5AW">
@@ -366,7 +366,7 @@
                                             <attributedString key="attributedText">
                                                 <fragment content="Text description">
                                                     <attributes>
-                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="14" name="HelveticaNeue"/>
                                                     </attributes>
                                                 </fragment>
@@ -421,7 +421,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztq-nS-ln0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3103" y="349"/>
+            <point key="canvasLocation" x="3081" y="349"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="nAq-h3-psr">
@@ -480,6 +480,9 @@
                                                 <constraint firstItem="bwU-VM-d30" firstAttribute="top" secondItem="HH6-N3-BCc" secondAttribute="topMargin" id="er8-vY-zu6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CpE-aU-Ac2" kind="show" id="kKC-K9-nMk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SearchBySet" id="uU1-Ko-N2n">
                                         <rect key="frame" x="0.0" y="204" width="414" height="70"/>
@@ -594,6 +597,69 @@
             </objects>
             <point key="canvasLocation" x="1978" y="349"/>
         </scene>
+        <!--Search By Name View Controller-->
+        <scene sceneID="FwH-B2-gzS">
+            <objects>
+                <viewController id="CpE-aU-Ac2" customClass="SearchByNameViewController" customModule="Hearthstone_Beginners_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rsC-rm-STU"/>
+                        <viewControllerLayoutGuide type="bottom" id="eXb-K3-DEk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3gT-IS-LJq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-hF-Khr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKV-Zh-9rG">
+                                <rect key="frame" x="112.5" y="111.5" width="281.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CpE-aU-Ac2" id="0Ta-Vd-A7Y"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9C-CX-tfx">
+                                <rect key="frame" x="20" y="114" width="58.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardExampleName.png" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-AQ-nLb">
+                                <rect key="frame" x="112" y="166.5" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Juk-Ej-pPH"/>
+                                    <constraint firstAttribute="width" secondItem="8SF-AQ-nLb" secondAttribute="height" multiplier="2:3" id="MyH-sN-o4r"/>
+                                    <constraint firstAttribute="height" constant="300" id="Rnh-EN-Pvq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QKV-Zh-9rG" firstAttribute="baseline" secondItem="F9C-CX-tfx" secondAttribute="baseline" id="Cx8-d4-dia"/>
+                            <constraint firstItem="eXb-K3-DEk" firstAttribute="top" secondItem="jfG-hF-Khr" secondAttribute="bottom" id="Ltj-Nf-O2R"/>
+                            <constraint firstItem="jfG-hF-Khr" firstAttribute="top" secondItem="3gT-IS-LJq" secondAttribute="topMargin" id="MBJ-WE-mlg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jfG-hF-Khr" secondAttribute="trailing" constant="-20" id="Mn7-Ox-QE3"/>
+                            <constraint firstItem="F9C-CX-tfx" firstAttribute="leading" secondItem="3gT-IS-LJq" secondAttribute="leadingMargin" id="OEm-A8-BhF"/>
+                            <constraint firstItem="QKV-Zh-9rG" firstAttribute="leading" secondItem="F9C-CX-tfx" secondAttribute="trailing" constant="34" id="Q5o-76-vPW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKV-Zh-9rG" secondAttribute="trailing" id="ZHV-22-KbX"/>
+                            <constraint firstItem="8SF-AQ-nLb" firstAttribute="top" secondItem="QKV-Zh-9rG" secondAttribute="bottom" constant="25" id="cO2-PT-jKm"/>
+                            <constraint firstItem="8SF-AQ-nLb" firstAttribute="leading" secondItem="QKV-Zh-9rG" secondAttribute="leading" id="dzh-7H-Fbj"/>
+                            <constraint firstItem="jfG-hF-Khr" firstAttribute="leading" secondItem="3gT-IS-LJq" secondAttribute="leadingMargin" constant="-20" id="eid-47-5yy"/>
+                            <constraint firstItem="F9C-CX-tfx" firstAttribute="top" secondItem="rsC-rm-STU" secondAttribute="bottom" constant="50" id="ux5-cv-4JW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="nameSearch" destination="QKV-Zh-9rG" id="1oi-oV-zml"/>
+                        <segue destination="bfJ-L8-nVB" kind="show" identifier="searchByNameSegue" id="E7C-st-6pR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJe-0B-zbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="1264"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="e4q-sN-tH8">
             <objects>
@@ -615,6 +681,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CardExampleName.png" width="307" height="465"/>
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
         <image name="Hunter.png" width="286" height="395"/>
@@ -627,4 +694,7 @@
         <image name="Warrior.png" width="286" height="395"/>
         <image name="mana-crystal.png" width="16" height="14"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="E7C-st-6pR"/>
+    </inferredMetricsTieBreakers>
 </document>

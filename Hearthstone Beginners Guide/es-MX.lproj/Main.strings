@@ -5,14 +5,35 @@
 /* Class = "UIButton"; normalTitle = "Druid"; ObjectID = "AJe-cB-dKv"; */
 "AJe-cB-dKv.normalTitle" = "Druid";
 
+/* Class = "UILabel"; text = "Cost"; ObjectID = "Byl-JN-OCp"; */
+"Byl-JN-OCp.text" = "Cost";
+
 /* Class = "UIButton"; normalTitle = "Hunter"; ObjectID = "DNe-8A-gGd"; */
 "DNe-8A-gGd.normalTitle" = "Hunter";
+
+/* Class = "UILabel"; text = "Name of the card"; ObjectID = "E09-L4-yfj"; */
+"E09-L4-yfj.text" = "Name of the card";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "F9C-CX-tfx"; */
+"F9C-CX-tfx.text" = "Name:";
+
+/* Class = "UILabel"; text = "Classes"; ObjectID = "HOe-Hg-GFa"; */
+"HOe-Hg-GFa.text" = "Classes";
 
 /* Class = "UIButton"; normalTitle = "Warlock"; ObjectID = "MgM-ub-p17"; */
 "MgM-ub-p17.normalTitle" = "Warlock";
 
+/* Class = "UILabel"; text = "Search By Health"; ObjectID = "NaL-ar-R77"; */
+"NaL-ar-R77.text" = "Search By Health";
+
+/* Class = "UITextField"; placeholder = "Name of the card"; ObjectID = "QKV-Zh-9rG"; */
+"QKV-Zh-9rG.placeholder" = "Name of the card";
+
 /* Class = "UIButton"; normalTitle = "Shaman"; ObjectID = "QnI-du-yUb"; */
 "QnI-du-yUb.normalTitle" = "Shaman";
+
+/* Class = "UILabel"; text = "Search By Attack"; ObjectID = "U52-yy-WJK"; */
+"U52-yy-WJK.text" = "Search By Attack";
 
 /* Class = "UIButton"; normalTitle = "Priest"; ObjectID = "V0j-bY-cCD"; */
 "V0j-bY-cCD.normalTitle" = "Priest";
@@ -20,8 +41,17 @@
 /* Class = "UIButton"; normalTitle = "Paladin"; ObjectID = "ZhN-yS-lYM"; */
 "ZhN-yS-lYM.normalTitle" = "Paladin";
 
+/* Class = "UILabel"; text = "Search By Name"; ObjectID = "bwU-VM-d30"; */
+"bwU-VM-d30.text" = "Search By Name";
+
+/* Class = "UILabel"; text = "Search By Set"; ObjectID = "c4l-f6-RdO"; */
+"c4l-f6-RdO.text" = "Search By Set";
+
 /* Class = "UIButton"; normalTitle = "Warrior"; ObjectID = "cuU-gj-n9q"; */
 "cuU-gj-n9q.normalTitle" = "Warrior";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "kW0-Sr-3CB"; */
+"kW0-Sr-3CB.text" = "Type";
 
 /* Class = "UIButton"; normalTitle = "Rogue"; ObjectID = "oVF-0d-EHk"; */
 "oVF-0d-EHk.normalTitle" = "Rogue";
