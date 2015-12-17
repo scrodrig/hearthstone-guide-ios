@@ -38,7 +38,6 @@ class SearchByNameViewController: UIViewController, UITextFieldDelegate {
     */
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        print("llegue " + nameSearch.text!);
         //Save integrity for querys
         guard let queryString:String = nameSearch.text else{
             return false;

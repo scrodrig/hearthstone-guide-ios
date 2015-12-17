@@ -223,6 +223,9 @@
                                     <action selector="searchByClass:" destination="aDR-eC-2Q0" eventType="touchUpInside" id="9If-eI-y6I"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-Z1-o2d">
+                                <rect key="frame" x="197" y="196" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -421,7 +424,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztq-nS-ln0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081" y="349"/>
+            <point key="canvasLocation" x="3049" y="809"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="nAq-h3-psr">
@@ -527,6 +530,9 @@
                                                 <constraint firstItem="U52-yy-WJK" firstAttribute="top" secondItem="fST-0J-hFW" secondAttribute="topMargin" id="qZq-27-u4I"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="M3f-hC-guA" kind="show" id="T7s-vm-bjS"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SearchByHealth" id="Oxu-Xg-DfS" userLabel="SearchByHealth">
                                         <rect key="frame" x="0.0" y="344" width="414" height="70"/>
@@ -597,6 +603,85 @@
             </objects>
             <point key="canvasLocation" x="1978" y="349"/>
         </scene>
+        <!--Search By Attack View Controller-->
+        <scene sceneID="fVz-5r-7Xw">
+            <objects>
+                <viewController id="M3f-hC-guA" customClass="SearchByAttackViewController" customModule="Hearthstone_Beginners_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7aA-Yp-frU"/>
+                        <viewControllerLayoutGuide type="bottom" id="eyD-NA-vhi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ohK-lq-C4s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sy9-Fd-4TB">
+                                <rect key="frame" x="20" y="94" width="63" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-Ri-nii">
+                                <rect key="frame" x="346.5" y="148" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchByAttackAction:" destination="M3f-hC-guA" eventType="touchUpInside" id="TWv-9y-Lkw"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-Qj-I8d">
+                                <rect key="frame" x="142" y="88" width="254" height="31"/>
+                                <connections>
+                                    <action selector="attackSliderValueChanged:" destination="M3f-hC-guA" eventType="valueChanged" id="Ho2-bL-nu9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZU-GV-2Xe">
+                                <rect key="frame" x="103" y="97" width="21" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardAttackExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="hrf-YG-CP3">
+                                <rect key="frame" x="103" y="167.5" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Cb-87-hvD"/>
+                                    <constraint firstAttribute="height" constant="300" id="Hgk-Tx-K8z"/>
+                                    <constraint firstAttribute="width" secondItem="hrf-YG-CP3" secondAttribute="height" multiplier="2:3" id="dzH-BH-aKF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-KD-FFd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tNn-Ri-nii" firstAttribute="top" secondItem="3Ej-Qj-I8d" secondAttribute="bottom" constant="30" id="DNe-MK-GAY"/>
+                            <constraint firstItem="sy9-Fd-4TB" firstAttribute="leading" secondItem="ohK-lq-C4s" secondAttribute="leadingMargin" id="Dx1-C9-735"/>
+                            <constraint firstItem="qCr-KD-FFd" firstAttribute="top" secondItem="ohK-lq-C4s" secondAttribute="topMargin" id="GBN-JJ-roo"/>
+                            <constraint firstItem="3Ej-Qj-I8d" firstAttribute="leading" secondItem="BZU-GV-2Xe" secondAttribute="trailing" constant="20" id="HVd-kB-aW1"/>
+                            <constraint firstItem="hrf-YG-CP3" firstAttribute="leading" secondItem="BZU-GV-2Xe" secondAttribute="leading" id="HZE-3o-2u6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qCr-KD-FFd" secondAttribute="trailing" constant="-20" id="LmI-91-J8d"/>
+                            <constraint firstItem="eyD-NA-vhi" firstAttribute="top" secondItem="qCr-KD-FFd" secondAttribute="bottom" id="MGY-e3-tdb"/>
+                            <constraint firstItem="BZU-GV-2Xe" firstAttribute="baseline" secondItem="sy9-Fd-4TB" secondAttribute="baseline" id="OYq-hm-5sX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ej-Qj-I8d" secondAttribute="trailing" id="SRv-Ie-QWM"/>
+                            <constraint firstItem="3Ej-Qj-I8d" firstAttribute="bottom" secondItem="BZU-GV-2Xe" secondAttribute="bottom" id="Wrc-Q4-RpI"/>
+                            <constraint firstItem="hrf-YG-CP3" firstAttribute="top" secondItem="BZU-GV-2Xe" secondAttribute="bottom" constant="50" id="b9y-eU-Xfq"/>
+                            <constraint firstItem="BZU-GV-2Xe" firstAttribute="leading" secondItem="sy9-Fd-4TB" secondAttribute="trailing" constant="20" id="k4C-7d-0vb"/>
+                            <constraint firstItem="tNn-Ri-nii" firstAttribute="trailing" secondItem="3Ej-Qj-I8d" secondAttribute="trailing" id="oo4-FN-EaQ"/>
+                            <constraint firstItem="qCr-KD-FFd" firstAttribute="leading" secondItem="ohK-lq-C4s" secondAttribute="leadingMargin" constant="-20" id="rI1-Jj-kKl"/>
+                            <constraint firstItem="sy9-Fd-4TB" firstAttribute="top" secondItem="7aA-Yp-frU" secondAttribute="bottom" constant="30" id="vGw-HK-8ca"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="attackSlider" destination="3Ej-Qj-I8d" id="7kj-8Q-o5R"/>
+                        <outlet property="valueLabel" destination="BZU-GV-2Xe" id="mZs-uj-Jg4"/>
+                        <segue destination="bfJ-L8-nVB" kind="show" identifier="searchByAttackSegue" id="I9v-w2-W2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7N-WW-lv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="2229"/>
+        </scene>
         <!--Search By Name View Controller-->
         <scene sceneID="FwH-B2-gzS">
             <objects>
@@ -613,7 +698,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKV-Zh-9rG">
-                                <rect key="frame" x="112.5" y="111.5" width="281.5" height="30"/>
+                                <rect key="frame" x="108.5" y="111.5" width="285.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <connections>
@@ -627,7 +712,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardExampleName.png" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-AQ-nLb">
-                                <rect key="frame" x="112" y="166.5" width="200" height="300"/>
+                                <rect key="frame" x="108" y="166.5" width="200" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Juk-Ej-pPH"/>
                                     <constraint firstAttribute="width" secondItem="8SF-AQ-nLb" secondAttribute="height" multiplier="2:3" id="MyH-sN-o4r"/>
@@ -642,7 +727,7 @@
                             <constraint firstItem="jfG-hF-Khr" firstAttribute="top" secondItem="3gT-IS-LJq" secondAttribute="topMargin" id="MBJ-WE-mlg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jfG-hF-Khr" secondAttribute="trailing" constant="-20" id="Mn7-Ox-QE3"/>
                             <constraint firstItem="F9C-CX-tfx" firstAttribute="leading" secondItem="3gT-IS-LJq" secondAttribute="leadingMargin" id="OEm-A8-BhF"/>
-                            <constraint firstItem="QKV-Zh-9rG" firstAttribute="leading" secondItem="F9C-CX-tfx" secondAttribute="trailing" constant="34" id="Q5o-76-vPW"/>
+                            <constraint firstItem="QKV-Zh-9rG" firstAttribute="leading" secondItem="F9C-CX-tfx" secondAttribute="trailing" constant="30" id="Q5o-76-vPW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QKV-Zh-9rG" secondAttribute="trailing" id="ZHV-22-KbX"/>
                             <constraint firstItem="8SF-AQ-nLb" firstAttribute="top" secondItem="QKV-Zh-9rG" secondAttribute="bottom" constant="25" id="cO2-PT-jKm"/>
                             <constraint firstItem="8SF-AQ-nLb" firstAttribute="leading" secondItem="QKV-Zh-9rG" secondAttribute="leading" id="dzh-7H-Fbj"/>
@@ -681,6 +766,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CardAttackExample.png" width="307" height="465"/>
         <image name="CardExampleName.png" width="307" height="465"/>
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
@@ -695,6 +781,6 @@
         <image name="mana-crystal.png" width="16" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="E7C-st-6pR"/>
+        <segue reference="I9v-w2-W2n"/>
     </inferredMetricsTieBreakers>
 </document>

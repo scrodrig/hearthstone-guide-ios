@@ -75,12 +75,9 @@ class ClassesMenuViewController: UIViewController {
         default:
             break;
         }
-        print("Heroe " + (heroSelected?.rawValue)!);
-        
         SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
             self.cards = cards;
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                //cardTableViewController.tableView.reloadData();
                 self.performSegueWithIdentifier("classSelectedSegue", sender: nil);
             })
             

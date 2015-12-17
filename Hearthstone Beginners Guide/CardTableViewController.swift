@@ -61,7 +61,6 @@ class CardTableViewController: UITableViewController {
                         let image = UIImage(data: d)
                         NSOperationQueue.mainQueue().addOperationWithBlock({() -> Void in
                             cell.cardImage.image = image;
-                            //self.tableView.reloadData();
                         })
                     }
                 }).resume()

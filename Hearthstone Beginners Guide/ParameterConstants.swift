@@ -17,6 +17,10 @@ struct ParameterConstants {
     static let HEARTHSTONE_API_URI:String = "https://omgvamp-hearthstone-v1.p.mashape.com";
         
     static let HEARTHSTONE_API_PARAMETER_LOCALE:String = "/?locale=";
+    
+    static let HEARTHSTONE_API_PARAMETER_ATTACK:String = "?attack=";
+    
+    static let HEARTHSTONE_API_PARAMETER_CONNECTOR_AMPERSAND = "&";
 
     
 }
