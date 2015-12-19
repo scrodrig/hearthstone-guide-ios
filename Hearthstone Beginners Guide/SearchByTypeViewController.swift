@@ -1,27 +1,26 @@
 //
-//  SearchBySetViewController.swift
+//  SearchByTypeViewController.swift
 //  Hearthstone Beginners Guide
 //
-//  Created by Schubert David Rodríguez on 18/12/15.
+//  Created by Schubert David Rodríguez on 19/12/15.
 //  Copyright © 2015 Schubert David Rodríguez. All rights reserved.
 //
 
 import UIKit
 
-class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SearchByTypeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var setPicker: UIPickerView!
+    
+    @IBOutlet weak var typePicker: UIPickerView!;
+    
     var cards:[Card]?;
     let pickerData = [
-        Sets.getAsArrayValues()
+        Type.getAsArrayValues()
     ]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setPicker.delegate = self;
-        //setPicker.dataSource = self;
+
         // Do any additional setup after loading the view.
     }
 
@@ -30,16 +29,15 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func searchCardsBySetAction(sender: AnyObject) {
-    
-        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SET_ENDPOINT, query: pickerData[0][setPicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
+    @IBAction func searchByTypeAction(sender: AnyObject) {
+        
+        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_TYPE_ENDPOINT, query: pickerData[0][typePicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             //Add operation to the main thread
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                 //Excute the segue
-                self.performSegueWithIdentifier("searchBySetSegue", sender: nil);
+                self.performSegueWithIdentifier("searchByTypeSegue", sender: nil);
                 
             })
         }
@@ -61,8 +59,7 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
         // Pass the selected object to the new view controller.
     }
     */
-    
-    //MARK: -Delgates and DataSource
+
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return pickerData.count

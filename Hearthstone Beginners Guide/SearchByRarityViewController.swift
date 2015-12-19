@@ -1,27 +1,25 @@
 //
-//  SearchBySetViewController.swift
+//  SearchByRarityViewController.swift
 //  Hearthstone Beginners Guide
 //
-//  Created by Schubert David Rodríguez on 18/12/15.
+//  Created by Schubert David Rodríguez on 19/12/15.
 //  Copyright © 2015 Schubert David Rodríguez. All rights reserved.
 //
 
 import UIKit
 
-class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SearchByRarityViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var setPicker: UIPickerView!
+    @IBOutlet weak var rarityPicker: UIPickerView!
+    
     var cards:[Card]?;
     let pickerData = [
-        Sets.getAsArrayValues()
+        Rarity.getAsArrayValues()
     ]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setPicker.delegate = self;
-        //setPicker.dataSource = self;
+
         // Do any additional setup after loading the view.
     }
 
@@ -30,16 +28,15 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func searchCardsBySetAction(sender: AnyObject) {
-    
-        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SET_ENDPOINT, query: pickerData[0][setPicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
+    @IBAction func searchCardsByRarity(sender: AnyObject) {
+        
+        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_QUALITY_ENDPOINT, query: pickerData[0][rarityPicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             //Add operation to the main thread
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                 //Excute the segue
-                self.performSegueWithIdentifier("searchBySetSegue", sender: nil);
+                self.performSegueWithIdentifier("searchByRaritySegue", sender: nil);
                 
             })
         }
@@ -75,5 +72,5 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[component][row]
     }
-    
+
 }

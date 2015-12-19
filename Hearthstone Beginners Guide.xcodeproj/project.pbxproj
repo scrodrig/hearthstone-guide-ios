@@ -55,6 +55,12 @@
 		2A9A06341C207CAE00E0CEC1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */; };
 		2A9A06391C20888600E0CEC1 /* ClassesBackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */; };
 		2A9A063B1C208DF500E0CEC1 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */; };
+		2AA05EE01C25698900DD7393 /* SearchByRarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA05EDF1C25698900DD7393 /* SearchByRarityViewController.swift */; };
+		2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA05EE11C256D7900DD7393 /* CardRarityExample.png */; };
+		2AA05EE41C256F7700DD7393 /* RarityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA05EE31C256F7700DD7393 /* RarityEnum.swift */; };
+		2AA05EE61C2578B000DD7393 /* SearchByTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA05EE51C2578B000DD7393 /* SearchByTypeViewController.swift */; };
+		2AA05EE81C257BF000DD7393 /* TypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA05EE71C257BF000DD7393 /* TypeEnum.swift */; };
+		2AA05EEA1C257F4900DD7393 /* CardTypeExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA05EE91C257F4900DD7393 /* CardTypeExample.png */; };
 		2AA93AAC1C127D090067E970 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */; };
 		2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */; };
 		2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */; };
@@ -141,6 +147,12 @@
 		2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2A9A06381C20888600E0CEC1 /* ClassesBackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ClassesBackground.jpeg; sourceTree = "<group>"; };
 		2A9A063A1C208DF500E0CEC1 /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		2AA05EDF1C25698900DD7393 /* SearchByRarityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByRarityViewController.swift; sourceTree = "<group>"; };
+		2AA05EE11C256D7900DD7393 /* CardRarityExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardRarityExample.png; sourceTree = "<group>"; };
+		2AA05EE31C256F7700DD7393 /* RarityEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RarityEnum.swift; sourceTree = "<group>"; };
+		2AA05EE51C2578B000DD7393 /* SearchByTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByTypeViewController.swift; sourceTree = "<group>"; };
+		2AA05EE71C257BF000DD7393 /* TypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeEnum.swift; sourceTree = "<group>"; };
+		2AA05EE91C257F4900DD7393 /* CardTypeExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardTypeExample.png; sourceTree = "<group>"; };
 		2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
@@ -302,6 +314,8 @@
 				2A9944101C17079200A1B891 /* LocationEnum.swift */,
 				2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */,
 				2A7F6A6C1C23189B00FED2A6 /* SetEnum.swift */,
+				2AA05EE31C256F7700DD7393 /* RarityEnum.swift */,
+				2AA05EE71C257BF000DD7393 /* TypeEnum.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -319,9 +333,11 @@
 		2A8ED9971C218061003CA96F /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				2AA05EE91C257F4900DD7393 /* CardTypeExample.png */,
 				2AE6DCCC1C25076D00A2613A /* CardHealthExample.png */,
 				2A8ED99A1C2180A9003CA96F /* CardExampleName.png */,
 				2A7F6A701C232BBF00FED2A6 /* CardAttackExample.png */,
+				2AA05EE11C256D7900DD7393 /* CardRarityExample.png */,
 			);
 			name = Cards;
 			sourceTree = "<group>";
@@ -392,6 +408,8 @@
 				2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */,
 				2AB8E6E41C24471400F4828E /* SearchBySetViewController.swift */,
 				2AE6DCCA1C2501D500A2613A /* SearchByHealthViewController.swift */,
+				2AA05EDF1C25698900DD7393 /* SearchByRarityViewController.swift */,
+				2AA05EE51C2578B000DD7393 /* SearchByTypeViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -508,12 +526,14 @@
 				2A7F6A711C232BBF00FED2A6 /* CardAttackExample.png in Resources */,
 				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
+				2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
 				2AE6DCCD1C25076D00A2613A /* CardHealthExample.png in Resources */,
 				2A7D66511C20C5F400D43550 /* attack.png in Resources */,
 				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
+				2AA05EEA1C257F4900DD7393 /* CardTypeExample.png in Resources */,
 				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
 				2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */,
 				2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */,
@@ -548,8 +568,11 @@
 			files = (
 				2A99440F1C17068400A1B891 /* CardbackClient.swift in Sources */,
 				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
+				2AA05EE81C257BF000DD7393 /* TypeEnum.swift in Sources */,
+				2AA05EE61C2578B000DD7393 /* SearchByTypeViewController.swift in Sources */,
 				2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */,
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
+				2AA05EE41C256F7700DD7393 /* RarityEnum.swift in Sources */,
 				2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */,
 				2A993BD61C219F9300C2EF99 /* SearchByNameViewController.swift in Sources */,
 				2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */,
@@ -570,6 +593,7 @@
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
+				2AA05EE01C25698900DD7393 /* SearchByRarityViewController.swift in Sources */,
 				2A9A063B1C208DF500E0CEC1 /* CardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

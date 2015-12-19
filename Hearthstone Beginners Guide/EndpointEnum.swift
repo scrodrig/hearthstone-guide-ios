@@ -20,6 +20,7 @@ enum Endpoints:String {
     
     case HEARTHSTONE_API_CARDS_SET_ENDPOINT = "/cards/sets/"
     
+    
     case HEARTHSTONE_API_CARDS_RACE_ENDPOINT = "/cards/races/"
     
     case HEARTHSTONE_API_CARDS_QUALITY_ENDPOINT = "/cards/qualities/"
