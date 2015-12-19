@@ -35,6 +35,8 @@
 		2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */; };
 		2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */; };
+		2A8B786C1C25B04200DD3779 /* CardCostExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B786B1C25B04200DD3779 /* CardCostExample.png */; };
+		2A8B786E1C25B0CF00DD3779 /* SearchByCostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */; };
 		2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
 		2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
 		2A8BF62B1C1602A500300E39 /* InfoClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */; };
@@ -127,6 +129,8 @@
 		2A7F6A701C232BBF00FED2A6 /* CardAttackExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardAttackExample.png; sourceTree = "<group>"; };
 		2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByAttackViewController.swift; sourceTree = "<group>"; };
 		2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClientTest.swift; sourceTree = "<group>"; };
+		2A8B786B1C25B04200DD3779 /* CardCostExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardCostExample.png; sourceTree = "<group>"; };
+		2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByCostViewController.swift; sourceTree = "<group>"; };
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
 		2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesEnum.swift; sourceTree = "<group>"; };
 		2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClientTest.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 		2A8ED9971C218061003CA96F /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				2A8B786B1C25B04200DD3779 /* CardCostExample.png */,
 				2AA05EE91C257F4900DD7393 /* CardTypeExample.png */,
 				2AE6DCCC1C25076D00A2613A /* CardHealthExample.png */,
 				2A8ED99A1C2180A9003CA96F /* CardExampleName.png */,
@@ -410,6 +415,7 @@
 				2AE6DCCA1C2501D500A2613A /* SearchByHealthViewController.swift */,
 				2AA05EDF1C25698900DD7393 /* SearchByRarityViewController.swift */,
 				2AA05EE51C2578B000DD7393 /* SearchByTypeViewController.swift */,
+				2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -530,6 +536,7 @@
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
 				2AE6DCCD1C25076D00A2613A /* CardHealthExample.png in Resources */,
 				2A7D66511C20C5F400D43550 /* attack.png in Resources */,
+				2A8B786C1C25B04200DD3779 /* CardCostExample.png in Resources */,
 				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
@@ -590,6 +597,7 @@
 				2A7F6A6D1C23189B00FED2A6 /* SetEnum.swift in Sources */,
 				2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */,
 				2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */,
+				2A8B786E1C25B0CF00DD3779 /* SearchByCostViewController.swift in Sources */,
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
