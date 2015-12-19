@@ -11,19 +11,19 @@ import Foundation
 class SearchByClassClient {
  
     
-    static func searchCardsByClass(hero: Heroes?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {
+    static func searchCardsByClass(hero: Heroes?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> NSURLSessionDataTask? {
     
         //Check veracity for location selection
         guard let locationQuery:Location = location else {
-            return;
+            return nil;
         }
         //Check veracity for hero selection
         guard let heroQuery:Heroes = hero else {
-            return;
+            return nil;
         }
         //Build a URL to connect with the server
         guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CLASS_CARDS_ENDPOINT.rawValue + heroQuery.rawValue + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
-            return;
+            return nil;
         }
         //Add headers for session
         let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
@@ -41,6 +41,8 @@ class SearchByClassClient {
         
         //Resume the task to waiti for asynchronuos methods
         sessionTask.resume();
+        
+        return sessionTask;
 
         
     

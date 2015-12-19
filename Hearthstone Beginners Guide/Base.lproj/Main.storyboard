@@ -37,6 +37,87 @@
             </objects>
             <point key="canvasLocation" x="831" y="349"/>
         </scene>
+        <!--Search By Health View Controller-->
+        <scene sceneID="2jA-2x-n1m">
+            <objects>
+                <viewController id="Xha-3M-V5P" customClass="SearchByHealthViewController" customModule="Hearthstone_Beginners_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8VL-Tx-d4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ggb-Z2-B72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PDT-g1-v8I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="k8c-Sg-uk7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4t-c0-ToT">
+                                <rect key="frame" x="20" y="94" width="55" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="DGT-nN-qNk">
+                                <rect key="frame" x="18" y="144" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changeHealthAction:" destination="Xha-3M-V5P" eventType="valueChanged" id="3GK-Gv-Rbb"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNn-lK-kHZ">
+                                <rect key="frame" x="105" y="94" width="21" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJ3-oO-uAD">
+                                <rect key="frame" x="346" y="204" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchByHealthAction:" destination="Xha-3M-V5P" eventType="touchUpInside" id="Yck-nH-rHa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardHealthExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-Tf-a7u">
+                                <rect key="frame" x="105" y="254" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q9v-Tf-a7u" secondAttribute="height" multiplier="2:3" id="46f-xU-Zjg"/>
+                                    <constraint firstAttribute="height" constant="300" id="74l-Fb-yvx"/>
+                                    <constraint firstAttribute="width" constant="200" id="ECo-l2-RMZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k8c-Sg-uk7" firstAttribute="leading" secondItem="PDT-g1-v8I" secondAttribute="leadingMargin" constant="-20" id="1gV-Ka-Awj"/>
+                            <constraint firstItem="H4t-c0-ToT" firstAttribute="leading" secondItem="PDT-g1-v8I" secondAttribute="leadingMargin" id="BBQ-ux-sxI"/>
+                            <constraint firstItem="DGT-nN-qNk" firstAttribute="top" secondItem="H4t-c0-ToT" secondAttribute="bottom" constant="30" id="Mho-De-lkc"/>
+                            <constraint firstItem="oJ3-oO-uAD" firstAttribute="trailing" secondItem="DGT-nN-qNk" secondAttribute="trailing" id="NBh-ZO-6FQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DGT-nN-qNk" secondAttribute="trailing" id="VfD-kV-Ktp"/>
+                            <constraint firstItem="Q9v-Tf-a7u" firstAttribute="top" secondItem="DGT-nN-qNk" secondAttribute="bottom" constant="80" id="YIV-1H-63z"/>
+                            <constraint firstItem="PNn-lK-kHZ" firstAttribute="baseline" secondItem="H4t-c0-ToT" secondAttribute="baseline" id="ZxL-7e-ivf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k8c-Sg-uk7" secondAttribute="trailing" constant="-20" id="dI0-v0-dDc"/>
+                            <constraint firstItem="Q9v-Tf-a7u" firstAttribute="leading" secondItem="PNn-lK-kHZ" secondAttribute="leading" id="deh-pR-DXr"/>
+                            <constraint firstItem="oJ3-oO-uAD" firstAttribute="top" secondItem="DGT-nN-qNk" secondAttribute="bottom" constant="30" id="epK-DX-J6e"/>
+                            <constraint firstItem="H4t-c0-ToT" firstAttribute="top" secondItem="8VL-Tx-d4Z" secondAttribute="bottom" constant="30" id="ksd-mJ-PzF"/>
+                            <constraint firstItem="PNn-lK-kHZ" firstAttribute="leading" secondItem="H4t-c0-ToT" secondAttribute="trailing" constant="30" id="o2f-7H-zf7"/>
+                            <constraint firstItem="Ggb-Z2-B72" firstAttribute="top" secondItem="k8c-Sg-uk7" secondAttribute="bottom" id="oyC-iZ-3hg"/>
+                            <constraint firstItem="k8c-Sg-uk7" firstAttribute="top" secondItem="PDT-g1-v8I" secondAttribute="topMargin" id="reZ-YP-nnJ"/>
+                            <constraint firstItem="DGT-nN-qNk" firstAttribute="leading" secondItem="H4t-c0-ToT" secondAttribute="leading" id="yy5-0v-6ZI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="healthSlider" destination="DGT-nN-qNk" id="EVq-Oo-3h0"/>
+                        <outlet property="valueLabel" destination="PNn-lK-kHZ" id="rfC-iu-b7a"/>
+                        <segue destination="bfJ-L8-nVB" kind="show" identifier="searchByHealthSegue" id="a3H-88-3Db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifU-fQ-iRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="3839"/>
+        </scene>
         <!--Classes Menu View Controller-->
         <scene sceneID="jUI-29-0hJ">
             <objects>
@@ -223,9 +304,6 @@
                                     <action selector="searchByClass:" destination="aDR-eC-2Q0" eventType="touchUpInside" id="9If-eI-y6I"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-Z1-o2d">
-                                <rect key="frame" x="197" y="196" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -508,6 +586,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="c4l-f6-RdO" secondAttribute="bottom" id="r1t-Ov-8Cr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hZh-QW-lVq" kind="show" id="EpX-ot-HJA"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SearchByAttack" id="cPm-cd-PIo">
                                         <rect key="frame" x="0.0" y="274" width="414" height="70"/>
@@ -555,6 +636,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="NaL-ar-R77" secondAttribute="trailing" id="myV-os-IW0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xha-3M-V5P" kind="show" id="Jce-1H-pCq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="b0p-xS-Vls">
                                         <rect key="frame" x="0.0" y="414" width="414" height="70"/>
@@ -603,6 +687,67 @@
             </objects>
             <point key="canvasLocation" x="1978" y="349"/>
         </scene>
+        <!--Search By Set View Controller-->
+        <scene sceneID="gtp-7S-AwN">
+            <objects>
+                <viewController id="hZh-QW-lVq" customClass="SearchBySetViewController" customModule="Hearthstone_Beginners_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aEq-Xx-eZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="0FI-lg-cM9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SdM-df-bZC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wW5-0Z-qST">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="100" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="0C2-sW-Vrn">
+                                <rect key="frame" x="85" y="120" width="309" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hZh-QW-lVq" id="oGk-gc-5WU"/>
+                                    <outlet property="delegate" destination="hZh-QW-lVq" id="M5b-XK-8oD"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP6-Bg-o52">
+                                <rect key="frame" x="20" y="214" width="40.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW4-3E-ZDb">
+                                <rect key="frame" x="331" y="361" width="63" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchCardsBySetAction:" destination="hZh-QW-lVq" eventType="touchUpInside" id="LoD-aQ-XdI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0C2-sW-Vrn" secondAttribute="trailing" id="2Ou-3V-Zr6"/>
+                            <constraint firstItem="BP6-Bg-o52" firstAttribute="top" secondItem="aEq-Xx-eZF" secondAttribute="bottom" constant="150" id="AhL-42-DZ0"/>
+                            <constraint firstItem="wW5-0Z-qST" firstAttribute="top" secondItem="SdM-df-bZC" secondAttribute="topMargin" id="FtN-Ms-SBb"/>
+                            <constraint firstItem="0C2-sW-Vrn" firstAttribute="leading" secondItem="BP6-Bg-o52" secondAttribute="trailing" constant="25" id="FuR-fh-kHl"/>
+                            <constraint firstItem="JW4-3E-ZDb" firstAttribute="top" secondItem="0C2-sW-Vrn" secondAttribute="bottom" constant="25" id="QnW-vX-1WG"/>
+                            <constraint firstItem="JW4-3E-ZDb" firstAttribute="trailing" secondItem="SdM-df-bZC" secondAttribute="trailingMargin" id="USO-Kg-Vso"/>
+                            <constraint firstItem="0FI-lg-cM9" firstAttribute="top" secondItem="wW5-0Z-qST" secondAttribute="bottom" id="fSi-o8-6Ky"/>
+                            <constraint firstItem="wW5-0Z-qST" firstAttribute="leading" secondItem="SdM-df-bZC" secondAttribute="leadingMargin" constant="-20" id="kpA-5V-WDi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wW5-0Z-qST" secondAttribute="trailing" constant="-20" id="rSZ-A3-AIu"/>
+                            <constraint firstItem="BP6-Bg-o52" firstAttribute="leading" secondItem="SdM-df-bZC" secondAttribute="leadingMargin" id="ss3-2M-gSw"/>
+                            <constraint firstItem="0C2-sW-Vrn" firstAttribute="centerY" secondItem="BP6-Bg-o52" secondAttribute="centerY" id="xGW-DV-nOe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="setPicker" destination="0C2-sW-Vrn" id="lsE-i1-6rc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYa-lD-5TU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="2126"/>
+        </scene>
         <!--Search By Attack View Controller-->
         <scene sceneID="fVz-5r-7Xw">
             <objects>
@@ -633,6 +778,8 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-Qj-I8d">
                                 <rect key="frame" x="142" y="88" width="254" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="attackSliderValueChanged:" destination="M3f-hC-guA" eventType="valueChanged" id="Ho2-bL-nu9"/>
                                 </connections>
@@ -680,7 +827,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7N-WW-lv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="2229"/>
+            <point key="canvasLocation" x="2516" y="2989"/>
         </scene>
         <!--Search By Name View Controller-->
         <scene sceneID="FwH-B2-gzS">
@@ -768,6 +915,7 @@
     <resources>
         <image name="CardAttackExample.png" width="307" height="465"/>
         <image name="CardExampleName.png" width="307" height="465"/>
+        <image name="CardHealthExample.png" width="307" height="465"/>
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
         <image name="Hunter.png" width="286" height="395"/>
@@ -781,6 +929,6 @@
         <image name="mana-crystal.png" width="16" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="I9v-w2-W2n"/>
+        <segue reference="a3H-88-3Db"/>
     </inferredMetricsTieBreakers>
 </document>

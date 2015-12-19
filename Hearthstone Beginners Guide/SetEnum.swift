@@ -35,8 +35,17 @@ enum Sets: String {
     case TavernBrawl = "Tavern Brawl";
     
     case TheGrandTournament = "The Grand Tournament";
-
+    
     case TheLeagueOfExplorers = "The League of Explorers";
-
+    
+    
+    
+    static func getAsArrayValues () -> [String]{
+        return [Sets.Classic.rawValue,Sets.Basic.rawValue,Sets.Credits.rawValue,Sets.Naxxramas.rawValue,Sets.Debug.rawValue,
+            Sets.GoblinsVsGnomes.rawValue,Sets.Missions.rawValue,Sets.Promotion.rawValue,Sets.Reward.rawValue,Sets.BlackrockMountain.rawValue,Sets.HeroSkins.rawValue,Sets.TavernBrawl.rawValue,Sets.TheGrandTournament.rawValue,Sets.TheLeagueOfExplorers.rawValue];
+    }
+    
+    
+    
     
 }

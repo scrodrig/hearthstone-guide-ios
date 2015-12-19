@@ -20,6 +20,8 @@ struct ParameterConstants {
     
     static let HEARTHSTONE_API_PARAMETER_ATTACK:String = "?attack=";
     
+    static let HEARTHSTONE_API_PARAMETER_HEALTH:String = "?health=";
+    
     static let HEARTHSTONE_API_PARAMETER_CONNECTOR_AMPERSAND = "&";
 
     

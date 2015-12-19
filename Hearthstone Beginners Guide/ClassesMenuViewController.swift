@@ -23,6 +23,8 @@ class ClassesMenuViewController: UIViewController {
     //Class selected
     
     var heroSelected:Heroes?;
+    var heroPending:Heroes?;
+    var sesiionTask:NSURLSessionDataTask?;
     var cards: [Card]?;
     
     override func viewDidLoad() {
@@ -48,12 +50,8 @@ class ClassesMenuViewController: UIViewController {
     */
     
     @IBAction func searchByClass(sender: UIButton) {
-        if sender == druidButton {
-            heroSelected = Heroes.Druid;
-        }
         switch sender
         {
-            
         case druidButton:
             heroSelected = Heroes.Druid;
         case hunterButton:
@@ -75,13 +73,30 @@ class ClassesMenuViewController: UIViewController {
         default:
             break;
         }
-        SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
+        if self.heroPending == heroSelected {
+            return;
+        }
+        else {
+            if let session = sesiionTask{
+                session.cancel();
+                sesiionTask = nil;
+            }
+            heroPending = heroSelected;
+        }
+        
+        sesiionTask = SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
+            self.heroPending = nil;
             self.cards = cards;
-            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                self.performSegueWithIdentifier("classSelectedSegue", sender: nil);
-            })
+            if let c = self.cards{
+                if c.count >= 0 {
+                    NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                        self.performSegueWithIdentifier("classSelectedSegue", sender: nil);
+                    })
+                    
+                }
+            }
             
-        })        
+        })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

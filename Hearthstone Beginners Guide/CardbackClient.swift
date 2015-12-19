@@ -10,6 +10,8 @@ import Foundation
 
 class CardbackClient {
     
+    
+    //Make connection with api server
     static func searchCardbacks(location: Location?,completionHandler: ([Cardback]?, NSError?) -> Void) -> Void {
         //Check veracity for location selection
         guard let locationQuery:Location = location else {
@@ -37,12 +39,13 @@ class CardbackClient {
         
     }
     
+    
+    //Convert from data to cardback model
     static func parseCardbacks(data:NSData?) -> [Cardback]? {
         do{
             guard let dta = data else {
                 return nil;
             }
-            //Build a URL to connect with the server
             if let searchDictionary = try NSJSONSerialization.JSONObjectWithData(dta, options: NSJSONReadingOptions.AllowFragments) as? NSArray{
                 var cardbacks = [Cardback]();
                 for(var i = 0; i < searchDictionary.count; i++){
