@@ -742,6 +742,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="setPicker" destination="0C2-sW-Vrn" id="lsE-i1-6rc"/>
+                        <segue destination="bfJ-L8-nVB" kind="show" identifier="searchBySetSegue" id="yPN-cM-ne2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYa-lD-5TU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -929,6 +930,6 @@
         <image name="mana-crystal.png" width="16" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a3H-88-3Db"/>
+        <segue reference="yPN-cM-ne2"/>
     </inferredMetricsTieBreakers>
 </document>

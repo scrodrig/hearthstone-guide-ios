@@ -11,13 +11,9 @@ import UIKit
 class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var setPicker: UIPickerView!
-    
+    var cards:[Card]?;
     let pickerData = [
-        //["10\"","14\"","18\"","24\""],
-        //["Cheese","Pepperoni","Sausage","Veggie","BBQ Chicken"],
         Sets.getAsArrayValues()
-        
-        //[Sets.Basic.rawValue,Sets.BlackrockMountain.rawValue,]
     ]
     
     
@@ -36,6 +32,24 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     
     @IBAction func searchCardsBySetAction(sender: AnyObject) {
+    
+        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SET_ENDPOINT, query: pickerData[0][setPicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
+            //Go to the server
+            self.cards = cards;
+            //Add operation to the main thread
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                //Excute the segue
+                self.performSegueWithIdentifier("searchBySetSegue", sender: nil);
+                
+            })
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cardTableViewController = segue.destinationViewController as? CardTableViewController {
+            cardTableViewController.cards = cards;
+        }
     }
 
     /*
