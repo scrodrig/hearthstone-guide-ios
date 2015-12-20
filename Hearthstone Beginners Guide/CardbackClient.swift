@@ -63,15 +63,18 @@ class CardbackClient {
                         let sortOrder = cardBackJson.objectForKey("sortOrder") as! String;
                         let locale = Location(rawValue: cardBackJson.objectForKey("locale") as! String);
                         
-                    
-                        
                         
                         cardbacks.append(Cardback(cardBackId:cardBackId,name: name
                             ,description: description, source: source, sourceDescription: sourceDescription,howToGet: howToGet, enabled: enabled,img:img,imgAnimated: imgAnimated, sortCategory: sortCategory, sortOrder: sortOrder,locale: locale!));
                     }
                     
                 }
-                return cardbacks;
+                return cardbacks.filter({ (cardback:Cardback) -> Bool in
+                    if(cardback.img != nil && cardback.description != nil && cardback.enabled != false){
+                        return true;
+                    }
+                    return false;
+                });
                 
             }
         }catch{

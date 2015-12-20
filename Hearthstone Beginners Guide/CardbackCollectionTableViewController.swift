@@ -1,15 +1,17 @@
 //
-//  MenuTableViewController.swift
+//  CardbackCollectionTableViewController.swift
 //  Hearthstone Beginners Guide
 //
-//  Created by Schubert David Rodríguez on 15/12/15.
+//  Created by Schubert David Rodríguez on 20/12/15.
 //  Copyright © 2015 Schubert David Rodríguez. All rights reserved.
 //
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class CardbackCollectionTableViewController: UITableViewController {
 
+    var cardbacks:[Cardback]?;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class MenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //The charge initial for cardbaks
+        CardbackClient.searchCardbacks(Location.USAEnglish) { (cardbacks, error) -> Void in
+            self.cardbacks = cardbacks;
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                self.tableView.reloadData();
+            })
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +38,49 @@ class MenuTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 9;
+        return cardbacks?.count ?? 0;
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cardbackCell", forIndexPath: indexPath) as! CardbackTableViewCell;
+        let cardback = self.cardbacks![indexPath.row];
+        
+        cell.titleLabel.text = cardback.name;
+        if let text:String = cardback.description {
+            let attrStr = try! NSAttributedString(
+                data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
+                options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+                documentAttributes: nil);
+            cell.descriptionLabel.attributedText = attrStr;
+        }
+        
+        
+        
+        //cell.cardText.attributedText =
+        
+        if let imageString = cardback.img {
+            
+            if let imageUrl = NSURL(string: imageString){
+                NSURLSession.sharedSession().dataTaskWithURL(imageUrl, completionHandler: { (data, response, error) -> Void in
+                    if let d = data {
+                        let image = UIImage(data: d)
+                        NSOperationQueue.mainQueue().addOperationWithBlock({() -> Void in
+                            cell.carbackImage.image = image;
+                            //self.tableView.reloadData();
+                        })
+                    }
+                }).resume()
+            }
+            
+        }else{
+            cell.carbackImage.image = nil;
+        }
+        
+        return cell
     }
 
     /*

@@ -67,6 +67,8 @@
 		2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */; };
 		2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */; };
 		2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACC7451C15E47600ABD538 /* InfoModel.swift */; };
+		2AB35EA41C27055900FC6303 /* CardbackCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB35EA31C27055900FC6303 /* CardbackCollectionTableViewController.swift */; };
+		2AB35EA61C27096100FC6303 /* CardbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */; };
 		2AB8E6E51C24471400F4828E /* SearchBySetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8E6E41C24471400F4828E /* SearchBySetViewController.swift */; };
 		2ACE133E1C1B34580089DE29 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
 		2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B661C1F092E007D98E3 /* Druid.png */; };
@@ -161,6 +163,8 @@
 		2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
 		2AACC7451C15E47600ABD538 /* InfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		2AB35EA31C27055900FC6303 /* CardbackCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackCollectionTableViewController.swift; sourceTree = "<group>"; };
+		2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackTableViewCell.swift; sourceTree = "<group>"; };
 		2AB8E6E41C24471400F4828E /* SearchBySetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBySetViewController.swift; sourceTree = "<group>"; };
 		2AD72B661C1F092E007D98E3 /* Druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Druid.png; sourceTree = "<group>"; };
 		2AD72B671C1F092E007D98E3 /* Hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hunter.png; sourceTree = "<group>"; };
@@ -416,6 +420,8 @@
 				2AA05EDF1C25698900DD7393 /* SearchByRarityViewController.swift */,
 				2AA05EE51C2578B000DD7393 /* SearchByTypeViewController.swift */,
 				2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */,
+				2AB35EA31C27055900FC6303 /* CardbackCollectionTableViewController.swift */,
+				2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -577,6 +583,8 @@
 				2A2545AA1C1216F900089CC9 /* AppDelegate.swift in Sources */,
 				2AA05EE81C257BF000DD7393 /* TypeEnum.swift in Sources */,
 				2AA05EE61C2578B000DD7393 /* SearchByTypeViewController.swift in Sources */,
+				2AB35EA61C27096100FC6303 /* CardbackTableViewCell.swift in Sources */,
+				2AB35EA41C27055900FC6303 /* CardbackCollectionTableViewController.swift in Sources */,
 				2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */,
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
 				2AA05EE41C256F7700DD7393 /* RarityEnum.swift in Sources */,
@@ -715,7 +723,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -754,7 +761,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
