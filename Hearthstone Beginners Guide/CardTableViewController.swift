@@ -12,6 +12,7 @@ class CardTableViewController: UITableViewController {
     
     
     var cards:[Card]?
+    var cardSelected:Card?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,14 +65,32 @@ class CardTableViewController: UITableViewController {
                         })
                     }
                 }).resume()
-            }            
+            }
             
         }else{
             cell.cardImage.image = nil;
         }
         
-        return cell
+        return cell;
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        cardSelected = self.cards![indexPath.row];
+        if cardSelected != nil{
+            if(cardSelected!.type == Type.Minion.rawValue){
+                self.performSegueWithIdentifier("cardDetailMinionSegue", sender: nil);
+            }
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cardDetailViewController = segue.destinationViewController as? DetailByMinionViewController {
+            cardDetailViewController.card = self.cardSelected;
+        }
+    }
+    
+    
     
     
     /*
