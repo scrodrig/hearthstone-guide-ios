@@ -1810,7 +1810,7 @@
                                             <segue destination="YbI-Ka-8nh" kind="show" id="nca-uM-X1d"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="QEs-V3-uvC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CardbackCollection" id="QEs-V3-uvC">
                                         <rect key="frame" x="0.0" y="624" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QEs-V3-uvC" id="1kN-uJ-bYO">
@@ -1835,6 +1835,31 @@
                                             <segue destination="8Nk-HY-Tez" kind="show" identifier="cardbackCollectionSegue" id="fKa-qy-K6R"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Classes Pattern" id="QUH-eK-6Lo">
+                                        <rect key="frame" x="0.0" y="694" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QUH-eK-6Lo" id="UkO-gu-QMX">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classes Pattern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-OQ-tfB">
+                                                    <rect key="frame" x="8" y="8" width="365" height="53.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xQg-OQ-tfB" firstAttribute="top" secondItem="UkO-gu-QMX" secondAttribute="topMargin" id="WH5-DX-agC"/>
+                                                <constraint firstItem="xQg-OQ-tfB" firstAttribute="trailing" secondItem="UkO-gu-QMX" secondAttribute="trailingMargin" id="Zsh-3q-aOD"/>
+                                                <constraint firstItem="xQg-OQ-tfB" firstAttribute="leading" secondItem="UkO-gu-QMX" secondAttribute="leadingMargin" id="eax-WZ-JkT"/>
+                                                <constraint firstItem="xQg-OQ-tfB" firstAttribute="bottom" secondItem="UkO-gu-QMX" secondAttribute="bottomMargin" id="hlc-xP-Ul8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Bdu-0z-ObR" kind="show" identifier="ClassesPatterRecogniton" id="RRL-9L-MOh"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1849,6 +1874,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCW-Pe-tzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1978" y="349"/>
+        </scene>
+        <!--Classes Patternrecognition View Controller-->
+        <scene sceneID="MVh-Xg-5Iu">
+            <objects>
+                <viewController id="Bdu-0z-ObR" customClass="ClassesPatternrecognitionViewController" customModule="Hearthstone_Beginners_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tso-vb-RLa"/>
+                        <viewControllerLayoutGuide type="bottom" id="WVw-aJ-jwt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xvg-R0-zrf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMv-dY-0gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="349"/>
         </scene>
         <!--Cardback Collection Table View Controller-->
         <scene sceneID="GoJ-88-rpY">

@@ -81,6 +81,7 @@
 		2AB35EA61C27096100FC6303 /* CardbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */; };
 		2AB8E6E51C24471400F4828E /* SearchBySetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8E6E41C24471400F4828E /* SearchBySetViewController.swift */; };
 		2ACE133E1C1B34580089DE29 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
+		2ACE160A1C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE16091C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift */; };
 		2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B661C1F092E007D98E3 /* Druid.png */; };
 		2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B671C1F092E007D98E3 /* Hunter.png */; };
 		2AD72B711C1F092E007D98E3 /* Mage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD72B681C1F092E007D98E3 /* Mage.png */; };
@@ -187,6 +188,7 @@
 		2AB35EA31C27055900FC6303 /* CardbackCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackCollectionTableViewController.swift; sourceTree = "<group>"; };
 		2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackTableViewCell.swift; sourceTree = "<group>"; };
 		2AB8E6E41C24471400F4828E /* SearchBySetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBySetViewController.swift; sourceTree = "<group>"; };
+		2ACE16091C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesPatternrecognitionViewController.swift; sourceTree = "<group>"; };
 		2AD72B661C1F092E007D98E3 /* Druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Druid.png; sourceTree = "<group>"; };
 		2AD72B671C1F092E007D98E3 /* Hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hunter.png; sourceTree = "<group>"; };
 		2AD72B681C1F092E007D98E3 /* Mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mage.png; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 				2AA8310D1C2973C4006B3DE4 /* DetailByMinionViewController.swift */,
 				2A97975C1C2AEA020079F5B3 /* DetailByWeaponViewController.swift */,
 				2A88FDAA1C2C21BB0081B98F /* DetailBySpellViewController.swift */,
+				2ACE16091C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */,
 				2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */,
 				2AA831201C2A3F16006B3DE4 /* UIImage+animatedGIF.m in Sources */,
+				2ACE160A1C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift in Sources */,
 				2A8B786E1C25B0CF00DD3779 /* SearchByCostViewController.swift in Sources */,
 				2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */,
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
