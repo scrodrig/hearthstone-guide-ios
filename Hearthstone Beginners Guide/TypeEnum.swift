@@ -16,7 +16,7 @@ enum Type: String {
     
     case Spell = "Spell";
     
-    //case Enchantment = "Enchantment";
+    case Enchantment = "Enchantment";
     
     case Weapon = "Weapon";
     

@@ -160,9 +160,9 @@ class CardUtil {
                     cards.appendContentsOf(self.convertCards(brmCards)!);
                 }
                 //Hero Skins
-                if let heroCards = searchDictionary.objectForKey(Sets.HeroSkins.rawValue) as? NSArray{
-                    cards.appendContentsOf(self.convertCards(heroCards)!);
-                }
+//                if let heroCards = searchDictionary.objectForKey(Sets.HeroSkins.rawValue) as? NSArray{
+//                    cards.appendContentsOf(self.convertCards(heroCards)!);
+//                }
                 //Tavern Brawl
                 if let brawlCards = searchDictionary.objectForKey(Sets.TavernBrawl.rawValue) as? NSArray{
                     cards.appendContentsOf(self.convertCards(brawlCards)!);

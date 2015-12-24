@@ -30,7 +30,7 @@ enum Sets: String {
     
     case BlackrockMountain = "Blackrock Mountain";
     
-    case HeroSkins = "Hero Skins";
+    //case HeroSkins = "Hero Skins";
     
     case TavernBrawl = "Tavern Brawl";
     
@@ -42,7 +42,7 @@ enum Sets: String {
     
     static func getAsArrayValues () -> [String]{
         return [Sets.Classic.rawValue,Sets.Basic.rawValue,Sets.Credits.rawValue,Sets.Naxxramas.rawValue,Sets.Debug.rawValue,
-            Sets.GoblinsVsGnomes.rawValue,Sets.Missions.rawValue,Sets.Promotion.rawValue,Sets.Reward.rawValue,Sets.BlackrockMountain.rawValue,Sets.HeroSkins.rawValue,Sets.TavernBrawl.rawValue,Sets.TheGrandTournament.rawValue,Sets.TheLeagueOfExplorers.rawValue];
+            Sets.GoblinsVsGnomes.rawValue,Sets.Missions.rawValue,Sets.Promotion.rawValue,Sets.Reward.rawValue,Sets.BlackrockMountain.rawValue,Sets.TavernBrawl.rawValue,Sets.TheGrandTournament.rawValue,Sets.TheLeagueOfExplorers.rawValue];
     }
     
     

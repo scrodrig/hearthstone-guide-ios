@@ -25,8 +25,13 @@ class SearchByClient {
         guard let nameQuery:String = query else {
             return;
         }
+//        var str = ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue;
+//        
+//        print(str);
+//        str = str.stringByReplacingOccurrencesOfString(" ", withString: "%20");
+//        print(str);
         //Build a URL to connect with the server
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+        guard let url = NSURL(string: (ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue).stringByReplacingOccurrencesOfString(" ", withString: "%20")) else{
             return;
         }
         //Add headers for session

@@ -77,8 +77,14 @@ class CardTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         cardSelected = self.cards![indexPath.row];
         if cardSelected != nil{
-            if(cardSelected!.type == Type.Minion.rawValue){
+            if(cardSelected!.type == Type.Minion.rawValue || cardSelected!.type == Type.Hero.rawValue){
                 self.performSegueWithIdentifier("cardDetailMinionSegue", sender: nil);
+            }
+            if(cardSelected!.type == Type.Weapon.rawValue){
+                self.performSegueWithIdentifier("cardDetailWeaponSegue", sender: nil);
+            }
+            if(cardSelected!.type == Type.Spell.rawValue || cardSelected!.type == Type.Enchantment.rawValue){
+                self.performSegueWithIdentifier("cardDetailSpellSegue", sender: nil);
             }
         }
     }
@@ -86,6 +92,14 @@ class CardTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let cardDetailViewController = segue.destinationViewController as? DetailByMinionViewController {
+            cardDetailViewController.card = self.cardSelected;
+        }
+        
+        if let cardDetailViewController = segue.destinationViewController as? DetailByWeaponViewController {
+            cardDetailViewController.card = self.cardSelected;
+        }
+        
+        if let cardDetailViewController = segue.destinationViewController as? DetailBySpellViewController {
             cardDetailViewController.card = self.cardSelected;
         }
     }

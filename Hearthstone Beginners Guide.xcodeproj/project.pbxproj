@@ -35,6 +35,8 @@
 		2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */; };
 		2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */; };
+		2A88FDA91C2C13B60081B98F /* SetEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F6A6C1C23189B00FED2A6 /* SetEnum.swift */; };
+		2A88FDAB1C2C21BB0081B98F /* DetailBySpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A88FDAA1C2C21BB0081B98F /* DetailBySpellViewController.swift */; };
 		2A8B786C1C25B04200DD3779 /* CardCostExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B786B1C25B04200DD3779 /* CardCostExample.png */; };
 		2A8B786E1C25B0CF00DD3779 /* SearchByCostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */; };
 		2A8BF6221C15E92500300E39 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6211C15E92500300E39 /* InfoClient.swift */; };
@@ -45,6 +47,8 @@
 		2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8BF6241C15EA4C00300E39 /* HeroesEnum.swift */; };
 		2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8ED99A1C2180A9003CA96F /* CardExampleName.png */; };
 		2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
+		2A97975D1C2AEA020079F5B3 /* DetailByWeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A97975C1C2AEA020079F5B3 /* DetailByWeaponViewController.swift */; };
+		2A97975F1C2AF6CF0079F5B3 /* durability.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A97975E1C2AF6CF0079F5B3 /* durability.png */; };
 		2A993BD61C219F9300C2EF99 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A993BD51C219F9300C2EF99 /* SearchByNameViewController.swift */; };
 		2A99440D1C1704C200A1B891 /* CardbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440C1C1704C200A1B891 /* CardbackModel.swift */; };
 		2A99440F1C17068400A1B891 /* CardbackClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99440E1C17068400A1B891 /* CardbackClient.swift */; };
@@ -137,6 +141,7 @@
 		2A7F6A701C232BBF00FED2A6 /* CardAttackExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardAttackExample.png; sourceTree = "<group>"; };
 		2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByAttackViewController.swift; sourceTree = "<group>"; };
 		2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClientTest.swift; sourceTree = "<group>"; };
+		2A88FDAA1C2C21BB0081B98F /* DetailBySpellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBySpellViewController.swift; sourceTree = "<group>"; };
 		2A8B786B1C25B04200DD3779 /* CardCostExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardCostExample.png; sourceTree = "<group>"; };
 		2A8B786D1C25B0CF00DD3779 /* SearchByCostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByCostViewController.swift; sourceTree = "<group>"; };
 		2A8BF6211C15E92500300E39 /* InfoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
@@ -144,6 +149,8 @@
 		2A8BF62A1C1602A500300E39 /* InfoClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoClientTest.swift; sourceTree = "<group>"; };
 		2A8ED99A1C2180A9003CA96F /* CardExampleName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardExampleName.png; sourceTree = "<group>"; };
 		2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtil.swift; sourceTree = "<group>"; };
+		2A97975C1C2AEA020079F5B3 /* DetailByWeaponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByWeaponViewController.swift; sourceTree = "<group>"; };
+		2A97975E1C2AF6CF0079F5B3 /* durability.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = durability.png; sourceTree = "<group>"; };
 		2A993BCF1C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
 		2A993BD01C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2A993BD11C219C6A00C2EF99 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -314,6 +321,7 @@
 				2A7D664C1C20C5E300D43550 /* mana-crystal.png */,
 				2A7D664E1C20C5EA00D43550 /* health.png */,
 				2A7D66501C20C5F400D43550 /* attack.png */,
+				2A97975E1C2AF6CF0079F5B3 /* durability.png */,
 			);
 			name = Attributes;
 			sourceTree = "<group>";
@@ -460,6 +468,8 @@
 				2AB35EA31C27055900FC6303 /* CardbackCollectionTableViewController.swift */,
 				2AB35EA51C27096100FC6303 /* CardbackTableViewCell.swift */,
 				2AA8310D1C2973C4006B3DE4 /* DetailByMinionViewController.swift */,
+				2A97975C1C2AEA020079F5B3 /* DetailByWeaponViewController.swift */,
+				2A88FDAA1C2C21BB0081B98F /* DetailBySpellViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -579,6 +589,7 @@
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
 				2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
+				2A97975F1C2AF6CF0079F5B3 /* durability.png in Resources */,
 				2AE6DCCD1C25076D00A2613A /* CardHealthExample.png in Resources */,
 				2A7D66511C20C5F400D43550 /* attack.png in Resources */,
 				2A8B786C1C25B04200DD3779 /* CardCostExample.png in Resources */,
@@ -636,6 +647,7 @@
 				2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */,
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
+				2A97975D1C2AEA020079F5B3 /* DetailByWeaponViewController.swift in Sources */,
 				2AA8310E1C2973C4006B3DE4 /* DetailByMinionViewController.swift in Sources */,
 				2AE6DCCB1C2501D500A2613A /* SearchByHealthViewController.swift in Sources */,
 				2A9A062C1C20637200E0CEC1 /* ClassesMenuViewController.swift in Sources */,
@@ -643,6 +655,7 @@
 				2A1E2D581C1875F800F3216F /* CardModel.swift in Sources */,
 				2A75476A1C2306110015F2C9 /* SearchByParameterClient.swift in Sources */,
 				2AB8E6E51C24471400F4828E /* SearchBySetViewController.swift in Sources */,
+				2A88FDAB1C2C21BB0081B98F /* DetailBySpellViewController.swift in Sources */,
 				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
 				2A9A06341C207CAE00E0CEC1 /* MenuTableViewController.swift in Sources */,
 				2A7F6A6D1C23189B00FED2A6 /* SetEnum.swift in Sources */,
@@ -677,6 +690,7 @@
 				2A8BF62E1C1602BD00300E39 /* InfoModel.swift in Sources */,
 				2A709FB01C19D7DB0091E08F /* MechanicModel.swift in Sources */,
 				2A9944161C1740EA00A1B891 /* LocationEnum.swift in Sources */,
+				2A88FDA91C2C13B60081B98F /* SetEnum.swift in Sources */,
 				2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */,
 				2A8BF62F1C1602C000300E39 /* HeroesEnum.swift in Sources */,
 			);

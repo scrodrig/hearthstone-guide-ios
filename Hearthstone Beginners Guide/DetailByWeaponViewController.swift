@@ -1,18 +1,18 @@
 //
-//  DetailByMinionViewController.swift
+//  DetailByWeaponViewController.swift
 //  Hearthstone Beginners Guide
 //
-//  Created by Schubert David Rodríguez on 22/12/15.
+//  Created by Schubert David Rodríguez on 23/12/15.
 //  Copyright © 2015 Schubert David Rodríguez. All rights reserved.
 //
 
 import UIKit
 
-class DetailByMinionViewController: UIViewController {
+class DetailByWeaponViewController: UIViewController {
+
     
     var card:Card?;
-    
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!;
     @IBOutlet weak var imgLabel: UIImageView!
     @IBOutlet weak var imgGoldenLabel: UIImageView!
     @IBOutlet weak var cardSetLabel: UILabel!
@@ -20,22 +20,21 @@ class DetailByMinionViewController: UIViewController {
     @IBOutlet weak var rarityImage: UIImageView!
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var attackLabel: UILabel!
-    @IBOutlet weak var healthLabel: UILabel!
+    @IBOutlet weak var durabilityLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var artistTitle: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var mechanicsLabel: UILabel!
-    @IBOutlet weak var mechanicTitle: UILabel!
-    @IBOutlet weak var howToGetTitle: UILabel!
     @IBOutlet weak var howToGetLabel: UILabel!
+    @IBOutlet weak var howToGetTitle: UILabel!
     @IBOutlet weak var howToGetGoldTitle: UILabel!
     @IBOutlet weak var howToGetGoldLabel: UILabel!
-    
-    
+    @IBOutlet weak var mechanicTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
         
         // Do any additional setup after loading the view.
         if let cardModel:Card = card {
@@ -60,7 +59,7 @@ class DetailByMinionViewController: UIViewController {
             }
             self.costLabel.text = "\(cardModel.cost!)";
             self.attackLabel.text = "\(cardModel.attack!)";
-            self.healthLabel.text = "\(cardModel.health!)";
+            self.durabilityLabel.text = "\(cardModel.durability!)";
             if(cardModel.artist != nil){
                 self.artistLabel.text = cardModel.artist;
             }else{
@@ -89,7 +88,7 @@ class DetailByMinionViewController: UIViewController {
                 self.howToGetLabel.text = nil;
                 self.howToGetLabel.hidden = true;
                 self.howToGetTitle.hidden = true;
-
+                
             }
             
             if let text:String = cardModel.howToGetGold {
@@ -119,10 +118,10 @@ class DetailByMinionViewController: UIViewController {
                 }else{
                     self.mechanicsLabel.hidden = true;
                     self.mechanicTitle.hidden = true;
-
+                    
                 }
             }
-         
+            
             
             //UIImages
             
@@ -150,29 +149,25 @@ class DetailByMinionViewController: UIViewController {
             
             self.imgGoldenLabel.image = UIImage.animatedImageWithAnimatedGIFURL(url)
             
-            
-            
         }
         
         
-        
-        
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
-    
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
     */
-    
+
 }
