@@ -221,19 +221,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKw-4k-oA5">
-                                <rect key="frame" x="20" y="84" width="47.5" height="24"/>
+                                <rect key="frame" x="20" y="94" width="47.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-fn-dvW">
-                                <rect key="frame" x="102.5" y="84" width="25" height="24"/>
+                                <rect key="frame" x="102.5" y="94" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-ta-Gpc">
-                                <rect key="frame" x="38" y="131" width="338" height="31"/>
+                                <rect key="frame" x="38" y="148" width="338" height="31"/>
                                 <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -241,7 +241,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLJ-Jo-dg3">
-                                <rect key="frame" x="314" y="191" width="60" height="35"/>
+                                <rect key="frame" x="314" y="208" width="60" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
@@ -249,7 +249,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardCostExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="kk0-iL-79O">
-                                <rect key="frame" x="107" y="211" width="200" height="300"/>
+                                <rect key="frame" x="107" y="258" width="200" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="60J-RY-FSC"/>
                                     <constraint firstAttribute="height" constant="300" id="JOp-RQ-2Qo"/>
@@ -261,7 +261,7 @@
                         <constraints>
                             <constraint firstItem="pKw-4k-oA5" firstAttribute="leading" secondItem="hJt-Jn-RAj" secondAttribute="leadingMargin" id="72d-qZ-80G"/>
                             <constraint firstItem="XXd-ta-Gpc" firstAttribute="leading" secondItem="hJt-Jn-RAj" secondAttribute="leadingMargin" constant="20" id="9rT-fY-859"/>
-                            <constraint firstItem="pKw-4k-oA5" firstAttribute="top" secondItem="V6n-hF-6Fo" secondAttribute="bottom" constant="20" id="9ry-8i-ERm"/>
+                            <constraint firstItem="pKw-4k-oA5" firstAttribute="top" secondItem="V6n-hF-6Fo" secondAttribute="bottom" constant="30" id="9ry-8i-ERm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XXd-ta-Gpc" secondAttribute="trailing" constant="20" id="HUR-mF-shk"/>
                             <constraint firstItem="hLJ-Jo-dg3" firstAttribute="top" secondItem="XXd-ta-Gpc" secondAttribute="bottom" constant="30" id="KqT-Z9-peZ"/>
                             <constraint firstItem="hLJ-Jo-dg3" firstAttribute="trailing" secondItem="XXd-ta-Gpc" secondAttribute="trailing" id="Mrt-il-a0K"/>
@@ -269,10 +269,10 @@
                             <constraint firstItem="h5v-NS-tNq" firstAttribute="top" secondItem="hJt-Jn-RAj" secondAttribute="topMargin" id="Tqw-cM-66b"/>
                             <constraint firstItem="2GK-fn-dvW" firstAttribute="baseline" secondItem="pKw-4k-oA5" secondAttribute="baseline" id="YQl-xW-Xmh"/>
                             <constraint firstItem="kk0-iL-79O" firstAttribute="centerX" secondItem="XXd-ta-Gpc" secondAttribute="centerX" id="ZxE-ik-10s"/>
-                            <constraint firstItem="kk0-iL-79O" firstAttribute="top" secondItem="XXd-ta-Gpc" secondAttribute="bottom" constant="50" id="jfa-9P-WSz"/>
+                            <constraint firstItem="kk0-iL-79O" firstAttribute="top" secondItem="XXd-ta-Gpc" secondAttribute="bottom" constant="80" id="jfa-9P-WSz"/>
                             <constraint firstItem="kk0-iL-79O" firstAttribute="leading" secondItem="2GK-fn-dvW" secondAttribute="leading" id="nDr-VV-ri3"/>
                             <constraint firstItem="7k7-FM-M0h" firstAttribute="top" secondItem="h5v-NS-tNq" secondAttribute="bottom" id="obx-Td-tQw"/>
-                            <constraint firstItem="XXd-ta-Gpc" firstAttribute="top" secondItem="pKw-4k-oA5" secondAttribute="bottom" constant="23" id="tKM-If-Qym"/>
+                            <constraint firstItem="XXd-ta-Gpc" firstAttribute="top" secondItem="pKw-4k-oA5" secondAttribute="bottom" constant="30" id="tKM-If-Qym"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h5v-NS-tNq" secondAttribute="trailing" constant="-20" id="zbR-8D-Nsh"/>
                             <constraint firstItem="2GK-fn-dvW" firstAttribute="leading" secondItem="pKw-4k-oA5" secondAttribute="trailing" constant="35" id="ziP-7c-9yQ"/>
                         </constraints>
@@ -2114,7 +2114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardExampleName.png" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-AQ-nLb">
-                                <rect key="frame" x="151.5" y="166.5" width="200" height="300"/>
+                                <rect key="frame" x="151.5" y="191.5" width="200" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Juk-Ej-pPH"/>
                                     <constraint firstAttribute="width" secondItem="8SF-AQ-nLb" secondAttribute="height" multiplier="2:3" id="MyH-sN-o4r"/>
@@ -2131,7 +2131,7 @@
                             <constraint firstItem="F9C-CX-tfx" firstAttribute="leading" secondItem="3gT-IS-LJq" secondAttribute="leadingMargin" id="OEm-A8-BhF"/>
                             <constraint firstItem="QKV-Zh-9rG" firstAttribute="leading" secondItem="F9C-CX-tfx" secondAttribute="trailing" constant="30" id="Q5o-76-vPW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QKV-Zh-9rG" secondAttribute="trailing" id="ZHV-22-KbX"/>
-                            <constraint firstItem="8SF-AQ-nLb" firstAttribute="top" secondItem="QKV-Zh-9rG" secondAttribute="bottom" constant="25" id="cO2-PT-jKm"/>
+                            <constraint firstItem="8SF-AQ-nLb" firstAttribute="top" secondItem="QKV-Zh-9rG" secondAttribute="bottom" constant="50" id="cO2-PT-jKm"/>
                             <constraint firstItem="8SF-AQ-nLb" firstAttribute="leading" secondItem="QKV-Zh-9rG" secondAttribute="leading" id="dzh-7H-Fbj"/>
                             <constraint firstItem="jfG-hF-Khr" firstAttribute="leading" secondItem="3gT-IS-LJq" secondAttribute="leadingMargin" constant="-20" id="eid-47-5yy"/>
                             <constraint firstItem="8SF-AQ-nLb" firstAttribute="centerX" secondItem="QKV-Zh-9rG" secondAttribute="centerX" id="ffV-9B-JRD"/>
@@ -2196,6 +2196,6 @@
         <image name="mana-crystal.png" width="16" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="I9v-w2-W2n"/>
+        <segue reference="E7C-st-6pR"/>
     </inferredMetricsTieBreakers>
 </document>
