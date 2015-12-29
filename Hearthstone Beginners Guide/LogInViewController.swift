@@ -12,13 +12,20 @@ import FBSDKLoginKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var menuButton:UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let loginButton = FBSDKLoginButton()
         loginButton.center = self.view.center
-        self.view .addSubview(loginButton)
+        self.view .addSubview(loginButton);
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +34,6 @@ class LogInViewController: UIViewController {
     }
     
 
-    @IBAction func presionoIrAEso(sender: AnyObject) {
-        performSegueWithIdentifier("menuSegue", sender: self)
-    }
     /*
     // MARK: - Navigation
 

@@ -11,28 +11,24 @@ import Foundation
 class SearchByClient {
  
     
-    static func searchCardsBy(endpoint: Endpoints?, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {
+    static func searchCardsBy(endpoint: Endpoints?, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> NSURLSessionDataTask? {
         //Check veracity for location selection
         guard let endPointQuery:Endpoints = endpoint else {
-            return;
+            return nil;
         }
         
         //Check veracity for location selection
         guard let locationQuery:Location = location else {
-            return;
+            return nil;
         }
         //Check veracity for hero selection
         guard let nameQuery:String = query else {
-            return;
+            return nil;
         }
-//        var str = ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue;
-//        
-//        print(str);
-//        str = str.stringByReplacingOccurrencesOfString(" ", withString: "%20");
-//        print(str);
+        
         //Build a URL to connect with the server
         guard let url = NSURL(string: (ParameterConstants.HEARTHSTONE_API_URI + endPointQuery.rawValue + nameQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue).stringByReplacingOccurrencesOfString(" ", withString: "%20")) else{
-            return;
+            return nil;
         }
         //Add headers for session
         let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
@@ -50,6 +46,8 @@ class SearchByClient {
         
         //Resume the task to waiti for asynchronuos methods
         sessionTask.resume();
+        
+        return sessionTask;
     }
     
     

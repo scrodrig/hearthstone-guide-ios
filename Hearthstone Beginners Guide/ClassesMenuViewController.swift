@@ -10,6 +10,7 @@ import UIKit
 
 class ClassesMenuViewController: UIViewController {
     
+    @IBOutlet weak var menuButton:UIBarButtonItem!
     @IBOutlet weak var druidButton: UIButton!
     @IBOutlet weak var hunterButton: UIButton!
     @IBOutlet weak var mageButton: UIButton!
@@ -24,12 +25,16 @@ class ClassesMenuViewController: UIViewController {
     
     var heroSelected:Heroes?;
     var heroPending:Heroes?;
-    var sesiionTask:NSURLSessionDataTask?;
+    var sessionTask:NSURLSessionDataTask?;
     var cards: [Card]?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -77,22 +82,29 @@ class ClassesMenuViewController: UIViewController {
             return;
         }
         else {
-            if let session = sesiionTask{
+            if let session = sessionTask{
                 session.cancel();
-                sesiionTask = nil;
+                sessionTask = nil;
             }
             heroPending = heroSelected;
+            ViewUtil.showLoadingScreen(self.view, object: nil);
         }
-        
-        sesiionTask = SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
+
+        sessionTask = SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
             self.heroPending = nil;
             self.cards = cards;
             if let c = self.cards{
                 if c.count >= 0 {
                     NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                         ViewUtil.hideLoadingScreen(self.view);
                         self.performSegueWithIdentifier("classSelectedSegue", sender: nil);
                     })
                     
+                }else{
+                    NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                        ViewUtil.hideLoadingScreen(self.view);
+                        ViewUtil.alertMessage(self, title: "Error", message: "There are not results for your search");
+                    })
                 }
             }
             

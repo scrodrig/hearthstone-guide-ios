@@ -139,12 +139,10 @@ class DetailBySpellViewController: UIViewController {
                 self.imgLabel.image = nil;
             }
             
-            
-            let strImg : String = cardModel.imgGold!;
-            
-            let url: NSURL = NSURL(string: strImg)!
-            
-            self.imgGoldenLabel.image = UIImage.animatedImageWithAnimatedGIFURL(url)
+            if let strImg : String = cardModel.imgGold {
+                let url: NSURL = NSURL(string: strImg)!;
+                self.imgGoldenLabel.image = UIImage.animatedImageWithAnimatedGIFURL(url);
+            }
             
         }
         

@@ -12,22 +12,22 @@ import Foundation
 class SearchByParameterClient {
  
     
-    static func searchCardsByParameter(parameter: String, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> Void {
+    static func searchCardsByParameter(parameter: String, query: String?, location: Location,completionHandler: ([Card]?, NSError?) -> Void) -> NSURLSessionDataTask? {
         //Check veracity for hero selection
         guard let parameterQuery:String = parameter else {
-            return;
+            return nil;
         }
         //Check veracity for location selection
         guard let locationQuery:Location = location else {
-            return;
+            return nil;
         }
         //Check veracity for hero selection
         guard let parameterValueQuery:String = query else {
-            return;
+            return nil;
         }
         //Build a URL to connect with the server
         guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CLASS_CARDS.rawValue + parameterQuery + parameterValueQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_CONNECTOR_AMPERSAND + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
-            return;
+            return nil;
         }
         //Add headers for session
         let headers = [ParameterConstants.KEY_HEADER_HEARTHSTONE_API: ParameterConstants.VALUE_HEADER_HEARTSTONE_API]
@@ -45,6 +45,8 @@ class SearchByParameterClient {
         
         //Resume the task to waiti for asynchronuos methods
         sessionTask.resume();
+        
+        return sessionTask;
     }
 
     

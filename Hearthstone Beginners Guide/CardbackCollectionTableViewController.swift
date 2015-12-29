@@ -11,10 +11,17 @@ import UIKit
 class CardbackCollectionTableViewController: UITableViewController {
 
     var cardbacks:[Cardback]?;
+    var cardbackSelected:Cardback?;
     
+    @IBOutlet weak var menuButton:UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -81,6 +88,20 @@ class CardbackCollectionTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        cardbackSelected = self.cardbacks![indexPath.row];
+        if cardbackSelected != nil{
+                self.performSegueWithIdentifier("detailByCardback", sender: nil);
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cardbackDetailViewController = segue.destinationViewController as? DetailByCardBackViewController {
+            cardbackDetailViewController.cardback = self.cardbackSelected;
+        }                
     }
 
     /*

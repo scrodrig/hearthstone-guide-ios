@@ -10,5 +10,6 @@
 #define SwiftGIFImage_SwiftGIFImage_Bridging_Header_h
 
 #import "UIImage+animatedGIF.h"
+#import "SWRevealViewController.h"
 
 #endif
