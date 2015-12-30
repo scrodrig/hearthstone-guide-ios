@@ -22,7 +22,7 @@ class DetailByCardBackViewController: UIViewController {
         super.viewDidLoad()
         
         if let cardbackModel = cardback{                                    
-            
+            self.titleLabel.text = cardbackModel.name;
             self.howToGetLabel.text = cardbackModel.howToGet;
             self.descriptionLabel.text = cardbackModel.description;
             

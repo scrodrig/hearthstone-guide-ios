@@ -33,6 +33,13 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait ,UIInterfaceOrientationMask.PortraitUpsideDown]
+    }
+    
+    
+    
 
     /*
     // MARK: - Navigation

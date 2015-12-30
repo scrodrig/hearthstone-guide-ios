@@ -31,6 +31,7 @@
 		2A709FB21C19E2400091E08F /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
 		2A75476A1C2306110015F2C9 /* SearchByParameterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7547691C2306110015F2C9 /* SearchByParameterClient.swift */; };
+		2A7828351C34301E0088D683 /* CardArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7828341C34301E0088D683 /* CardArchive.swift */; };
 		2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664C1C20C5E300D43550 /* mana-crystal.png */; };
 		2A7D664F1C20C5EA00D43550 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664E1C20C5EA00D43550 /* health.png */; };
 		2A7D66511C20C5F400D43550 /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D66501C20C5F400D43550 /* attack.png */; };
@@ -146,6 +147,7 @@
 		2A709FB11C19E2400091E08F /* SearchByClassClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClient.swift; sourceTree = "<group>"; };
 		2A709FB41C19EC020091E08F /* ParameterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterConstants.swift; sourceTree = "<group>"; };
 		2A7547691C2306110015F2C9 /* SearchByParameterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByParameterClient.swift; sourceTree = "<group>"; };
+		2A7828341C34301E0088D683 /* CardArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardArchive.swift; sourceTree = "<group>"; };
 		2A7D664C1C20C5E300D43550 /* mana-crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mana-crystal.png"; sourceTree = "<group>"; };
 		2A7D664E1C20C5EA00D43550 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
 		2A7D66501C20C5F400D43550 /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				2A8BF6231C15E9E000300E39 /* Enums */,
 				2AACC7441C15E46A00ABD538 /* Model */,
 				2A8BF6201C15E8FA00300E39 /* Client */,
+				2A7828331C342FDC0088D683 /* Persistence */,
 				2A8F80E81C1915BB00EC01F9 /* Utils */,
 				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
 				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
@@ -347,6 +350,14 @@
 				2A709FB41C19EC020091E08F /* ParameterConstants.swift */,
 			);
 			name = Consts;
+			sourceTree = "<group>";
+		};
+		2A7828331C342FDC0088D683 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2A7828341C34301E0088D683 /* CardArchive.swift */,
+			);
+			name = Persistence;
 			sourceTree = "<group>";
 		};
 		2A7D664B1C20C5D400D43550 /* Attributes */ = {
@@ -721,6 +732,7 @@
 				2AACC7461C15E47600ABD538 /* InfoModel.swift in Sources */,
 				2A8BF6251C15EA4C00300E39 /* HeroesEnum.swift in Sources */,
 				2AA05EE01C25698900DD7393 /* SearchByRarityViewController.swift in Sources */,
+				2A7828351C34301E0088D683 /* CardArchive.swift in Sources */,
 				2A9A063B1C208DF500E0CEC1 /* CardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
