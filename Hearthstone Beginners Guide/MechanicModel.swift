@@ -9,8 +9,21 @@
 import Foundation
 
 
-struct Mechanic {
+class Mechanic: NSObject, NSCoding {
     
     let name:String;
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(name, forKey: DecoderConstants.Mechanic.NAME);
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObjectForKey(DecoderConstants.Mechanic.NAME) as? String ?? "";
+    }
+    
+    init (name:String){
+        self.name = name;
+    }
     
 }

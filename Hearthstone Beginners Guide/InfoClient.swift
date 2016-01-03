@@ -49,8 +49,7 @@ class InfoClient {
                 let races = searchDictionary.objectForKey("races") as! [String];
                 let locales = searchDictionary.objectForKey("locales") as! [String];
                 
-                return Info(patch:patch, classes:classes,sets: sets,types: types,factions: factions,qualities: qualities,races: races,locales: locales);
-                
+                return Info(patch:patch, classes:classes,sets: sets,types: types,factions: factions,qualities: qualities,races: races,locales: locales);                
             }
         }catch{
             

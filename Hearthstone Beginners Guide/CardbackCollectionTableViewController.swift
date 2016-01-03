@@ -26,8 +26,7 @@ class CardbackCollectionTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()        
         //The charge initial for cardbaks
         CardbackClient.searchCardbacks(Location.USAEnglish) { (cardbacks, error) -> Void in
             self.cardbacks = cardbacks;
@@ -57,7 +56,7 @@ class CardbackCollectionTableViewController: UITableViewController {
         let cardback = self.cardbacks![indexPath.row];
         
         cell.titleLabel.text = cardback.name;
-        if let text:String = cardback.description {
+        if let text:String = cardback.p_description {
             let attrStr = try! NSAttributedString(
                 data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
                 options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],

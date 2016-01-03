@@ -70,10 +70,10 @@ class CardbackClient {
                     
                 }
                 return cardbacks.filter({ (cardback:Cardback) -> Bool in
-                    if(cardback.img != nil && cardback.description != nil && cardback.enabled != false){
+                    //if(cardback.img != nil && cardback.description != nil && cardback.enabled != false){
                         return true;
-                    }
-                    return false;
+                    //}
+                    //return false;
                 });
                 
             }

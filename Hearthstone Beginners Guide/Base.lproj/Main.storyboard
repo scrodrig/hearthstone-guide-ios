@@ -52,10 +52,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31u-XY-kwU">
-                                <rect key="frame" x="132" y="442" width="151" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ifN-mP-z6N">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us3-NA-1mR">
+                                <rect key="frame" x="121" y="450" width="151" height="30"/>
                                 <state key="normal" title="Access whitout loggin"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-wr-1Ah">
+                                <rect key="frame" x="25" y="72" width="389" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoDown.png" translatesAutoresizingMaskIntoConstraints="NO" id="trf-YC-l41">
+                                <rect key="frame" x="0.0" y="621" width="414" height="115"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2194,8 +2203,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searh by name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phq-0a-IDZ">
-                                                    <rect key="frame" x="61" y="7.5" width="118.5" height="30.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search by name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phq-0a-IDZ">
+                                                    <rect key="frame" x="61" y="7.5" width="126" height="31"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2741,6 +2750,8 @@
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
         <image name="Hunter.png" width="286" height="395"/>
+        <image name="LogoDown.png" width="1122" height="314"/>
+        <image name="LogoUp.png" width="813" height="564"/>
         <image name="Mage.png" width="286" height="395"/>
         <image name="Paladin.png" width="286" height="395"/>
         <image name="Priest.png" width="286" height="395"/>
@@ -2755,17 +2766,17 @@
         <image name="menu.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HaS-6H-3HA"/>
+        <segue reference="0ak-To-RVt"/>
         <segue reference="2WR-x8-haQ"/>
-        <segue reference="Q3N-OQ-QSf"/>
-        <segue reference="Txc-Rp-lGm"/>
-        <segue reference="mhi-17-MNd"/>
         <segue reference="hzN-19-18t"/>
+        <segue reference="mhi-17-MNd"/>
+        <segue reference="HaS-6H-3HA"/>
         <segue reference="Jtd-Mj-B5e"/>
+        <segue reference="Q3N-OQ-QSf"/>
         <segue reference="MQO-6a-jU3"/>
-        <segue reference="Hdz-qB-3Mz"/>
         <segue reference="dOj-fx-QjD"/>
+        <segue reference="Hdz-qB-3Mz"/>
         <segue reference="6Ar-b8-hcu"/>
-        <segue reference="E7C-st-6pR"/>
+        <segue reference="Txc-Rp-lGm"/>
     </inferredMetricsTieBreakers>
 </document>

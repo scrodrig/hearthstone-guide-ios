@@ -24,7 +24,7 @@ class DetailByCardBackViewController: UIViewController {
         if let cardbackModel = cardback{                                    
             self.titleLabel.text = cardbackModel.name;
             self.howToGetLabel.text = cardbackModel.howToGet;
-            self.descriptionLabel.text = cardbackModel.description;
+            self.descriptionLabel.text = cardbackModel.p_description;
             
 //            if let text:String = cardbackModel.howToGet {
 //                let attrStr = try! NSAttributedString(
