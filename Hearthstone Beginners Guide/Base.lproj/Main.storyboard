@@ -93,8 +93,8 @@
                                     <constraint firstAttribute="width" secondItem="fwK-wr-1Ah" secondAttribute="height" multiplier="1:1" id="E3J-HY-wna"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoDown.png" translatesAutoresizingMaskIntoConstraints="NO" id="trf-YC-l41">
-                                <rect key="frame" x="0.0" y="632" width="414" height="103.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogoDown.png" translatesAutoresizingMaskIntoConstraints="NO" id="trf-YC-l41">
+                                <rect key="frame" x="0.0" y="632" width="414" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="trf-YC-l41" secondAttribute="height" multiplier="4:1" id="P1d-tm-mjs"/>
                                 </constraints>
@@ -120,7 +120,7 @@
                                     <constraint firstAttribute="width" secondItem="uvv-YW-Ef0" secondAttribute="height" multiplier="5:2" id="rpz-rU-CG5"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-b5-fD0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-b5-fD0">
                                 <rect key="frame" x="306" y="361" width="77" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="C3g-Ss-5Db"/>
