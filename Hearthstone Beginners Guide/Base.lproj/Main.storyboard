@@ -20,14 +20,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola Clau =)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGg-FS-IBX">
-                                <rect key="frame" x="160" y="181" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7pZ-oZ-FWK">
+                                <rect key="frame" x="0.0" y="51" width="394" height="288"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srg-yo-KdH">
-                                <rect key="frame" x="140" y="277" width="139" height="30"/>
+                                <rect key="frame" x="151" y="451" width="139" height="30"/>
                                 <state key="normal" title="Sig Pantalla Clau"/>
                                 <connections>
                                     <action selector="continueButton:" destination="YD8-C1-UDm" eventType="touchUpInside" id="wZA-mr-GSU"/>
@@ -43,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYH-Iy-Uvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="-1446"/>
+            <point key="canvasLocation" x="2014" y="-1722"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Efj-zs-V8c">
@@ -2789,6 +2786,7 @@
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
         <image name="Hunter.png" width="286" height="395"/>
+        <image name="Logo.png" width="1122" height="664"/>
         <image name="LogoDown.png" width="1122" height="314"/>
         <image name="LogoUp.png" width="813" height="564"/>
         <image name="Mage.png" width="286" height="395"/>
@@ -2805,17 +2803,17 @@
         <image name="menu.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mhi-17-MNd"/>
-        <segue reference="Jtd-Mj-B5e"/>
-        <segue reference="HaS-6H-3HA"/>
-        <segue reference="6Ar-b8-hcu"/>
-        <segue reference="MQO-6a-jU3"/>
-        <segue reference="Hdz-qB-3Mz"/>
-        <segue reference="2WR-x8-haQ"/>
-        <segue reference="dOj-fx-QjD"/>
-        <segue reference="Txc-Rp-lGm"/>
         <segue reference="Q3N-OQ-QSf"/>
         <segue reference="hzN-19-18t"/>
-        <segue reference="1RR-5J-VMm"/>
+        <segue reference="Jtd-Mj-B5e"/>
+        <segue reference="Hdz-qB-3Mz"/>
+        <segue reference="6Ar-b8-hcu"/>
+        <segue reference="2WR-x8-haQ"/>
+        <segue reference="Txc-Rp-lGm"/>
+        <segue reference="HaS-6H-3HA"/>
+        <segue reference="MQO-6a-jU3"/>
+        <segue reference="mhi-17-MNd"/>
+        <segue reference="dOj-fx-QjD"/>
+        <segue reference="a3H-88-3Db"/>
     </inferredMetricsTieBreakers>
 </document>
