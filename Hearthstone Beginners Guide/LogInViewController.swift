@@ -28,8 +28,8 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         let loginButton = FBSDKLoginButton();
         loginButton.readPermissions = ["public_profile","email","user_friends"];
         loginButton.delegate = self;
-        loginButton.center = self.view.center;
-        self.view .addSubview(loginButton);
+        loginButton.center = FBClient.getCenterForButton(self.view, numParts: 4);
+        self.view.addSubview(loginButton);    
         self.showMenuIndex();
         if(FBSDKAccessToken.currentAccessToken() == nil){
             print("Not logged in");

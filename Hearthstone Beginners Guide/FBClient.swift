@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class FBClient {
     static func logUserData(result: AnyObject?, error:NSError?) {
@@ -53,6 +54,22 @@ class FBClient {
         }
     }
     
+    static func getCenterForButton(view:UIView, numParts: Int) -> CGPoint{
+        if numParts <= 0 {
+            let x_point = (view.bounds.maxX - view.bounds.minX)/2
+            let y_point = (view.bounds.maxY - view.bounds.minY)/2;
+            return CGPoint(x: x_point, y: y_point);
+        }else{
+            //Always get the vertical center from the view
+            let x_point = (view.bounds.maxX - view.bounds.minX)/2;
+            //Always get the horizaontal division for the section
+            let y_point = view.bounds.maxY - ((view.bounds.maxY - view.bounds.minY)/CGFloat(numParts));
+            //Return the place for section button
+            return CGPoint(x: x_point, y: y_point);
+        }
+        
+        
+    }
     
     
     
