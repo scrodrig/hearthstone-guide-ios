@@ -20,12 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7pZ-oZ-FWK">
-                                <rect key="frame" x="0.0" y="51" width="394" height="288"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-KI-8Y2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srg-yo-KdH">
-                                <rect key="frame" x="151" y="451" width="139" height="30"/>
-                                <state key="normal" title="Sig Pantalla Clau"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srg-yo-KdH">
+                                <rect key="frame" x="0.0" y="201" width="414" height="257"/>
+                                <state key="normal" title="Sig Pantalla Clau" image="Logo.png"/>
                                 <connections>
                                     <action selector="continueButton:" destination="YD8-C1-UDm" eventType="touchUpInside" id="wZA-mr-GSU"/>
                                 </connections>
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYH-Iy-Uvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="-1722"/>
+            <point key="canvasLocation" x="2014" y="-1658"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Efj-zs-V8c">
