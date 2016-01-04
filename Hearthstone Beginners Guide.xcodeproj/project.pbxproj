@@ -24,6 +24,7 @@
 		2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */; };
 		2A4ED80B1C323AB900B8AF33 /* Cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4ED80A1C323AB900B8AF33 /* Cards.png */; };
 		2A4ED80D1C3251EF00B8AF33 /* DetailByCardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */; };
+		2A6457CE1C39F151002BCCC3 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */; };
 		2A709FAD1C19D3640091E08F /* CardUtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FAC1C19D3640091E08F /* CardUtilTest.swift */; };
 		2A709FAE1C19D3690091E08F /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
 		2A709FAF1C19D7D80091E08F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D571C1875F800F3216F /* CardModel.swift */; };
@@ -149,6 +150,7 @@
 		2A2545CB1C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4ED80A1C323AB900B8AF33 /* Cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cards.png; sourceTree = "<group>"; };
 		2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByCardBackViewController.swift; sourceTree = "<group>"; };
+		2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		2A709FAC1C19D3640091E08F /* CardUtilTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtilTest.swift; sourceTree = "<group>"; };
 		2A709FB11C19E2400091E08F /* SearchByClassClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClient.swift; sourceTree = "<group>"; };
 		2A709FB41C19EC020091E08F /* ParameterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterConstants.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 				2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */,
 				2ACE16091C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift */,
 				2A148F721C3097FB005C499F /* MenuController.swift */,
+				2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 				2A88FDAB1C2C21BB0081B98F /* DetailBySpellViewController.swift in Sources */,
 				2AB2264D1C2F4C5A00105EC4 /* ViewUtil.swift in Sources */,
 				2A8F80EA1C1915FF00EC01F9 /* CardUtil.swift in Sources */,
+				2A6457CE1C39F151002BCCC3 /* PortalViewController.swift in Sources */,
 				2A148F6E1C3092C1005C499F /* SWRevealViewController.m in Sources */,
 				2A9A06341C207CAE00E0CEC1 /* MenuTableViewController.swift in Sources */,
 				2A7F6A6D1C23189B00FED2A6 /* SetEnum.swift in Sources */,
