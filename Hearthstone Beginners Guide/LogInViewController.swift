@@ -25,10 +25,7 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.delegate = self;
         loginButton.center = self.view.center;
         self.view .addSubview(loginButton);
-        self.showMenuIndex();
-        self.menuButton.enabled = false;
-        self.menuButton.tintColor = UIColor.clearColor();
-        
+        self.showMenuIndex();        
         if(FBSDKAccessToken.currentAccessToken() == nil){
             print("Not logged in");
         }else{
