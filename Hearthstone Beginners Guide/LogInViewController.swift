@@ -25,12 +25,9 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.delegate = self;
         loginButton.center = self.view.center;
         self.view .addSubview(loginButton);
-        
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+        self.showMenuIndex();
+        self.menuButton.enabled = false;
+        self.menuButton.tintColor = UIColor.clearColor();
         
         if(FBSDKAccessToken.currentAccessToken() == nil){
             print("Not logged in");
@@ -41,6 +38,14 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         //var loginButton = FBSDKLoginButton();
         
+    }
+    
+    func showMenuIndex (){
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,6 +64,7 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         if(error == nil){
             print("Login complete");
             self.logUserData();
+            self.showMenuIndex();
         }else{
             print(error.localizedDescription);
         }
