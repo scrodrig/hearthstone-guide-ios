@@ -25,6 +25,8 @@
 		2A4ED80B1C323AB900B8AF33 /* Cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4ED80A1C323AB900B8AF33 /* Cards.png */; };
 		2A4ED80D1C3251EF00B8AF33 /* DetailByCardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */; };
 		2A6457CE1C39F151002BCCC3 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */; };
+		2A6457D01C3A0E14002BCCC3 /* FBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6457CF1C3A0E14002BCCC3 /* FBClient.swift */; };
+		2A6457D51C3A1E36002BCCC3 /* guest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6457D41C3A1E36002BCCC3 /* guest.png */; };
 		2A709FAD1C19D3640091E08F /* CardUtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FAC1C19D3640091E08F /* CardUtilTest.swift */; };
 		2A709FAE1C19D3690091E08F /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */; };
 		2A709FAF1C19D7D80091E08F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E2D571C1875F800F3216F /* CardModel.swift */; };
@@ -151,6 +153,8 @@
 		2A4ED80A1C323AB900B8AF33 /* Cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cards.png; sourceTree = "<group>"; };
 		2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByCardBackViewController.swift; sourceTree = "<group>"; };
 		2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		2A6457CF1C3A0E14002BCCC3 /* FBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBClient.swift; sourceTree = "<group>"; };
+		2A6457D41C3A1E36002BCCC3 /* guest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guest.png; sourceTree = "<group>"; };
 		2A709FAC1C19D3640091E08F /* CardUtilTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtilTest.swift; sourceTree = "<group>"; };
 		2A709FB11C19E2400091E08F /* SearchByClassClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClient.swift; sourceTree = "<group>"; };
 		2A709FB41C19EC020091E08F /* ParameterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterConstants.swift; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 		2A148F6F1C3095F7005C499F /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				2A6457D11C3A1E17002BCCC3 /* Facebook */,
 				2A148F701C309603005C499F /* menu.png */,
 			);
 			name = Icons;
@@ -351,6 +356,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A6457D11C3A1E17002BCCC3 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				2A6457D41C3A1E36002BCCC3 /* guest.png */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
 		2A709FAB1C19D3370091E08F /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +415,7 @@
 				2A709FB11C19E2400091E08F /* SearchByClassClient.swift */,
 				2A00DCF51C1B1903005089F2 /* SearchByClient.swift */,
 				2A7547691C2306110015F2C9 /* SearchByParameterClient.swift */,
+				2A6457CF1C3A0E14002BCCC3 /* FBClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -536,6 +550,7 @@
 		2AD72B781C1F09F8007D98E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */,
 				2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */,
 				2A9A062B1C20637200E0CEC1 /* ClassesMenuViewController.swift */,
 				2A9A06331C207CAE00E0CEC1 /* MenuTableViewController.swift */,
@@ -556,7 +571,6 @@
 				2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */,
 				2ACE16091C2C7BA400CAD6A5 /* ClassesPatternrecognitionViewController.swift */,
 				2A148F721C3097FB005C499F /* MenuController.swift */,
-				2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -692,6 +706,7 @@
 				2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */,
 				2AA831161C298BF8006B3DE4 /* gem_legendary.png in Resources */,
 				2AA1DC8A1C39B81D009878E4 /* Default-568h@2x.png in Resources */,
+				2A6457D51C3A1E36002BCCC3 /* guest.png in Resources */,
 				2AA831171C298BF8006B3DE4 /* gem_rare.png in Resources */,
 				2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */,
 				2A9D64A81C3844F800D19D93 /* LogoDown.png in Resources */,
@@ -745,6 +760,7 @@
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,
 				2A97975D1C2AEA020079F5B3 /* DetailByWeaponViewController.swift in Sources */,
+				2A6457D01C3A0E14002BCCC3 /* FBClient.swift in Sources */,
 				2AA8310E1C2973C4006B3DE4 /* DetailByMinionViewController.swift in Sources */,
 				2AE6DCCB1C2501D500A2613A /* SearchByHealthViewController.swift in Sources */,
 				2A9A062C1C20637200E0CEC1 /* ClassesMenuViewController.swift in Sources */,
@@ -933,6 +949,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -953,6 +970,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

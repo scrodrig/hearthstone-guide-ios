@@ -19,10 +19,16 @@ class User {
     
     var email:String?;
     
+    var picture:UIImage?;
+    
+    var cover:UIImage?;
+    
     init(){
         self.id = nil;
         self.name = "Guest";
         self.email = nil;
+        self.picture = nil;
+        self.cover = nil;
     }
     
 }
