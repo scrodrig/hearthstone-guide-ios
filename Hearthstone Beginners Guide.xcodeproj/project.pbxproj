@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2940C47C1C3AE68400E6155E /* Ancient-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */; };
+		296700DF1C3C2132001A2B3A /* portadaCartas.png in Resources */ = {isa = PBXBuildFile; fileRef = 296700DE1C3C2132001A2B3A /* portadaCartas.png */; };
 		296FE07C1C3B3FA400EAED32 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07B1C3B3FA400EAED32 /* portada.png */; };
 		296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07D1C3B5BB100EAED32 /* portada1.png */; };
 		296FE0801C3B613E00EAED32 /* portada2.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07F1C3B613E00EAED32 /* portada2.png */; };
@@ -136,6 +137,7 @@
 
 /* Begin PBXFileReference section */
 		2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ancient-Medium.ttf"; sourceTree = "<group>"; };
+		296700DE1C3C2132001A2B3A /* portadaCartas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portadaCartas.png; sourceTree = "<group>"; };
 		296FE07B1C3B3FA400EAED32 /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
 		296FE07D1C3B5BB100EAED32 /* portada1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada1.png; sourceTree = "<group>"; };
 		296FE07F1C3B613E00EAED32 /* portada2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada2.png; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		296FE07A1C3B3F8800EAED32 /* Portada */ = {
 			isa = PBXGroup;
 			children = (
+				296700DE1C3C2132001A2B3A /* portadaCartas.png */,
 				296FE07F1C3B613E00EAED32 /* portada2.png */,
 				296FE07D1C3B5BB100EAED32 /* portada1.png */,
 				296FE07B1C3B3FA400EAED32 /* portada.png */,
@@ -750,6 +753,7 @@
 				2A6457D51C3A1E36002BCCC3 /* guest.png in Resources */,
 				2AA831171C298BF8006B3DE4 /* gem_rare.png in Resources */,
 				2A8ED99B1C2180A9003CA96F /* CardExampleName.png in Resources */,
+				296700DF1C3C2132001A2B3A /* portadaCartas.png in Resources */,
 				2A9D64A81C3844F800D19D93 /* LogoDown.png in Resources */,
 				2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */,
 				2A9D64A61C383FB000D19D93 /* LogoUp.png in Resources */,
