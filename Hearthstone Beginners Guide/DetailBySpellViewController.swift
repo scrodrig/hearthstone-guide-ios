@@ -156,8 +156,19 @@ class DetailBySpellViewController: UIViewController {
         
     }
 
-    @IBAction func markAsFavouriteCard(sender: UIButton) {
-        
+    @IBAction func markAsFavouriteCard(sender: UIButton) {        
+        if let cardModel:Card = card {
+            if(cardModel.favourite){
+                cardModel.favourite = false;
+                CardUtil.removeCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_off");
+            }else{
+                cardModel.favourite = true;
+                CardUtil.addCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+                
+            }
+        }
     }
     
     

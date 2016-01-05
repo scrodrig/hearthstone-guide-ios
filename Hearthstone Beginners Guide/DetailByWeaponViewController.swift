@@ -162,6 +162,18 @@ class DetailByWeaponViewController: UIViewController {
 
     @IBAction func markAsFavouriteAction(sender: UIButton) {
         
+        if let cardModel:Card = card {
+            if(cardModel.favourite){
+                cardModel.favourite = false;
+                CardUtil.removeCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_off");
+            }else{
+                cardModel.favourite = true;
+                CardUtil.addCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+                
+            }
+        }
         
     }
     override func didReceiveMemoryWarning() {
