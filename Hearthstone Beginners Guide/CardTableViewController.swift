@@ -54,6 +54,8 @@ class CardTableViewController: UITableViewController {
                 options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
                 documentAttributes: nil);
             cell.cardText.attributedText = attrStr;
+        }else{
+            cell.cardText.text = nil;
         }
         
         if(card.favourite){

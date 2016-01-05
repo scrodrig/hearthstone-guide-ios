@@ -16,7 +16,6 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
     @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var userCover: UIImageView!
     @IBOutlet weak var userPicture: UIImageView!
     
     
@@ -26,11 +25,11 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         // Do any additional setup after loading the view.
         let loginButton = FBSDKLoginButton();
-        loginButton.readPermissions = ["public_profile","email","user_friends"];
-        //loginButton.publishPermissions = ["publish_actions"];
+        loginButton.readPermissions = ["public_profile","email","user_friends","read_stream"];
+        loginButton.publishPermissions = ["publish_actions"];
         loginButton.delegate = self;
         loginButton.center = FBClient.getCenterForButton(self.view, numParts: 4);
-        self.view.addSubview(loginButton);    
+        self.view.addSubview(loginButton);
         self.showMenuIndex();
         if(FBSDKAccessToken.currentAccessToken() == nil){
             print("Not logged in");
@@ -79,69 +78,28 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func logUserData() {
-        let graphRequest = FBSDKGraphRequest(graphPath: "me?fields=cover,picture,name,id", parameters: nil);
+        let graphRequest = FBSDKGraphRequest(graphPath: "me?fields=name,id", parameters: nil);
         graphRequest.startWithCompletionHandler { (connection, result, error) -> Void in
             if error != nil {
                 print(error);
             }else{
-                //FBClient.logUserData(result, error: error);
-                
                 if let userInfo = result as? NSDictionary{
                     userLogged.id = userInfo.objectForKey("id") as? String;
                     userLogged.name = userInfo.objectForKey("name") as! String;
-                    //Image
-                    if let pictureImg = userInfo.objectForKey("picture") as? NSDictionary{
-                        if let dataImg = pictureImg.objectForKey("data") as? NSDictionary {
-                            if let imageString = dataImg.objectForKey("url") as? String {
-                                if let imageUrl = NSURL(string: imageString){
-                                    NSURLSession.sharedSession().dataTaskWithURL(imageUrl, completionHandler: { (data, response, error) -> Void in
-                                        if let d = data {
-                                            let image = UIImage(data: d)
-                                            NSOperationQueue.mainQueue().addOperationWithBlock({() -> Void in
-                                                userLogged.picture = image;
-                                                self.fillLoginPanel();
-                                            })
-                                        }
-                                    }).resume()
-                                }
-                            }else{
-                                userLogged.picture = nil;
-                            }
-                        }
-                    }
-                    //Cover
-                    if let coverImg = userInfo.objectForKey("cover") as? NSDictionary{
-                        if let imageString = coverImg.objectForKey("source") as? String {
-                            if let imageUrl = NSURL(string: imageString){
-                                NSURLSession.sharedSession().dataTaskWithURL(imageUrl, completionHandler: { (data, response, error) -> Void in
-                                    if let d = data {
-                                        let image = UIImage(data: d)
-                                        NSOperationQueue.mainQueue().addOperationWithBlock({() -> Void in
-                                            userLogged.cover = image;
-                                            self.fillLoginPanel();
-                                        })
-                                    }
-                                }).resume()
-                            }
-                            //self.view.
-                        }else{
-                            userLogged.cover = nil;
-                        }
-                    }
-                    
+                    let imgURLString = "https://graph.facebook.com/" + "\(userLogged.id!)" + "/picture?type=large" //type=small, normal, album, large, square"
+                    let imgURL = NSURL(string: imgURLString)
+                    let imageData = NSData(contentsOfURL: imgURL!)
+                    userLogged.picture = UIImage(data: imageData!)
+                    self.fillLoginPanel();
                 }
             }
         }
+        
+        
     }
     
     func fillLoginPanel(){
-        self.userName.text = userLogged.name;
-        if let imgCover = userLogged.cover {
-            self.userCover.image = imgCover;
-        }else{
-            self.userCover.image = nil;
-        }
-        
+        self.userName.text = userLogged.name;        
         if let imgPicture = userLogged.picture {
             self.userPicture.image = imgPicture;
         }else{
