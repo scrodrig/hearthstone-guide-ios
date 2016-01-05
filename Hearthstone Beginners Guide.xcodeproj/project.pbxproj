@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2940C47C1C3AE68400E6155E /* Ancient-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */; };
 		296FE07C1C3B3FA400EAED32 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07B1C3B3FA400EAED32 /* portada.png */; };
+		296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07D1C3B5BB100EAED32 /* portada1.png */; };
+		296FE0801C3B613E00EAED32 /* portada2.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07F1C3B613E00EAED32 /* portada2.png */; };
 		2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF51C1B1903005089F2 /* SearchByClient.swift */; };
 		2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
 		2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
@@ -133,6 +135,8 @@
 /* Begin PBXFileReference section */
 		2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ancient-Medium.ttf"; sourceTree = "<group>"; };
 		296FE07B1C3B3FA400EAED32 /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
+		296FE07D1C3B5BB100EAED32 /* portada1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada1.png; sourceTree = "<group>"; };
+		296FE07F1C3B613E00EAED32 /* portada2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada2.png; sourceTree = "<group>"; };
 		2A00DCF51C1B1903005089F2 /* SearchByClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClient.swift; sourceTree = "<group>"; };
 		2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
 		2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 		296FE07A1C3B3F8800EAED32 /* Portada */ = {
 			isa = PBXGroup;
 			children = (
+				296FE07F1C3B613E00EAED32 /* portada2.png */,
+				296FE07D1C3B5BB100EAED32 /* portada1.png */,
 				296FE07B1C3B3FA400EAED32 /* portada.png */,
 			);
 			name = Portada;
@@ -714,7 +720,9 @@
 				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
 				2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */,
+				296FE0801C3B613E00EAED32 /* portada2.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
+				296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */,
 				296FE07C1C3B3FA400EAED32 /* portada.png in Resources */,
 				2A9D64A21C38226A00D19D93 /* Logo.png in Resources */,
 				2A97975F1C2AF6CF0079F5B3 /* durability.png in Resources */,
