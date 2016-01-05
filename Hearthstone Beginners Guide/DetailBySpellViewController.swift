@@ -29,6 +29,7 @@ class DetailBySpellViewController: UIViewController {
     @IBOutlet weak var howToGetGoldTitle: UILabel!
     @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var mechanicTitle: UILabel!
+    @IBOutlet weak var imgFavourite: UIImageView!
     
     
     override func viewDidLoad() {
@@ -101,6 +102,12 @@ class DetailBySpellViewController: UIViewController {
                 
             }
             
+            if(cardModel.favourite){
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+            }else{
+                self.imgFavourite.image = UIImage(named: "favourite_off");
+            }
+            
             
             if let mechanics = cardModel.mechanics {
                 var valueMechanic:String="";
@@ -149,6 +156,11 @@ class DetailBySpellViewController: UIViewController {
         
     }
 
+    @IBAction func markAsFavouriteCard(sender: UIButton) {
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

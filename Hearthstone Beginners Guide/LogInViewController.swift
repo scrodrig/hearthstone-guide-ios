@@ -10,7 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-var userLogged:User = User();
+
 
 class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     
@@ -27,6 +27,7 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         // Do any additional setup after loading the view.
         let loginButton = FBSDKLoginButton();
         loginButton.readPermissions = ["public_profile","email","user_friends"];
+        //loginButton.publishPermissions = ["publish_actions"];
         loginButton.delegate = self;
         loginButton.center = FBClient.getCenterForButton(self.view, numParts: 4);
         self.view.addSubview(loginButton);    
@@ -37,8 +38,9 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             print("Logged in");
             self.logUserData();
         }
-        
+        favouriteCards = CardArchive().retreiveCards();
         //self.fillLoginPanel();
+        print(favouriteCards);
     }
     
     func showMenuIndex (){

@@ -8,6 +8,10 @@
 
 import UIKit
 
+var userLogged:User = User();
+
+var favouriteCards:[Card] = [Card]();
+
 class PortalViewController: UIViewController {
 
     override func viewDidLoad() {

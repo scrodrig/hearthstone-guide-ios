@@ -27,6 +27,11 @@ class CardTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData();
+    }
+    
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,6 +47,7 @@ class CardTableViewController: UITableViewController {
         cell.cardName.text = card.name;
         cell.cardCost.text = String(card.cost!);
         cell.cardType.text = card.rarity!;
+        
         if let text:String = card.text {
             let attrStr = try! NSAttributedString(
                 data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
@@ -49,6 +55,13 @@ class CardTableViewController: UITableViewController {
                 documentAttributes: nil);
             cell.cardText.attributedText = attrStr;
         }
+        
+        if(card.favourite){
+            cell.favouriteImage.image = UIImage(named: "favourite_on");
+        }else{
+            cell.favouriteImage.image = UIImage(named: "favourite_off");
+        }
+        
         
         
         

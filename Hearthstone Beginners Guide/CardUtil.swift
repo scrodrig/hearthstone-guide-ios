@@ -102,8 +102,10 @@ class CardUtil {
             }
             
         }
+                
         return cards.filter({ (card:Card) -> Bool in
             if(card.img != nil && card.cost != nil && card.rarity != nil){
+                card.favourite = self.cardInFavouriteArray(card);
                 return true;
             }
             return false;
@@ -182,6 +184,45 @@ class CardUtil {
             
         }        
         return nil;
+    }
+    
+    
+    
+    //Add card to collection
+    static func addCardToFavouriteCollection(card:Card){
+        let result:[Card] = favouriteCards.filter { (a_card) -> Bool in
+            return a_card.cardId == card.cardId;
+        };
+        if(result.count == 0){
+            favouriteCards.append(card);
+            CardArchive().saveCards(favouriteCards);
+        }
+    }
+    
+    //Add card to collection
+    static func removeCardToFavouriteCollection(card:Card){
+        if(favouriteCards.contains({ (a_card:Card) -> Bool in
+            return a_card.cardId == card.cardId;
+        })){
+            let index = favouriteCards.indexOf({ (a_card:Card) -> Bool in
+                return a_card.cardId == card.cardId;
+            })
+            if let idx = index {
+                favouriteCards.removeAtIndex(idx);
+                CardArchive().saveCards(favouriteCards);
+            }
+        }
+    }
+    
+    //Check if any card is in array
+    static func cardInFavouriteArray(card:Card) -> Bool{
+        let result:[Card] = favouriteCards.filter { (a_card) -> Bool in
+            return a_card.cardId == card.cardId;
+        };
+        if(result.count == 0){
+            return false;
+        }
+        return true;
     }
     
 }

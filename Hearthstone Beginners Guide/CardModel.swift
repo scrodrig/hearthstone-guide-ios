@@ -58,6 +58,8 @@ class Card: NSObject, NSCoding {
     
     let mechanics:[Mechanic]?;
     
+    var favourite:Bool;
+    
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(cardId, forKey: DecoderConstants.Card.CARD_ID);
@@ -112,6 +114,7 @@ class Card: NSObject, NSCoding {
         howToGetGold = aDecoder.decodeObjectForKey(DecoderConstants.Card.HOW_TO_GET_GOLD) as? String;
         locale = Location(rawValue: aDecoder.decodeObjectForKey(DecoderConstants.Cardback.LOCALE) as? String ?? "")!;
         mechanics = aDecoder.decodeObjectForKey(DecoderConstants.Card.CARD_ID) as? [Mechanic];
+        favourite = false;
     }
     
     init (cardId:String, name: String, cardSet:String?, type:String?,faction:String?, rarity:String?, cost:Int?, attack:Int?, health:Int?, durability: Int?, text: String?, inPlayText:String?, flavor:String?, artist:String?, collectible:Bool?, elite:Bool?, img:String?, imgGold:String?, race:String?, playerClass:String?, howToGet: String?, howToGetGold: String?, locale:Location, mechanics:[Mechanic]?){
@@ -140,6 +143,7 @@ class Card: NSObject, NSCoding {
         self.howToGetGold = howToGetGold;
         self.locale = locale;
         self.mechanics = mechanics;
+        self.favourite = false;
     }
     
     

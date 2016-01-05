@@ -30,6 +30,7 @@ class DetailByWeaponViewController: UIViewController {
     @IBOutlet weak var howToGetGoldTitle: UILabel!
     @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var mechanicTitle: UILabel!
+    @IBOutlet weak var imgFavourite: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,6 +105,12 @@ class DetailByWeaponViewController: UIViewController {
                 
             }
             
+            if(cardModel.favourite){
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+            }else{
+                self.imgFavourite.image = UIImage(named: "favourite_off");
+            }
+            
             
             if let mechanics = cardModel.mechanics {
                 var valueMechanic:String="";
@@ -153,6 +160,10 @@ class DetailByWeaponViewController: UIViewController {
         
     }
 
+    @IBAction func markAsFavouriteAction(sender: UIButton) {
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

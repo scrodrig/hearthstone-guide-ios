@@ -36,6 +36,8 @@
 		2A75476A1C2306110015F2C9 /* SearchByParameterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7547691C2306110015F2C9 /* SearchByParameterClient.swift */; };
 		2A7828351C34301E0088D683 /* CardArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7828341C34301E0088D683 /* CardArchive.swift */; };
 		2A7828371C3436200088D683 /* DecoderConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7828361C3436200088D683 /* DecoderConstants.swift */; };
+		2A7A98C91C3B1C67005F0C5C /* favourite_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A98C71C3B1C67005F0C5C /* favourite_off.png */; };
+		2A7A98CA1C3B1C67005F0C5C /* favourite_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A98C81C3B1C67005F0C5C /* favourite_on.png */; };
 		2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664C1C20C5E300D43550 /* mana-crystal.png */; };
 		2A7D664F1C20C5EA00D43550 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D664E1C20C5EA00D43550 /* health.png */; };
 		2A7D66511C20C5F400D43550 /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D66501C20C5F400D43550 /* attack.png */; };
@@ -161,6 +163,8 @@
 		2A7547691C2306110015F2C9 /* SearchByParameterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByParameterClient.swift; sourceTree = "<group>"; };
 		2A7828341C34301E0088D683 /* CardArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardArchive.swift; sourceTree = "<group>"; };
 		2A7828361C3436200088D683 /* DecoderConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderConstants.swift; sourceTree = "<group>"; };
+		2A7A98C71C3B1C67005F0C5C /* favourite_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favourite_off.png; sourceTree = "<group>"; };
+		2A7A98C81C3B1C67005F0C5C /* favourite_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favourite_on.png; sourceTree = "<group>"; };
 		2A7D664C1C20C5E300D43550 /* mana-crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mana-crystal.png"; sourceTree = "<group>"; };
 		2A7D664E1C20C5EA00D43550 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
 		2A7D66501C20C5F400D43550 /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				2A6457D11C3A1E17002BCCC3 /* Facebook */,
+				2A7A98C71C3B1C67005F0C5C /* favourite_off.png */,
+				2A7A98C81C3B1C67005F0C5C /* favourite_on.png */,
 				2A148F701C309603005C499F /* menu.png */,
 			);
 			name = Icons;
@@ -686,6 +692,7 @@
 				2A9A06391C20888600E0CEC1 /* ClassesBackground.jpeg in Resources */,
 				2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */,
 				2A7F6A711C232BBF00FED2A6 /* CardAttackExample.png in Resources */,
+				2A7A98CA1C3B1C67005F0C5C /* favourite_on.png in Resources */,
 				2A148F711C309603005C499F /* menu.png in Resources */,
 				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
@@ -700,6 +707,7 @@
 				2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */,
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
+				2A7A98C91C3B1C67005F0C5C /* favourite_off.png in Resources */,
 				2AA05EEA1C257F4900DD7393 /* CardTypeExample.png in Resources */,
 				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
 				2AA831141C298BF8006B3DE4 /* gem_common.png in Resources */,

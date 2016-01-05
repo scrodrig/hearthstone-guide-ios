@@ -30,6 +30,7 @@ class DetailByMinionViewController: UIViewController {
     @IBOutlet weak var howToGetLabel: UILabel!
     @IBOutlet weak var howToGetGoldTitle: UILabel!
     @IBOutlet weak var howToGetGoldLabel: UILabel!
+    @IBOutlet weak var imgFavourite: UIImageView!
     
     
     
@@ -89,7 +90,7 @@ class DetailByMinionViewController: UIViewController {
                 self.howToGetLabel.text = nil;
                 self.howToGetLabel.hidden = true;
                 self.howToGetTitle.hidden = true;
-
+                
             }
             
             if let text:String = cardModel.howToGetGold {
@@ -103,6 +104,12 @@ class DetailByMinionViewController: UIViewController {
                 self.howToGetGoldLabel.hidden = true;
                 self.howToGetGoldTitle.hidden = true;
                 
+            }
+            
+            if(cardModel.favourite){
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+            }else{
+                self.imgFavourite.image = UIImage(named: "favourite_off");
             }
             
             
@@ -119,10 +126,10 @@ class DetailByMinionViewController: UIViewController {
                 }else{
                     self.mechanicsLabel.hidden = true;
                     self.mechanicTitle.hidden = true;
-
+                    
                 }
             }
-         
+            
             
             //UIImages
             
@@ -158,6 +165,22 @@ class DetailByMinionViewController: UIViewController {
         
     }
     
+    @IBAction func markAsFavouriteCard(sender: UIButton) {
+        
+        if let cardModel:Card = card {
+            if(cardModel.favourite){
+                cardModel.favourite = false;
+                CardUtil.removeCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_off");
+            }else{
+                cardModel.favourite = true;
+                CardUtil.addCardToFavouriteCollection(cardModel);
+                self.imgFavourite.image = UIImage(named: "favourite_on");
+                
+            }
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

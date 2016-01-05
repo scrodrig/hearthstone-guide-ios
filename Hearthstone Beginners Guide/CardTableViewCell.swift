@@ -16,7 +16,8 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var cardCost: UILabel!
     @IBOutlet weak var cardType: UILabel!
     @IBOutlet weak var cardText: UILabel!
-    
+    @IBOutlet weak var favouriteImage: UIImageView!
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +26,4 @@ class CardTableViewCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)        
     }
-
 }
