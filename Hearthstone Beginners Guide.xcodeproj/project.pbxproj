@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2940C47C1C3AE68400E6155E /* Ancient-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */; };
+		296FE07C1C3B3FA400EAED32 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07B1C3B3FA400EAED32 /* portada.png */; };
 		2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF51C1B1903005089F2 /* SearchByClient.swift */; };
 		2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
 		2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
@@ -129,6 +131,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ancient-Medium.ttf"; sourceTree = "<group>"; };
+		296FE07B1C3B3FA400EAED32 /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
 		2A00DCF51C1B1903005089F2 /* SearchByClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClient.swift; sourceTree = "<group>"; };
 		2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
 		2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +267,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2940C47A1C3AE66A00E6155E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2940C47B1C3AE68400E6155E /* Ancient-Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		296FE07A1C3B3F8800EAED32 /* Portada */ = {
+			isa = PBXGroup;
+			children = (
+				296FE07B1C3B3FA400EAED32 /* portada.png */,
+			);
+			name = Portada;
+			sourceTree = "<group>";
+		};
 		2A148F6B1C3092B2005C499F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +300,7 @@
 			);
 			name = Icons;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		2A25459D1C1216F900089CC9 = {
 			isa = PBXGroup;
@@ -305,6 +326,7 @@
 		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
 			isa = PBXGroup;
 			children = (
+				2940C47A1C3AE66A00E6155E /* Fonts */,
 				2A709FB31C19EA750091E08F /* Consts */,
 				2A8BF6231C15E9E000300E39 /* Enums */,
 				2AACC7441C15E46A00ABD538 /* Model */,
@@ -520,6 +542,7 @@
 		2AD72B641C1F06BE007D98E3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				296FE07A1C3B3F8800EAED32 /* Portada */,
 				2A9D64A01C3821A300D19D93 /* Logo */,
 				2A148F6F1C3095F7005C499F /* Icons */,
 				2A7D664B1C20C5D400D43550 /* Attributes */,
@@ -684,6 +707,7 @@
 			files = (
 				2AA831151C298BF8006B3DE4 /* gem_epic.png in Resources */,
 				2A9A06391C20888600E0CEC1 /* ClassesBackground.jpeg in Resources */,
+				2940C47C1C3AE68400E6155E /* Ancient-Medium.ttf in Resources */,
 				2A7D664D1C20C5E300D43550 /* mana-crystal.png in Resources */,
 				2A7F6A711C232BBF00FED2A6 /* CardAttackExample.png in Resources */,
 				2A148F711C309603005C499F /* menu.png in Resources */,
@@ -691,6 +715,7 @@
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
 				2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
+				296FE07C1C3B3FA400EAED32 /* portada.png in Resources */,
 				2A9D64A21C38226A00D19D93 /* Logo.png in Resources */,
 				2A97975F1C2AF6CF0079F5B3 /* durability.png in Resources */,
 				2A4ED80B1C323AB900B8AF33 /* Cards.png in Resources */,

@@ -7,6 +7,11 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Ancient-Medium.ttf">
+            <string>Ancient-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Portal View Controller-->
         <scene sceneID="blp-6q-Oep">
@@ -20,18 +25,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ClassesBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-KI-8Y2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srg-yo-KdH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srg-yo-KdH">
-                                <rect key="frame" x="0.0" y="201" width="414" height="257"/>
-                                <state key="normal" title="Sig Pantalla Clau" image="Logo.png"/>
+                                <state key="normal" title="Sig Pantalla Clau" image="portada.png"/>
                                 <connections>
                                     <action selector="continueButton:" destination="YD8-C1-UDm" eventType="touchUpInside" id="wZA-mr-GSU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="srg-yo-KdH" firstAttribute="top" secondItem="ZtT-9T-CVh" secondAttribute="topMargin" id="1u5-tc-2Pg"/>
+                            <constraint firstItem="srg-yo-KdH" firstAttribute="leading" secondItem="ZtT-9T-CVh" secondAttribute="leadingMargin" constant="-20" id="6ev-T7-i7t"/>
+                            <constraint firstItem="DL0-qN-dzY" firstAttribute="top" secondItem="srg-yo-KdH" secondAttribute="bottom" id="G8H-zg-mhr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="srg-yo-KdH" secondAttribute="trailing" constant="-20" id="kZ9-kn-mlL"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -40,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYH-Iy-Uvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="-1658"/>
+            <point key="canvasLocation" x="2014" y="-1672"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Efj-zs-V8c">
@@ -104,7 +112,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9R6-Ga-fFm">
                                 <rect key="frame" x="20" y="114" width="374" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2862,7 +2870,6 @@
         <image name="ClassesBackground.jpeg" width="600" height="600"/>
         <image name="Druid.png" width="286" height="395"/>
         <image name="Hunter.png" width="286" height="395"/>
-        <image name="Logo.png" width="1122" height="664"/>
         <image name="LogoDown.png" width="1122" height="314"/>
         <image name="LogoUp.png" width="813" height="564"/>
         <image name="Mage.png" width="286" height="395"/>
@@ -2877,6 +2884,7 @@
         <image name="health.png" width="14" height="20"/>
         <image name="mana-crystal.png" width="16" height="14"/>
         <image name="menu.png" width="22" height="22"/>
+        <image name="portada.png" width="2268" height="4000"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Q3N-OQ-QSf"/>
