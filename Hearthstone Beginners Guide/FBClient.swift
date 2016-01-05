@@ -79,7 +79,7 @@ class FBClient {
         //Content title
         content.contentTitle = card.name;
         //Content description
-        content.contentDescription = "I check this card as my favourite";
+        content.contentDescription = "I check this card as my favourite <3";
         //Content image
         content.imageURL = NSURL(string: card.img!);
         //Ready for share on facebook
