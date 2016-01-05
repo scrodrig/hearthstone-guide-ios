@@ -19,7 +19,7 @@ class CardArchive {
         filePath = documentsPath.URLByAppendingPathComponent("FavouriteCards.data");
         let path = filePath.path!;
         if NSKeyedArchiver.archiveRootObject(cards, toFile: path) {
-            print("Success")
+            print("Success");
         } else {
             print("Failure")
         }

@@ -31,6 +31,7 @@ class DetailByMinionViewController: UIViewController {
     @IBOutlet weak var howToGetGoldTitle: UILabel!
     @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var imgFavourite: UIImageView!
+    @IBOutlet weak var buttonFavourite: UIButton!
     
     
     
@@ -156,6 +157,11 @@ class DetailByMinionViewController: UIViewController {
                 self.imgGoldenLabel.image = UIImage.animatedImageWithAnimatedGIFURL(url);
             }
             
+            //Check facebook conectivity
+            
+            if(userLogged.id == nil){
+                buttonFavourite.enabled = false;
+            }
             
             
         }
@@ -176,7 +182,7 @@ class DetailByMinionViewController: UIViewController {
                 cardModel.favourite = true;
                 CardUtil.addCardToFavouriteCollection(cardModel);
                 self.imgFavourite.image = UIImage(named: "favourite_on");
-                
+                FBClient.shareFavouriteCard(self, card: cardModel);
             }
         }
         

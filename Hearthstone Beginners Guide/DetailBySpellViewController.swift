@@ -30,6 +30,8 @@ class DetailBySpellViewController: UIViewController {
     @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var mechanicTitle: UILabel!
     @IBOutlet weak var imgFavourite: UIImageView!
+    @IBOutlet weak var buttonFavourite: UIButton!
+
     
     
     override func viewDidLoad() {
@@ -124,6 +126,12 @@ class DetailBySpellViewController: UIViewController {
                     self.mechanicTitle.hidden = true;
                     
                 }
+            }
+            
+            //Check facebook conectivity
+            
+            if(userLogged.id != nil){
+                buttonFavourite.enabled = false;
             }
             
             

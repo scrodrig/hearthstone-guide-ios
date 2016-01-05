@@ -10,8 +10,6 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-
-
 class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
@@ -38,8 +36,7 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
             self.logUserData();
         }
         favouriteCards = CardArchive().retreiveCards();
-        //self.fillLoginPanel();
-        print(favouriteCards);
+        self.fillLoginPanel();
     }
     
     func showMenuIndex (){
@@ -86,10 +83,12 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
                 if let userInfo = result as? NSDictionary{
                     userLogged.id = userInfo.objectForKey("id") as? String;
                     userLogged.name = userInfo.objectForKey("name") as! String;
-                    let imgURLString = "https://graph.facebook.com/" + "\(userLogged.id!)" + "/picture?type=large" //type=small, normal, album, large, square"
-                    let imgURL = NSURL(string: imgURLString)
-                    let imageData = NSData(contentsOfURL: imgURL!)
-                    userLogged.picture = UIImage(data: imageData!)
+                    if let id = userLogged.id {
+                        let imgURLString = "https://graph.facebook.com/" + "\(id)" + "/picture?type=large" //type=small, normal, album, large, square"
+                        let imgURL = NSURL(string: imgURLString)
+                        let imageData = NSData(contentsOfURL: imgURL!)
+                        userLogged.picture = UIImage(data: imageData!)
+                    }
                     self.fillLoginPanel();
                 }
             }
@@ -111,8 +110,6 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         userLogged = User();
         self.fillLoginPanel();
     }
-    
-    //
     
     
     /*

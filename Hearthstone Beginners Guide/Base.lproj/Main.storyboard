@@ -997,6 +997,10 @@
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E5y-E4-TyL">
                                 <rect key="frame" x="155" y="460" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="6oO-p0-pG0"/>
+                                    <constraint firstAttribute="width" constant="15" id="iL3-qk-E8C"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mana-crystal.png" translatesAutoresizingMaskIntoConstraints="NO" id="3yr-y8-ZXg">
                                 <rect key="frame" x="341" y="462" width="10" height="10"/>
@@ -1158,6 +1162,7 @@
                         <outlet property="artistLabel" destination="Xrb-ZV-cUw" id="l9n-3V-2k7"/>
                         <outlet property="artistTitle" destination="wFM-vA-aI2" id="MXK-De-hLV"/>
                         <outlet property="attackLabel" destination="jvC-7M-rJR" id="z2j-3u-Ck4"/>
+                        <outlet property="buttonFavourite" destination="WaO-HJ-PBa" id="4FK-B5-bG7"/>
                         <outlet property="cardSetLabel" destination="XJY-Mm-fms" id="0aU-Xj-huq"/>
                         <outlet property="costLabel" destination="CxV-NP-qeL" id="OWe-gV-GVS"/>
                         <outlet property="healthLabel" destination="ojF-Wb-n5Q" id="QDQ-1O-QoW"/>
@@ -1208,7 +1213,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mana-crystal.png" translatesAutoresizingMaskIntoConstraints="NO" id="fE3-gE-dSY">
-                                <rect key="frame" x="340.5" y="457" width="10" height="8"/>
+                                <rect key="frame" x="340" y="457" width="10" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="bg8-lG-qf3"/>
                                 </constraints>
@@ -1226,7 +1231,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-Ze-npn">
-                                <rect key="frame" x="20" y="413.5" width="69" height="21.5"/>
+                                <rect key="frame" x="20" y="413" width="69" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1238,7 +1243,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc5-hS-f1V">
-                                <rect key="frame" x="288.5" y="451" width="47" height="19"/>
+                                <rect key="frame" x="288" y="451" width="47" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1257,7 +1262,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Mechanics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t2-cK-bW1">
-                                <rect key="frame" x="103" y="610.5" width="291" height="14.5"/>
+                                <rect key="frame" x="103" y="610" width="291" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1269,10 +1274,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UH0-sH-t0Q">
-                                <rect key="frame" x="155" y="455" width="15" height="13"/>
+                                <rect key="frame" x="155" y="453.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Bhg-HO-Mt6"/>
+                                    <constraint firstAttribute="width" constant="15" id="J8d-RE-M6n"/>
+                                    <constraint firstAttribute="width" constant="15" id="k0v-jl-j4D"/>
+                                    <constraint firstAttribute="height" constant="15" id="xhj-Re-G6m"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Bhg-HO-Mt6"/>
+                                        <exclude reference="J8d-RE-M6n"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cardset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-J6-9TS">
-                                <rect key="frame" x="103" y="413.5" width="291" height="21.5"/>
+                                <rect key="frame" x="103" y="413" width="291" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1296,7 +1313,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gro-Jq-vvx">
-                                <rect key="frame" x="288.5" y="492" width="77" height="21.5"/>
+                                <rect key="frame" x="288" y="492" width="77" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1305,6 +1322,7 @@
                                 <rect key="frame" x="160" y="493" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="eBx-tP-FzX"/>
+                                    <constraint firstAttribute="height" constant="15" id="hqO-2x-3tE"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mechanics:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-Jd-wnN">
@@ -1314,7 +1332,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to get:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bt-OJ-7hL">
-                                <rect key="frame" x="20" y="647.5" width="56" height="12"/>
+                                <rect key="frame" x="20" y="647" width="56" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1332,25 +1350,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="HowToGetGold" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGc-rj-GiB">
-                                <rect key="frame" x="103" y="683.5" width="291" height="14.5"/>
+                                <rect key="frame" x="103" y="683" width="291" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="durability.png" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-nI-lEs">
-                                <rect key="frame" x="369.5" y="496" width="15" height="13"/>
+                                <rect key="frame" x="369" y="496" width="15" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="HjX-Fk-Rqw"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1y6-po-QUk">
-                                <rect key="frame" x="20" y="108" width="374" height="285.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="285"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ywV-9M-jZY">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="285.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="285"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4b-0X-lKa">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="285.5"/>
+                                        <rect key="frame" x="187" y="0.0" width="187" height="285"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -1390,6 +1408,7 @@
                             <constraint firstItem="CrD-di-1WB" firstAttribute="firstBaseline" secondItem="F7r-5v-HVe" secondAttribute="firstBaseline" id="BnI-9T-d9I"/>
                             <constraint firstItem="VGc-rj-GiB" firstAttribute="top" secondItem="tKM-sk-jFz" secondAttribute="bottom" constant="22" id="CXg-da-6qP"/>
                             <constraint firstItem="9t2-cK-bW1" firstAttribute="top" secondItem="8vh-Eg-VIj" secondAttribute="bottom" constant="24" id="DuZ-O4-rdu"/>
+                            <constraint firstItem="UH0-sH-t0Q" firstAttribute="centerY" secondItem="fE3-gE-dSY" secondAttribute="centerY" id="E0v-eF-1AC"/>
                             <constraint firstItem="Gro-Jq-vvx" firstAttribute="leading" secondItem="rCS-D5-50Z" secondAttribute="trailing" constant="8" symbolic="YES" id="E1Q-aO-Tck"/>
                             <constraint firstItem="Gro-Jq-vvx" firstAttribute="centerY" secondItem="B7a-nI-lEs" secondAttribute="centerY" id="Ejr-65-zeO"/>
                             <constraint firstItem="KWR-Zt-cxC" firstAttribute="leading" secondItem="2OV-Oa-raN" secondAttribute="leading" id="Fnj-5a-E2s"/>
@@ -1438,6 +1457,7 @@
                             <constraint firstItem="NQJ-05-goK" firstAttribute="trailing" secondItem="1y6-po-QUk" secondAttribute="trailing" id="i6A-if-qSl"/>
                             <constraint firstItem="cE2-J6-9TS" firstAttribute="leading" secondItem="CrD-di-1WB" secondAttribute="leading" id="jdf-Zr-14W"/>
                             <constraint firstItem="1y6-po-QUk" firstAttribute="centerX" secondItem="KWR-Zt-cxC" secondAttribute="centerX" id="kek-9r-rJV"/>
+                            <constraint firstItem="UH0-sH-t0Q" firstAttribute="leading" secondItem="CrD-di-1WB" secondAttribute="trailing" constant="5" id="lg8-8Z-PWi"/>
                             <constraint firstItem="9t2-cK-bW1" firstAttribute="leading" secondItem="Mas-UJ-uW1" secondAttribute="leading" id="m7I-nR-UlB"/>
                             <constraint firstItem="zob-qf-dsj" firstAttribute="leading" secondItem="7SF-Zf-bg7" secondAttribute="leading" id="mHX-D3-RHZ"/>
                             <constraint firstItem="cE2-J6-9TS" firstAttribute="baseline" secondItem="iCv-Ze-npn" secondAttribute="baseline" id="mSe-hw-SYf"/>
@@ -1463,6 +1483,11 @@
                             <mask key="constraints">
                                 <exclude reference="Y6f-mF-tRE"/>
                                 <exclude reference="mna-qc-3oG"/>
+                                <exclude reference="SRm-6l-J56"/>
+                                <exclude reference="yuh-XL-LQY"/>
+                                <exclude reference="94h-FQ-LXV"/>
+                                <exclude reference="Pbz-7K-HFp"/>
+                                <exclude reference="PNu-ZV-sUZ"/>
                             </mask>
                         </variation>
                     </view>
@@ -1471,6 +1496,7 @@
                         <outlet property="artistLabel" destination="Mas-UJ-uW1" id="a0a-D9-Y3G"/>
                         <outlet property="artistTitle" destination="zob-qf-dsj" id="2cZ-f1-X0e"/>
                         <outlet property="attackLabel" destination="lif-Kp-nS8" id="SVi-r1-71z"/>
+                        <outlet property="buttonFavourite" destination="NQJ-05-goK" id="TW0-1U-srU"/>
                         <outlet property="cardSetLabel" destination="cE2-J6-9TS" id="NNo-kk-JoZ"/>
                         <outlet property="costLabel" destination="cc5-hS-f1V" id="GA9-jP-lVT"/>
                         <outlet property="durabilityLabel" destination="Gro-Jq-vvx" id="jGB-CM-gsK"/>
@@ -1600,6 +1626,10 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcN-yN-mZU">
                                 <rect key="frame" x="155" y="464" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3AN-Hu-eyG"/>
+                                    <constraint firstAttribute="width" constant="15" id="FaT-K3-Kat"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="HowToGet" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU1-WG-OKD">
                                 <rect key="frame" x="103" y="616" width="291" height="13"/>
@@ -1736,6 +1766,7 @@
                     <connections>
                         <outlet property="artistLabel" destination="ing-Up-YGM" id="ToM-Yo-ff5"/>
                         <outlet property="artistTitle" destination="LjT-Yu-QjT" id="tva-M4-bi6"/>
+                        <outlet property="buttonFavourite" destination="6mo-8g-ydU" id="Eaj-yk-ad2"/>
                         <outlet property="cardSetLabel" destination="OSI-wJ-T66" id="5Yc-o4-5Ga"/>
                         <outlet property="costLabel" destination="mct-BL-xyH" id="q8W-PB-qJt"/>
                         <outlet property="howToGetGoldLabel" destination="vX4-8p-w03" id="jLc-U3-ESc"/>

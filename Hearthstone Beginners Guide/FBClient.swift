@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FBSDKCoreKit
+import FBSDKShareKit
 
 class FBClient {
     static func logUserData(result: AnyObject?, error:NSError?) {
@@ -69,6 +71,19 @@ class FBClient {
         }
         
         
+    }
+    
+    static func shareFavouriteCard(view:UIViewController,card:Card){
+        //Prepare content for sharing
+        let content: FBSDKShareLinkContent = FBSDKShareLinkContent();
+        //Content title
+        content.contentTitle = card.name;
+        //Content description
+        content.contentDescription = "I check this card as my favourite";
+        //Content image
+        content.imageURL = NSURL(string: card.img!);
+        //Ready for share on facebook
+        FBSDKShareDialog.showFromViewController(view, withContent: content, delegate: nil)
     }
     
     
