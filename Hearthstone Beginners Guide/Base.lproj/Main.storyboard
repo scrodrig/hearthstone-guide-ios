@@ -166,7 +166,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portadaCartas.png" translatesAutoresizingMaskIntoConstraints="NO" id="k8c-Sg-uk7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardHealthExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-Tf-a7u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CardHealthExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-Tf-a7u">
                                 <rect key="frame" x="115" y="229" width="184" height="278"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Q9v-Tf-a7u" secondAttribute="height" multiplier="307:465" id="46f-xU-Zjg"/>
