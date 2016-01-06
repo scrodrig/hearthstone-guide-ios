@@ -13,6 +13,15 @@
 		296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07D1C3B5BB100EAED32 /* portada1.png */; };
 		296FE0801C3B613E00EAED32 /* portada2.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07F1C3B613E00EAED32 /* portada2.png */; };
 		29E8F2EB1C3C9AE600FD45E9 /* Name.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2EA1C3C9AE600FD45E9 /* Name.png */; };
+		29E8F2F51C3CC4D600FD45E9 /* CAttack.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2EC1C3CC4D600FD45E9 /* CAttack.png */; };
+		29E8F2F61C3CC4D600FD45E9 /* CCardback Collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2ED1C3CC4D600FD45E9 /* CCardback Collection.png */; };
+		29E8F2F71C3CC4D600FD45E9 /* CCost.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2EE1C3CC4D600FD45E9 /* CCost.png */; };
+		29E8F2F81C3CC4D600FD45E9 /* CFavorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2EF1C3CC4D600FD45E9 /* CFavorites.png */; };
+		29E8F2F91C3CC4D600FD45E9 /* CHealth.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2F01C3CC4D600FD45E9 /* CHealth.png */; };
+		29E8F2FA1C3CC4D600FD45E9 /* CName.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2F11C3CC4D600FD45E9 /* CName.png */; };
+		29E8F2FB1C3CC4D600FD45E9 /* CRarity.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2F21C3CC4D600FD45E9 /* CRarity.png */; };
+		29E8F2FC1C3CC4D600FD45E9 /* CSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2F31C3CC4D600FD45E9 /* CSet.png */; };
+		29E8F2FD1C3CC4D600FD45E9 /* CType.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2F41C3CC4D600FD45E9 /* CType.png */; };
 		2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF51C1B1903005089F2 /* SearchByClient.swift */; };
 		2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
 		2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
@@ -143,6 +152,15 @@
 		296FE07D1C3B5BB100EAED32 /* portada1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada1.png; sourceTree = "<group>"; };
 		296FE07F1C3B613E00EAED32 /* portada2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada2.png; sourceTree = "<group>"; };
 		29E8F2EA1C3C9AE600FD45E9 /* Name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Name.png; sourceTree = "<group>"; };
+		29E8F2EC1C3CC4D600FD45E9 /* CAttack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAttack.png; sourceTree = "<group>"; };
+		29E8F2ED1C3CC4D600FD45E9 /* CCardback Collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCardback Collection.png"; sourceTree = "<group>"; };
+		29E8F2EE1C3CC4D600FD45E9 /* CCost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCost.png; sourceTree = "<group>"; };
+		29E8F2EF1C3CC4D600FD45E9 /* CFavorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CFavorites.png; sourceTree = "<group>"; };
+		29E8F2F01C3CC4D600FD45E9 /* CHealth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CHealth.png; sourceTree = "<group>"; };
+		29E8F2F11C3CC4D600FD45E9 /* CName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CName.png; sourceTree = "<group>"; };
+		29E8F2F21C3CC4D600FD45E9 /* CRarity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRarity.png; sourceTree = "<group>"; };
+		29E8F2F31C3CC4D600FD45E9 /* CSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CSet.png; sourceTree = "<group>"; };
+		29E8F2F41C3CC4D600FD45E9 /* CType.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CType.png; sourceTree = "<group>"; };
 		2A00DCF51C1B1903005089F2 /* SearchByClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClient.swift; sourceTree = "<group>"; };
 		2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
 		2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -301,6 +319,15 @@
 		29E8F2E91C3C9AB700FD45E9 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				29E8F2EC1C3CC4D600FD45E9 /* CAttack.png */,
+				29E8F2ED1C3CC4D600FD45E9 /* CCardback Collection.png */,
+				29E8F2EE1C3CC4D600FD45E9 /* CCost.png */,
+				29E8F2EF1C3CC4D600FD45E9 /* CFavorites.png */,
+				29E8F2F01C3CC4D600FD45E9 /* CHealth.png */,
+				29E8F2F11C3CC4D600FD45E9 /* CName.png */,
+				29E8F2F21C3CC4D600FD45E9 /* CRarity.png */,
+				29E8F2F31C3CC4D600FD45E9 /* CSet.png */,
+				29E8F2F41C3CC4D600FD45E9 /* CType.png */,
 				29E8F2EA1C3C9AE600FD45E9 /* Name.png */,
 			);
 			name = Search;
@@ -738,15 +765,19 @@
 				2A7F6A711C232BBF00FED2A6 /* CardAttackExample.png in Resources */,
 				2A7A98CA1C3B1C67005F0C5C /* favourite_on.png in Resources */,
 				2A148F711C309603005C499F /* menu.png in Resources */,
+				29E8F2F81C3CC4D600FD45E9 /* CFavorites.png in Resources */,
 				2AD72B721C1F092E007D98E3 /* Paladin.png in Resources */,
 				2AD72B741C1F092E007D98E3 /* Rogue.png in Resources */,
 				2AA05EE21C256D7900DD7393 /* CardRarityExample.png in Resources */,
 				296FE0801C3B613E00EAED32 /* portada2.png in Resources */,
 				2AD72B6F1C1F092E007D98E3 /* Druid.png in Resources */,
+				29E8F2F71C3CC4D600FD45E9 /* CCost.png in Resources */,
+				29E8F2FD1C3CC4D600FD45E9 /* CType.png in Resources */,
 				296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */,
 				296FE07C1C3B3FA400EAED32 /* portada.png in Resources */,
 				2A9D64A21C38226A00D19D93 /* Logo.png in Resources */,
 				2A97975F1C2AF6CF0079F5B3 /* durability.png in Resources */,
+				29E8F2F91C3CC4D600FD45E9 /* CHealth.png in Resources */,
 				2A4ED80B1C323AB900B8AF33 /* Cards.png in Resources */,
 				2AE6DCCD1C25076D00A2613A /* CardHealthExample.png in Resources */,
 				2A7D66511C20C5F400D43550 /* attack.png in Resources */,
@@ -760,6 +791,7 @@
 				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
 				2AA831141C298BF8006B3DE4 /* gem_common.png in Resources */,
 				2AD72B701C1F092E007D98E3 /* Hunter.png in Resources */,
+				29E8F2FA1C3CC4D600FD45E9 /* CName.png in Resources */,
 				2AA831161C298BF8006B3DE4 /* gem_legendary.png in Resources */,
 				2AA1DC8A1C39B81D009878E4 /* Default-568h@2x.png in Resources */,
 				2A6457D51C3A1E36002BCCC3 /* guest.png in Resources */,
@@ -769,10 +801,14 @@
 				2A9D64A81C3844F800D19D93 /* LogoDown.png in Resources */,
 				2AD72B771C1F092E007D98E3 /* Warrior.png in Resources */,
 				2A9D64A61C383FB000D19D93 /* LogoUp.png in Resources */,
+				29E8F2FC1C3CC4D600FD45E9 /* CSet.png in Resources */,
 				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
+				29E8F2FB1C3CC4D600FD45E9 /* CRarity.png in Resources */,
 				2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */,
 				2A7D664F1C20C5EA00D43550 /* health.png in Resources */,
+				29E8F2F61C3CC4D600FD45E9 /* CCardback Collection.png in Resources */,
 				2AD72B761C1F092E007D98E3 /* Warlock.png in Resources */,
+				29E8F2F51C3CC4D600FD45E9 /* CAttack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
