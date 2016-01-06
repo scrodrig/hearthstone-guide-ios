@@ -9,6 +9,8 @@
 import Foundation
 
 enum Rarity: String {
+    
+    case None = "None";
         
     case Free = "Free";
     
@@ -25,6 +27,10 @@ enum Rarity: String {
         return [Rarity.Free.rawValue,Rarity.Common.rawValue,Rarity.Rare.rawValue,Rarity.Epic.rawValue,Rarity.Legendary.rawValue];
     }
     
+    static func getAsArrayValuesWithNone () -> [String]{
+        return [Rarity.None.rawValue,Rarity.Free.rawValue,Rarity.Common.rawValue,Rarity.Rare.rawValue,Rarity.Epic.rawValue,Rarity.Legendary.rawValue];
+    }
+
     
     
     

@@ -35,6 +35,8 @@ class CardArchive {
         if let newData = NSKeyedUnarchiver.unarchiveObjectWithFile(path) as? NSArray {
             for(var i = 0; i < newData.count; i++){
                 if let cardJson = newData.objectAtIndex(i) as? Card{
+                    //Force to check favourite cards
+                    cardJson.favourite = true;
                     dataToRetrieve.append(cardJson);
                 }
             }

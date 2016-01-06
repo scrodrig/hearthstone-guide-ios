@@ -10,6 +10,8 @@ import Foundation
 
 enum Heroes: String {
     
+    case None = "None";
+    
     case Druid = "Druid";
     
     case Hunter = "Hunter";
@@ -29,4 +31,14 @@ enum Heroes: String {
     case Warrior = "Warrior";
     
     case Dream = "Dream";
+    
+    static func getAsArrayValues () -> [String]{
+        return [Heroes.Druid.rawValue,Heroes.Hunter.rawValue,Heroes.Mage.rawValue,Heroes.Paladin.rawValue,Heroes.Priest.rawValue,
+            Heroes.Rogue.rawValue,Heroes.Shaman.rawValue,Heroes.Warlock.rawValue,Heroes.Warrior.rawValue,Heroes.Warlock.rawValue];
+    }
+    
+    static func getAsArrayValuesWithNone () -> [String]{
+        return [Heroes.None.rawValue,Heroes.Druid.rawValue,Heroes.Hunter.rawValue,Heroes.Mage.rawValue,Heroes.Paladin.rawValue,Heroes.Priest.rawValue,
+            Heroes.Rogue.rawValue,Heroes.Shaman.rawValue,Heroes.Warlock.rawValue,Heroes.Warrior.rawValue,Heroes.Warlock.rawValue];
+    }
 }
