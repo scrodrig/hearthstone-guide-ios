@@ -12,6 +12,7 @@
 		296FE07C1C3B3FA400EAED32 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07B1C3B3FA400EAED32 /* portada.png */; };
 		296FE07E1C3B5BB100EAED32 /* portada1.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07D1C3B5BB100EAED32 /* portada1.png */; };
 		296FE0801C3B613E00EAED32 /* portada2.png in Resources */ = {isa = PBXBuildFile; fileRef = 296FE07F1C3B613E00EAED32 /* portada2.png */; };
+		29E8F2EB1C3C9AE600FD45E9 /* Name.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E8F2EA1C3C9AE600FD45E9 /* Name.png */; };
 		2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF51C1B1903005089F2 /* SearchByClient.swift */; };
 		2A00DCF81C1B26F9005089F2 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */; };
 		2A0439E61C19F4FD00E177D6 /* ParameterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB41C19EC020091E08F /* ParameterConstants.swift */; };
@@ -141,6 +142,7 @@
 		296FE07B1C3B3FA400EAED32 /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
 		296FE07D1C3B5BB100EAED32 /* portada1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada1.png; sourceTree = "<group>"; };
 		296FE07F1C3B613E00EAED32 /* portada2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada2.png; sourceTree = "<group>"; };
+		29E8F2EA1C3C9AE600FD45E9 /* Name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Name.png; sourceTree = "<group>"; };
 		2A00DCF51C1B1903005089F2 /* SearchByClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClient.swift; sourceTree = "<group>"; };
 		2A00DCF71C1B26F9005089F2 /* EndpointEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
 		2A0BD3F31C127ED500D4F9BF /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 				296FE07B1C3B3FA400EAED32 /* portada.png */,
 			);
 			name = Portada;
+			sourceTree = "<group>";
+		};
+		29E8F2E91C3C9AB700FD45E9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				29E8F2EA1C3C9AE600FD45E9 /* Name.png */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 		2A148F6B1C3092B2005C499F /* Menu */ = {
@@ -557,6 +567,7 @@
 		2AD72B641C1F06BE007D98E3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				29E8F2E91C3C9AB700FD45E9 /* Search */,
 				296FE07A1C3B3F8800EAED32 /* Portada */,
 				2A9D64A01C3821A300D19D93 /* Logo */,
 				2A148F6F1C3095F7005C499F /* Icons */,
@@ -744,6 +755,7 @@
 				2A2545B11C1216F900089CC9 /* Assets.xcassets in Resources */,
 				2AD72B731C1F092E007D98E3 /* Priest.png in Resources */,
 				2A7A98C91C3B1C67005F0C5C /* favourite_off.png in Resources */,
+				29E8F2EB1C3C9AE600FD45E9 /* Name.png in Resources */,
 				2AA05EEA1C257F4900DD7393 /* CardTypeExample.png in Resources */,
 				2AD72B711C1F092E007D98E3 /* Mage.png in Resources */,
 				2AA831141C298BF8006B3DE4 /* gem_common.png in Resources */,
