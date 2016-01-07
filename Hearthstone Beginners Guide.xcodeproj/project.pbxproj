@@ -256,7 +256,7 @@
 		2AA05EE71C257BF000DD7393 /* TypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeEnum.swift; sourceTree = "<group>"; };
 		2AA05EE91C257F4900DD7393 /* CardTypeExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardTypeExample.png; sourceTree = "<group>"; };
 		2AA1DC871C39B432009878E4 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		2AA1DC891C39B81D009878E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2AA1DC891C39B81D009878E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		2AA8310D1C2973C4006B3DE4 /* DetailByMinionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByMinionViewController.swift; sourceTree = "<group>"; };
 		2AA831101C298BF8006B3DE4 /* gem_common.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gem_common.png; sourceTree = "<group>"; };
 		2AA831111C298BF8006B3DE4 /* gem_epic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gem_epic.png; sourceTree = "<group>"; };
@@ -377,8 +377,6 @@
 		2A25459D1C1216F900089CC9 = {
 			isa = PBXGroup;
 			children = (
-				2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */,
-				2AA1DC891C39B81D009878E4 /* Default-568h@2x.png */,
 				2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */,
 				2A2545BD1C1216F900089CC9 /* Hearthstone Beginners GuideTests */,
 				2A2545C81C1216F900089CC9 /* Hearthstone Beginners GuideUITests */,
@@ -446,6 +444,7 @@
 				2AA93AA91C127D090067E970 /* FBSDKCoreKit.framework */,
 				2AA93AAA1C127D090067E970 /* FBSDKLoginKit.framework */,
 				2AA93AAB1C127D090067E970 /* FBSDKShareKit.framework */,
+				2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -627,6 +626,7 @@
 				2A8045B81C3DC66A001BB0B5 /* Photos */,
 				2A8ED9971C218061003CA96F /* Cards */,
 				2AD72B651C1F06C9007D98E3 /* Heroes */,
+				2AA1DC891C39B81D009878E4 /* Default-568h@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
