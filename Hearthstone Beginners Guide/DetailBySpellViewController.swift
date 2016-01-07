@@ -174,7 +174,7 @@ class DetailBySpellViewController: UIViewController {
                 cardModel.favourite = true;
                 CardUtil.addCardToFavouriteCollection(cardModel);
                 self.imgFavourite.image = UIImage(named: "favourite_on");
-                
+                FBClient.shareFavouriteCard(self, card: cardModel);
             }
         }
     }
