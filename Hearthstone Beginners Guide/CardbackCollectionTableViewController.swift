@@ -28,7 +28,7 @@ class CardbackCollectionTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()        
         //The charge initial for cardbaks
-        CardbackClient.searchCardbacks(Location.USAEnglish) { (cardbacks, error) -> Void in
+        CardbackClient.searchCardbacks(currentLanguage!) { (cardbacks, error) -> Void in
             self.cardbacks = cardbacks;
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                 self.tableView.reloadData();

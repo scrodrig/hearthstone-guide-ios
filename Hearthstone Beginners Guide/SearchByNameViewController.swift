@@ -55,7 +55,7 @@ class SearchByNameViewController: UIViewController, UITextFieldDelegate {
             //nameSearch.resignFirstResponder();
             ViewUtil.showLoadingScreen(self.view, object: self.nameSearch);
             
-            sessionTask = SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SEARCH_NAME_ENDPOINT, query: queryString, location: Location.USAEnglish) { (cards, error) -> Void in
+            sessionTask = SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SEARCH_NAME_ENDPOINT, query: queryString, location: currentLanguage!) { (cards, error) -> Void in
                 //Go to the server
                 self.cards = cards;
                 if let c = self.cards{

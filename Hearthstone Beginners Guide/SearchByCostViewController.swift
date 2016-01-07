@@ -40,7 +40,7 @@ class SearchByCostViewController: UIViewController {
     
     @IBAction func searchByCostAction(sender: UISlider) {
         ViewUtil.showLoadingScreen(self.view, object: nil);
-        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_COST, query: "\(Int(self.costSlider.value))", location: Location.USAEnglish) { (cards, error) -> Void in
+        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_COST, query: "\(Int(self.costSlider.value))", location: currentLanguage!) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             if let c = self.cards{

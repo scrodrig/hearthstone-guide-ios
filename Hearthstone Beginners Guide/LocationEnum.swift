@@ -38,4 +38,8 @@ enum Location: String {
     
     case Japanese = "jaJP";
     
+    static func getAsArrayValues () -> [String]{
+        return [Location.USAEnglish.rawValue,Location.BritainEnglish.rawValue,Location.MexicoSpanish.rawValue,Location.PortugalPortuguese.rawValue];
+    }
+    
 }

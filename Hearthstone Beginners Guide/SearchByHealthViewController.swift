@@ -42,7 +42,7 @@ class SearchByHealthViewController: UIViewController {
     
     @IBAction func searchByHealthAction(sender: AnyObject) {
         ViewUtil.showLoadingScreen(self.view, object: nil);
-        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_HEALTH, query: "\(Int(self.healthSlider.value))", location: Location.USAEnglish) { (cards, error) -> Void in
+        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_HEALTH, query: "\(Int(self.healthSlider.value))", location: currentLanguage!) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             if let c = self.cards{

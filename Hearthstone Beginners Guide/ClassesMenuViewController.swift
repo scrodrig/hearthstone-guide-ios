@@ -90,7 +90,7 @@ class ClassesMenuViewController: UIViewController {
             ViewUtil.showLoadingScreen(self.view, object: nil);
         }
 
-        sessionTask = SearchByClassClient.searchCardsByClass(self.heroSelected, location: Location.USAEnglish, completionHandler: { (cards, error) -> Void in
+        sessionTask = SearchByClassClient.searchCardsByClass(self.heroSelected, location: currentLanguage!, completionHandler: { (cards, error) -> Void in
             self.heroPending = nil;
             self.cards = cards;
             if let c = self.cards{

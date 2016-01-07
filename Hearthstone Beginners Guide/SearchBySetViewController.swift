@@ -41,7 +41,7 @@ class SearchBySetViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     @IBAction func searchCardsBySetAction(sender: AnyObject) {
         ViewUtil.showLoadingScreen(self.view, object: nil);
-        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SET_ENDPOINT, query: pickerData[0][setPicker.selectedRowInComponent(0)], location: Location.USAEnglish) { (cards, error) -> Void in
+        SearchByClient.searchCardsBy(Endpoints.HEARTHSTONE_API_CARDS_SET_ENDPOINT, query: pickerData[0][setPicker.selectedRowInComponent(0)], location: currentLanguage!) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             if let c = self.cards{

@@ -41,7 +41,7 @@ class SearchByAttackViewController: UIViewController {
     
     @IBAction func SearchByAttackAction(sender: AnyObject) {
         ViewUtil.showLoadingScreen(self.view, object: nil);
-        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_ATTACK, query: "\(Int(self.attackSlider.value))", location: Location.USAEnglish) { (cards, error) -> Void in
+        SearchByParameterClient.searchCardsByParameter(ParameterConstants.HEARTHSTONE_API_PARAMETER_ATTACK, query: "\(Int(self.attackSlider.value))", location: currentLanguage!) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             if let c = self.cards{

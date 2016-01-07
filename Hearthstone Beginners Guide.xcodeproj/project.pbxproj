@@ -37,6 +37,7 @@
 		2A2545B41C1216F900089CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */; };
 		2A2545BF1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545BE1C1216F900089CC9 /* Hearthstone_Beginners_GuideTests.swift */; };
 		2A2545CA1C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */; };
+		2A360A031C3E1A9500C66BFC /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A360A021C3E1A9500C66BFC /* LanguageViewController.swift */; };
 		2A4ED80B1C323AB900B8AF33 /* Cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4ED80A1C323AB900B8AF33 /* Cards.png */; };
 		2A4ED80D1C3251EF00B8AF33 /* DetailByCardBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */; };
 		2A6457CE1C39F151002BCCC3 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */; };
@@ -59,6 +60,9 @@
 		2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */; };
 		2A7F6A6D1C23189B00FED2A6 /* SetEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F6A6C1C23189B00FED2A6 /* SetEnum.swift */; };
 		2A7F6A711C232BBF00FED2A6 /* CardAttackExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F6A701C232BBF00FED2A6 /* CardAttackExample.png */; };
+		2A8045BA1C3DC68E001BB0B5 /* blank_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8045B91C3DC68E001BB0B5 /* blank_photo.jpg */; };
+		2A8045BC1C3DECF2001BB0B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */; };
+		2A8045BE1C3DED58001BB0B5 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8045BD1C3DED58001BB0B5 /* LocationUtil.swift */; };
 		2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */; };
 		2A84D0C41C1ACF26009F1C51 /* SearchByClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A709FB11C19E2400091E08F /* SearchByClassClient.swift */; };
 		2A84D0C61C1AD117009F1C51 /* SearchByClassClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */; };
@@ -186,6 +190,7 @@
 		2A2545C51C1216F900089CC9 /* Hearthstone Beginners GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone Beginners GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2545C91C1216F900089CC9 /* Hearthstone_Beginners_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hearthstone_Beginners_GuideUITests.swift; sourceTree = "<group>"; };
 		2A2545CB1C1216F900089CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A360A021C3E1A9500C66BFC /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		2A4ED80A1C323AB900B8AF33 /* Cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cards.png; sourceTree = "<group>"; };
 		2A4ED80C1C3251EF00B8AF33 /* DetailByCardBackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByCardBackViewController.swift; sourceTree = "<group>"; };
 		2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +210,9 @@
 		2A7D66541C20CA7600D43550 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2A7F6A6C1C23189B00FED2A6 /* SetEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetEnum.swift; sourceTree = "<group>"; };
 		2A7F6A701C232BBF00FED2A6 /* CardAttackExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardAttackExample.png; sourceTree = "<group>"; };
+		2A8045B91C3DC68E001BB0B5 /* blank_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blank_photo.jpg; sourceTree = "<group>"; };
+		2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2A8045BD1C3DED58001BB0B5 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtil.swift; sourceTree = "<group>"; };
 		2A81E99C1C223C6D00FDC653 /* SearchByAttackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByAttackViewController.swift; sourceTree = "<group>"; };
 		2A84D0C51C1AD117009F1C51 /* SearchByClassClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByClassClientTest.swift; sourceTree = "<group>"; };
 		2A88FDAA1C2C21BB0081B98F /* DetailBySpellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBySpellViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +293,7 @@
 				2AA93AAD1C127D090067E970 /* FBSDKLoginKit.framework in Frameworks */,
 				2AA93AAC1C127D090067E970 /* FBSDKCoreKit.framework in Frameworks */,
 				2AA93AAE1C127D090067E970 /* FBSDKShareKit.framework in Frameworks */,
+				2A8045BC1C3DECF2001BB0B5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +374,7 @@
 		2A25459D1C1216F900089CC9 = {
 			isa = PBXGroup;
 			children = (
+				2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */,
 				2AA1DC891C39B81D009878E4 /* Default-568h@2x.png */,
 				2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */,
 				2A2545BD1C1216F900089CC9 /* Hearthstone Beginners GuideTests */,
@@ -481,6 +491,14 @@
 			name = Attributes;
 			sourceTree = "<group>";
 		};
+		2A8045B81C3DC66A001BB0B5 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				2A8045B91C3DC68E001BB0B5 /* blank_photo.jpg */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		2A8BF6201C15E8FA00300E39 /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +555,7 @@
 			children = (
 				2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */,
 				2AB2264C1C2F4C5A00105EC4 /* ViewUtil.swift */,
+				2A8045BD1C3DED58001BB0B5 /* LocationUtil.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -602,6 +621,7 @@
 				2A7D664B1C20C5D400D43550 /* Attributes */,
 				2A9A06351C20872100E0CEC1 /* Backgrounds */,
 				2AA8310F1C298BCE006B3DE4 /* Rarities */,
+				2A8045B81C3DC66A001BB0B5 /* Photos */,
 				2A8ED9971C218061003CA96F /* Cards */,
 				2AD72B651C1F06C9007D98E3 /* Heroes */,
 			);
@@ -651,6 +671,7 @@
 				2A8F40F31C3C8EB600B97723 /* FavouriteCardsTableViewController.swift */,
 				2A8F40F51C3C8ECD00B97723 /* FavoriteCardTableViewCell.swift */,
 				2A8F40F91C3CB58900B97723 /* CustomSearchViewController.swift */,
+				2A360A021C3E1A9500C66BFC /* LanguageViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -724,6 +745,14 @@
 					2A2545A51C1216F900089CC9 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = T26366CZ44;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2A2545B91C1216F900089CC9 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -809,6 +838,7 @@
 				2A2545AF1C1216F900089CC9 /* Main.storyboard in Resources */,
 				29E8F2FB1C3CC4D600FD45E9 /* CRarity.png in Resources */,
 				2AD72B751C1F092E007D98E3 /* Shaman.png in Resources */,
+				2A8045BA1C3DC68E001BB0B5 /* blank_photo.jpg in Resources */,
 				2A7D664F1C20C5EA00D43550 /* health.png in Resources */,
 				29E8F2F61C3CC4D600FD45E9 /* CCardback Collection.png in Resources */,
 				2AD72B761C1F092E007D98E3 /* Warlock.png in Resources */,
@@ -847,12 +877,14 @@
 				2A4ED80D1C3251EF00B8AF33 /* DetailByCardBackViewController.swift in Sources */,
 				2AB35EA41C27055900FC6303 /* CardbackCollectionTableViewController.swift in Sources */,
 				2A81E99D1C223C6D00FDC653 /* SearchByAttackViewController.swift in Sources */,
+				2A360A031C3E1A9500C66BFC /* LanguageViewController.swift in Sources */,
 				2AA1DC881C39B432009878E4 /* UserModel.swift in Sources */,
 				2A0BD3F41C127ED500D4F9BF /* LogInViewController.swift in Sources */,
 				2AA05EE41C256F7700DD7393 /* RarityEnum.swift in Sources */,
 				2A1E2D5A1C18787900F3216F /* MechanicModel.swift in Sources */,
 				2A993BD61C219F9300C2EF99 /* SearchByNameViewController.swift in Sources */,
 				2A00DCF61C1B1903005089F2 /* SearchByClient.swift in Sources */,
+				2A8045BE1C3DED58001BB0B5 /* LocationUtil.swift in Sources */,
 				2A7D66551C20CA7600D43550 /* CardTableViewCell.swift in Sources */,
 				2A709FB51C19EC020091E08F /* ParameterConstants.swift in Sources */,
 				2A9944111C17079200A1B891 /* LocationEnum.swift in Sources */,

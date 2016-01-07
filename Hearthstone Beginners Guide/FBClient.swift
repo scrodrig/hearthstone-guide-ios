@@ -83,7 +83,20 @@ class FBClient {
         //Content image
         content.imageURL = NSURL(string: card.img!);
         //Ready for share on facebook
-        FBSDKShareDialog.showFromViewController(view, withContent: content, delegate: nil)
+        FBSDKShareDialog.showFromViewController(view, withContent: content, delegate: nil);
+    }
+    
+    static func shareMoment(view:UIViewController, image:UIImage){
+        let photo:FBSDKSharePhoto = FBSDKSharePhoto();
+        photo.image = image;
+        photo.userGenerated = true;
+        let content: FBSDKSharePhotoContent = FBSDKSharePhotoContent();
+        //Prepare content for sharing
+        content.photos = [photo];
+        //let content: FBSDKShareLinkContent = FBSDKShareLinkContent();
+        //Ready for share on facebook
+        //FBSDKShare
+        FBSDKShareDialog.showFromViewController(view, withContent: content, delegate: nil);
     }
     
     

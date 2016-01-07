@@ -12,9 +12,29 @@ class ClassesPatternrecognitionViewController: UIViewController, UIImagePickerCo
     
     @IBOutlet weak var currentImage: UIImageView!
     @IBOutlet weak var menuButton:UIBarButtonItem!
-
-    
+    @IBOutlet weak var takePhotoButton: UIButton!
     let imagePicker: UIImagePickerController! = UIImagePickerController();
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imagePicker.delegate = self;
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        if(userLogged.id == nil){
+            self.takePhotoButton.enabled = false;
+        }
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     @IBAction func takePicture(sender: UIButton) {
         if (UIImagePickerController.isSourceTypeAvailable(.Camera)) {
@@ -47,12 +67,14 @@ class ClassesPatternrecognitionViewController: UIViewController, UIImagePickerCo
     }
     
     func imageWasSavedSuccessfully(image: UIImage, didFinishSavingWithError error: NSError!, context: UnsafeMutablePointer<()>) {
-        print("Image saved");
+        
         if let theError = error{
             print("An error happened while saving the image = \(theError)");
         }else{
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                print("Image saved");
                 self.currentImage.image = image;
+                FBClient.shareMoment(self, image: self.currentImage.image!);
             })
         }
     }
@@ -74,19 +96,6 @@ class ClassesPatternrecognitionViewController: UIViewController, UIImagePickerCo
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imagePicker.delegate = self;
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }

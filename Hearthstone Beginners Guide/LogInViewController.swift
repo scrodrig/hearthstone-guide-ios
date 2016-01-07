@@ -9,18 +9,23 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import CoreLocation
 
-class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
+var currentLanguage:Location?;
+
+class LogInViewController: UIViewController, FBSDKLoginButtonDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userPicture: UIImageView!
     
+    //let locationManager = CLLocationManager();
     
+    let locationManager = CLLocationManager()
+    var currentLocation:CLLocation?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         let loginButton = FBSDKLoginButton();
         loginButton.readPermissions = ["public_profile","email","user_friends","read_stream"];
@@ -37,8 +42,26 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         favouriteCards = CardArchive().retreiveCards();
         self.fillLoginPanel();
+        
+        
+        // For use in foreground
+        //self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self;
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+            locationManager.requestAlwaysAuthorization();
+            locationManager.startUpdatingLocation()
+            //currentLocation = locationManager.location;
+            currentLocation = CLLocation();
+            //Do something
+            
+        }
+        currentLanguage = Location.USAEnglish; 
+        
+        
     }
-    
+        
     func showMenuIndex (){
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()

@@ -88,7 +88,7 @@ class CustomSearchViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     @IBAction func searchCustom(sender: AnyObject) {
         ViewUtil.showLoadingScreen(self.view, object: nil);
-        SearchByCustomClient.searchCardsByParameters(self.attackChanged ? "\(Int(self.attackSlider.value))" : nil, health: self.healthChanged ? "\(Int(self.healthSlider.value))":nil, cost: self.costChanged ? "\(Int(self.costSlider.value))": nil, durability: self.durabilityChanged ? "\(Int(self.durabilitySlider.value))" : nil, location: Location.USAEnglish) { (cards, error) -> Void in
+        SearchByCustomClient.searchCardsByParameters(self.attackChanged ? "\(Int(self.attackSlider.value))" : nil, health: self.healthChanged ? "\(Int(self.healthSlider.value))":nil, cost: self.costChanged ? "\(Int(self.costSlider.value))": nil, durability: self.durabilityChanged ? "\(Int(self.durabilitySlider.value))" : nil, location: currentLanguage!) { (cards, error) -> Void in
             //Go to the server
             self.cards = cards;
             if var c = self.cards{
