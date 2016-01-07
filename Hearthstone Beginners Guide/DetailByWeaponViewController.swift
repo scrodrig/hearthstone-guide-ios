@@ -133,7 +133,7 @@ class DetailByWeaponViewController: UIViewController {
             
             //Check facebook conectivity
             
-            if(userLogged.id != nil){
+            if(userLogged.id == nil){
                 buttonFavourite.enabled = false;
             }
             

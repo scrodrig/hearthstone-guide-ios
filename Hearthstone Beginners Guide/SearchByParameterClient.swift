@@ -26,7 +26,9 @@ class SearchByParameterClient {
             return nil;
         }
         //Build a URL to connect with the server
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CLASS_CARDS.rawValue + parameterQuery + parameterValueQuery + ParameterConstants.HEARTHSTONE_API_PARAMETER_CONNECTOR_AMPERSAND + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CLASS_CARDS.rawValue + parameterQuery + parameterValueQuery +
+            //ParameterConstants.HEARTHSTONE_API_PARAMETER_CONNECTOR_AMPERSAND +
+            ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
             return nil;
         }
         //Add headers for session

@@ -326,7 +326,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-Ym-Qfb">
-                                        <rect key="frame" x="124.5" y="388" width="125" height="68"/>
+                                        <rect key="frame" x="125" y="388" width="125" height="68"/>
                                         <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="50"/>
                                         <state key="normal" title="Search">
                                             <color key="titleColor" red="0.4392156862745098" green="0.21176470588235294" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
@@ -928,7 +928,7 @@
                     <connections>
                         <segue destination="Pet-E7-Xnt" kind="show" identifier="cardDetailMinionSegue" id="n8O-z7-33Q"/>
                         <segue destination="dPj-JG-4nZ" kind="show" identifier="cardDetailWeaponSegue" id="yLj-c2-NhO"/>
-                        <segue destination="Uow-di-4qU" kind="show" identifier="cardDetailWeaponSegue" id="sAZ-S4-m6m"/>
+                        <segue destination="Uow-di-4qU" kind="show" identifier="cardDetailSpellSegue" id="sAZ-S4-m6m"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztq-nS-ln0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1128,8 +1128,7 @@
                                     <constraint firstAttribute="width" constant="35" id="6eJ-9O-Ftk"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="markAsFavouriteAction:" destination="dPj-JG-4nZ" eventType="touchUpInside" id="Dcd-vC-pxc"/>
-                                    <action selector="markAsFavouriteCard:" destination="Pet-E7-Xnt" eventType="touchUpInside" id="BaC-GX-N7P"/>
+                                    <action selector="markAsFavouriteCard:" destination="Pet-E7-Xnt" eventType="touchUpInside" id="Qx4-c0-4wo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p2l-j3-K32">
@@ -1689,11 +1688,19 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="187" id="7Zg-lV-hf1"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7Zg-lV-hf1"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gtx-yn-eUe">
                                         <rect key="frame" x="187" y="0.0" width="187" height="287"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="z4g-BI-mYs" firstAttribute="width" secondItem="Gtx-yn-eUe" secondAttribute="width" id="2xg-PE-OQf"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ing-Up-YGM">
                                 <rect key="frame" x="103" y="503" width="291" height="17"/>
@@ -1732,13 +1739,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-8g-ydU">
-                                <rect key="frame" x="359" y="69" width="35" height="35"/>
-                                <connections>
-                                    <action selector="markAsFavouriteAction:" destination="dPj-JG-4nZ" eventType="touchUpInside" id="hEb-aX-Ih5"/>
-                                    <action selector="markAsFavouriteCard:" destination="Uow-di-4qU" eventType="touchUpInside" id="iVs-JZ-Kf3"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zSK-px-RyY">
                                 <rect key="frame" x="359" y="69" width="35" height="35"/>
                                 <constraints>
@@ -1746,7 +1746,18 @@
                                     <constraint firstAttribute="width" constant="35" id="Ljl-QJ-UMh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="P5g-Fb-8do"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P5g-Fb-8do"/>
+                                    </mask>
+                                </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-8g-ydU">
+                                <rect key="frame" x="359" y="69" width="35" height="35"/>
+                                <connections>
+                                    <action selector="markAsFavouriteCard:" destination="Uow-di-4qU" eventType="touchUpInside" id="rCl-7S-UNq"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mct-BL-xyH">
                                 <rect key="frame" x="289" y="461" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -3551,7 +3562,7 @@
                         <outlet property="menuButton" destination="aqy-5o-jKM" id="9zU-si-9nX"/>
                         <segue destination="Pet-E7-Xnt" kind="show" identifier="cardDetailMinionSegue" id="jOa-dW-1re"/>
                         <segue destination="dPj-JG-4nZ" kind="show" identifier="cardDetailWeaponSegue" id="Y53-kV-9EM"/>
-                        <segue destination="Uow-di-4qU" kind="show" identifier="cardDetailWeaponSegue" id="pJ1-re-wgT"/>
+                        <segue destination="Uow-di-4qU" kind="show" identifier="cardDetailSpellSegue" id="pJ1-re-wgT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkh-0A-vEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3715,20 +3726,20 @@
         <image name="portadaCartas.png" width="2268" height="4000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7fH-Yg-pVx"/>
-        <segue reference="mhi-17-MNd"/>
         <segue reference="HaS-6H-3HA"/>
-        <segue reference="2WR-x8-haQ"/>
-        <segue reference="dOj-fx-QjD"/>
-        <segue reference="hzN-19-18t"/>
-        <segue reference="Q3N-OQ-QSf"/>
-        <segue reference="60R-yD-T9y"/>
-        <segue reference="6Ar-b8-hcu"/>
-        <segue reference="Jtd-Mj-B5e"/>
-        <segue reference="MQO-6a-jU3"/>
-        <segue reference="Hdz-qB-3Mz"/>
-        <segue reference="Txc-Rp-lGm"/>
         <segue reference="ZGD-KU-jqT"/>
+        <segue reference="7fH-Yg-pVx"/>
+        <segue reference="MQO-6a-jU3"/>
+        <segue reference="Q3N-OQ-QSf"/>
+        <segue reference="2WR-x8-haQ"/>
+        <segue reference="60R-yD-T9y"/>
+        <segue reference="Txc-Rp-lGm"/>
+        <segue reference="Jtd-Mj-B5e"/>
+        <segue reference="6Ar-b8-hcu"/>
+        <segue reference="Hdz-qB-3Mz"/>
+        <segue reference="hzN-19-18t"/>
+        <segue reference="dOj-fx-QjD"/>
+        <segue reference="mhi-17-MNd"/>
         <segue reference="bV6-FS-0gk"/>
         <segue reference="sAZ-S4-m6m"/>
         <segue reference="n8O-z7-33Q"/>
