@@ -18,7 +18,7 @@ class CardbackClient {
             return;
         }
         //Build a URL to connect with the server
-        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CARDBACK_ENDPOINT.rawValue + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE + locationQuery.rawValue) else{
+        guard let url = NSURL(string: ParameterConstants.HEARTHSTONE_API_URI + Endpoints.HEARTHSTONE_API_CARDBACK_ENDPOINT.rawValue + ParameterConstants.HEARTHSTONE_API_PARAMETER_LOCALE_OR + locationQuery.rawValue) else{
             return;            
         }
         //Add headers for session

@@ -289,7 +289,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portadaCartas.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hH-Co-ET8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o0G-8m-fV3">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o0G-8m-fV3">
                                 <rect key="frame" x="20" y="64" width="374" height="456"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CType.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-MU-jhq">
@@ -298,13 +298,13 @@
                                             <constraint firstAttribute="width" secondItem="y3L-MU-jhq" secondAttribute="height" multiplier="1000:168" id="WoX-xU-IJK"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-47-aE4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-47-aE4">
                                         <rect key="frame" x="148" y="63" width="78" height="45"/>
                                         <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="40"/>
                                         <color key="textColor" red="0.50196078430000002" green="0.25098039220000001" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-i4-Xqr">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-i4-Xqr">
                                         <rect key="frame" x="0.0" y="108" width="374" height="280"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardTypeExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-C1-Omw">
@@ -325,7 +325,7 @@
                                             <constraint firstItem="UfS-C1-Omw" firstAttribute="width" secondItem="TxE-MX-oOr" secondAttribute="width" id="1NB-My-v8g"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-Ym-Qfb">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-Ym-Qfb">
                                         <rect key="frame" x="125" y="388" width="125" height="68"/>
                                         <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="50"/>
                                         <state key="normal" title="Search">
@@ -725,7 +725,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portadaCartas.png" translatesAutoresizingMaskIntoConstraints="NO" id="5n7-hk-nyR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RpV-av-ejX">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RpV-av-ejX">
                                 <rect key="frame" x="20" y="84" width="374" height="456"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CRarity.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-0o-6jx">
@@ -734,13 +734,13 @@
                                             <constraint firstAttribute="width" secondItem="Lj9-0o-6jx" secondAttribute="height" multiplier="1000:168" id="YOB-DM-7ty"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rarity:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWj-gl-kTB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rarity:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWj-gl-kTB">
                                         <rect key="frame" x="0.0" y="63" width="374" height="45"/>
                                         <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="40"/>
                                         <color key="textColor" red="0.40784313729999999" green="0.18823529410000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="heP-Kl-QVZ">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="heP-Kl-QVZ">
                                         <rect key="frame" x="0.0" y="108" width="374" height="280"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardRarityExample.png" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-7T-ZEe">
@@ -761,7 +761,7 @@
                                             <constraint firstItem="uOK-9y-Wkc" firstAttribute="width" secondItem="mrc-7T-ZEe" secondAttribute="width" id="nbx-kd-7RV"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-hd-ALw">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-hd-ALw">
                                         <rect key="frame" x="0.0" y="388" width="374" height="68"/>
                                         <fontDescription key="fontDescription" name="Ancient-Medium" family="Ancient" pointSize="50"/>
                                         <state key="normal" title="Search">
