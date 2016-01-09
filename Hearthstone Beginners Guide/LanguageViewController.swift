@@ -12,8 +12,12 @@ class LanguageViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBOutlet weak var setPicker: UIPickerView!
     @IBOutlet weak var menuButton:UIBarButtonItem!
-
+    //var value = "esMX"
     let pickerData = [
+        Location.getAsArrayValues()
+    ]
+    
+    let pickerData2 = [
         Location.getAsArrayValues()
     ]
     
@@ -43,12 +47,15 @@ class LanguageViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[component][row]
+        return LocationUtil.getLocation(pickerData[component][row]);
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //value = pickerData[component][row];
         currentLanguage = Location(rawValue:pickerData[component][row]);
     }
+    
+    
     
 
     /*

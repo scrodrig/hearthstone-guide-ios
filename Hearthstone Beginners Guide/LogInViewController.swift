@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import CoreLocation
 
-var currentLanguage:Location?;
+var currentLanguage:Location? = Location.USAEnglish;
 
 class LogInViewController: UIViewController, FBSDKLoginButtonDelegate, CLLocationManagerDelegate {
     
@@ -52,13 +52,37 @@ class LogInViewController: UIViewController, FBSDKLoginButtonDelegate, CLLocatio
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
             locationManager.requestAlwaysAuthorization();
             locationManager.startUpdatingLocation()
-            //currentLocation = locationManager.location;
             currentLocation = CLLocation();
-            //Do something
-            
         }
-        currentLanguage = Location.USAEnglish; 
         
+        
+        
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let last = locations.last {
+            print(last.coordinate);
+            //last.
+            //print(manager.rangedRegions.);
+            let geoCoder = CLGeocoder();
+            geoCoder.reverseGeocodeLocation(last, completionHandler: { (placemarks, error) -> Void in
+                // Place details
+                var placeMark: CLPlacemark!
+                placeMark = placemarks?[0]
+                // Country
+                if let country = placeMark.addressDictionary!["Country"] as? NSString {
+                    print(country)
+                    if(country == "Portugal"){
+                        currentLanguage = Location.BrazilPortuguese;
+                    }
+                    if(country == "Mexico" || country == "Ecuador"){
+                        currentLanguage = Location.MexicoSpanish;
+                    }
+                }
+            })
+
+            //currentLanguage = Location.USAEnglish;
+        }
         
     }
         

@@ -239,14 +239,12 @@
 		2A8F40F71C3CABDD00B97723 /* SearchByCustomClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByCustomClient.swift; sourceTree = "<group>"; };
 		2A8F40F91C3CB58900B97723 /* CustomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchViewController.swift; sourceTree = "<group>"; };
 		2A8F80E91C1915FF00EC01F9 /* CardUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUtil.swift; sourceTree = "<group>"; };
+		2A946EA01C401C0A00F86764 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A946EA11C401C0A00F86764 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2A946EA21C401C1700F86764 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		2A946EA31C401C1700F86764 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2A97975C1C2AEA020079F5B3 /* DetailByWeaponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailByWeaponViewController.swift; sourceTree = "<group>"; };
 		2A97975E1C2AF6CF0079F5B3 /* durability.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = durability.png; sourceTree = "<group>"; };
-		2A993BCF1C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
-		2A993BD01C219C3100C2EF99 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2A993BD11C219C6A00C2EF99 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
-		2A993BD21C219C6A00C2EF99 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2A993BD31C219C7000C2EF99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		2A993BD41C219C7000C2EF99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2A993BD51C219F9300C2EF99 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
 		2A99440C1C1704C200A1B891 /* CardbackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackModel.swift; sourceTree = "<group>"; };
 		2A99440E1C17068400A1B891 /* CardbackClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardbackClient.swift; sourceTree = "<group>"; };
@@ -1007,9 +1005,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545AE1C1216F900089CC9 /* Base */,
-				2A993BCF1C219C3100C2EF99 /* es-MX */,
-				2A993BD11C219C6A00C2EF99 /* pt-PT */,
-				2A993BD31C219C7000C2EF99 /* es */,
+				2A946EA01C401C0A00F86764 /* pt-PT */,
+				2A946EA21C401C1700F86764 /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1018,9 +1015,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A2545B31C1216F900089CC9 /* Base */,
-				2A993BD01C219C3100C2EF99 /* es-MX */,
-				2A993BD21C219C6A00C2EF99 /* pt-PT */,
-				2A993BD41C219C7000C2EF99 /* es */,
+				2A946EA11C401C0A00F86764 /* pt-PT */,
+				2A946EA31C401C1700F86764 /* es-MX */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

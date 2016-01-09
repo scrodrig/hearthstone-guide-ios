@@ -28,8 +28,6 @@ class DetailByMinionViewController: UIViewController {
     @IBOutlet weak var mechanicTitle: UILabel!
     @IBOutlet weak var howToGetTitle: UILabel!
     @IBOutlet weak var howToGetLabel: UILabel!
-    @IBOutlet weak var howToGetGoldTitle: UILabel!
-    @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var imgFavourite: UIImageView!
     @IBOutlet weak var buttonFavourite: UIButton!
     
@@ -94,18 +92,6 @@ class DetailByMinionViewController: UIViewController {
                 
             }
             
-            if let text:String = cardModel.howToGetGold {
-                let attrStr = try! NSAttributedString(
-                    data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-                    options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-                    documentAttributes: nil);
-                self.howToGetGoldLabel.attributedText = attrStr;
-            }else{
-                self.howToGetGoldLabel.text = nil;
-                self.howToGetGoldLabel.hidden = true;
-                self.howToGetGoldTitle.hidden = true;
-                
-            }
             
             if(cardModel.favourite){
                 self.imgFavourite.image = UIImage(named: "favourite_on");
@@ -129,6 +115,8 @@ class DetailByMinionViewController: UIViewController {
                     self.mechanicTitle.hidden = true;
                     
                 }
+            }else{
+                self.mechanicsLabel.text = "";
             }
             
             

@@ -26,8 +26,6 @@ class DetailBySpellViewController: UIViewController {
     @IBOutlet weak var mechanicsLabel: UILabel!
     @IBOutlet weak var howToGetLabel: UILabel!
     @IBOutlet weak var howToGetTitle: UILabel!
-    @IBOutlet weak var howToGetGoldTitle: UILabel!
-    @IBOutlet weak var howToGetGoldLabel: UILabel!
     @IBOutlet weak var mechanicTitle: UILabel!
     @IBOutlet weak var imgFavourite: UIImageView!
     @IBOutlet weak var buttonFavourite: UIButton!
@@ -91,25 +89,12 @@ class DetailBySpellViewController: UIViewController {
                 
             }
             
-            if let text:String = cardModel.howToGetGold {
-                let attrStr = try! NSAttributedString(
-                    data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-                    options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-                    documentAttributes: nil);
-                self.howToGetGoldLabel.attributedText = attrStr;
-            }else{
-                self.howToGetGoldLabel.text = nil;
-                self.howToGetGoldLabel.hidden = true;
-                self.howToGetGoldTitle.hidden = true;
-                
-            }
             
             if(cardModel.favourite){
                 self.imgFavourite.image = UIImage(named: "favourite_on");
             }else{
                 self.imgFavourite.image = UIImage(named: "favourite_off");
             }
-            
             
             if let mechanics = cardModel.mechanics {
                 var valueMechanic:String="";
@@ -126,6 +111,8 @@ class DetailBySpellViewController: UIViewController {
                     self.mechanicTitle.hidden = true;
                     
                 }
+            }else{
+                 self.mechanicsLabel.text = "";
             }
             
             //Check facebook conectivity

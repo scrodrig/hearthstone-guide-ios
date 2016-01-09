@@ -1,12 +1,57 @@
 
-/* Class = "UIButton"; normalTitle = "Access whitout loggin"; ObjectID = "31u-XY-kwU"; */
-"31u-XY-kwU.normalTitle" = "Access whitout loggin";
+/* Class = "UILabel"; text = "0"; ObjectID = "004-S6-CDF"; */
+"004-S6-CDF.text" = "0";
+
+/* Class = "UILabel"; text = "How to get:"; ObjectID = "2Bt-OJ-7hL"; */
+"2Bt-OJ-7hL.text" = "How to get:";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "2GK-fn-dvW"; */
+"2GK-fn-dvW.text" = "00";
+
+/* Class = "UILabel"; text = "Attack:"; ObjectID = "31s-Sq-Lk2"; */
+"31s-Sq-Lk2.text" = "Attack:";
+
+/* Class = "UILabel"; text = "How to get:"; ObjectID = "34Q-I7-DBZ"; */
+"34Q-I7-DBZ.text" = "How to get:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "48V-b4-EBK"; */
+"48V-b4-EBK.text" = "Title";
+
+/* Class = "UILabel"; text = "Attack:"; ObjectID = "7SF-Zf-bg7"; */
+"7SF-Zf-bg7.text" = "Attack:";
+
+/* Class = "UILabel"; text = "Mechanics"; ObjectID = "9t2-cK-bW1"; */
+"9t2-cK-bW1.text" = "Mechanics";
+
+/* Class = "UIButton"; normalTitle = "Take photo"; ObjectID = "A4U-0k-FJi"; */
+"A4U-0k-FJi.normalTitle" = "Take photo";
 
 /* Class = "UIButton"; normalTitle = "Druid"; ObjectID = "AJe-cB-dKv"; */
 "AJe-cB-dKv.normalTitle" = "Druid";
 
+/* Class = "UILabel"; text = "HowToGetGold"; ObjectID = "At2-Xo-LfE"; */
+"At2-Xo-LfE.text" = "HowToGetGold";
+
+/* Class = "UILabel"; text = "Set:"; ObjectID = "BP6-Bg-o52"; */
+"BP6-Bg-o52.text" = "Set:";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "BZU-GV-2Xe"; */
+"BZU-GV-2Xe.text" = "00";
+
+/* Class = "UILabel"; text = "Rarity:"; ObjectID = "BaK-5K-3A1"; */
+"BaK-5K-3A1.text" = "Rarity:";
+
 /* Class = "UILabel"; text = "Cost"; ObjectID = "Byl-JN-OCp"; */
 "Byl-JN-OCp.text" = "Cost";
+
+/* Class = "UILabel"; text = "Rarity"; ObjectID = "CCJ-LE-lul"; */
+"CCJ-LE-lul.text" = "Rarity";
+
+/* Class = "UILabel"; text = "Rarity"; ObjectID = "CrD-di-1WB"; */
+"CrD-di-1WB.text" = "Rarity";
+
+/* Class = "UILabel"; text = "Cost  "; ObjectID = "CxV-NP-qeL"; */
+"CxV-NP-qeL.text" = "Cost  ";
 
 /* Class = "UIButton"; normalTitle = "Hunter"; ObjectID = "DNe-8A-gGd"; */
 "DNe-8A-gGd.normalTitle" = "Hunter";
@@ -14,47 +59,317 @@
 /* Class = "UILabel"; text = "Name of the card"; ObjectID = "E09-L4-yfj"; */
 "E09-L4-yfj.text" = "Name of the card";
 
+/* Class = "UILabel"; text = "Cost:"; ObjectID = "F7r-5v-HVe"; */
+"F7r-5v-HVe.text" = "Cost:";
+
 /* Class = "UILabel"; text = "Name:"; ObjectID = "F9C-CX-tfx"; */
 "F9C-CX-tfx.text" = "Name:";
 
-/* Class = "UILabel"; text = "Classes"; ObjectID = "HOe-Hg-GFa"; */
-"HOe-Hg-GFa.text" = "Classes";
+/* Class = "UILabel"; text = "0"; ObjectID = "Fur-ud-NWE"; */
+"Fur-ud-NWE.text" = "0";
+
+/* Class = "UILabel"; text = "Durability"; ObjectID = "Gro-Jq-vvx"; */
+"Gro-Jq-vvx.text" = "Durability";
+
+/* Class = "UILabel"; text = "Health:"; ObjectID = "H4t-c0-ToT"; */
+"H4t-c0-ToT.text" = "Health:";
+
+/* Class = "UILabel"; text = "Get gold:"; ObjectID = "JJr-Yk-mkC"; */
+"JJr-Yk-mkC.text" = "Get gold:";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "JW4-3E-ZDb"; */
+"JW4-3E-ZDb.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Classes"; ObjectID = "Jvg-3m-5AY"; */
+"Jvg-3m-5AY.text" = "Classes";
+
+/* Class = "UILabel"; text = "Language:"; ObjectID = "KZJ-Vj-Ymp"; */
+"KZJ-Vj-Ymp.text" = "Language:";
+
+/* Class = "UILabel"; text = "Cardset:"; ObjectID = "KrQ-jo-2Rr"; */
+"KrQ-jo-2Rr.text" = "Cardset:";
+
+/* Class = "UILabel"; text = "Rarity:"; ObjectID = "KuB-lp-bXj"; */
+"KuB-lp-bXj.text" = "Rarity:";
+
+/* Class = "UILabel"; text = "Mechanics:"; ObjectID = "LMe-fa-2Po"; */
+"LMe-fa-2Po.text" = "Mechanics:";
+
+/* Class = "UILabel"; text = "Mechanics:"; ObjectID = "LVy-GW-tUH"; */
+"LVy-GW-tUH.text" = "Mechanics:";
+
+/* Class = "UILabel"; text = "Artist:"; ObjectID = "LjT-Yu-QjT"; */
+"LjT-Yu-QjT.text" = "Artist:";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "LmB-Ud-Vf1"; */
+"LmB-Ud-Vf1.text" = "Name";
+
+/* Class = "UILabel"; text = "Artist"; ObjectID = "Mas-UJ-uW1"; */
+"Mas-UJ-uW1.text" = "Artist";
 
 /* Class = "UIButton"; normalTitle = "Warlock"; ObjectID = "MgM-ub-p17"; */
 "MgM-ub-p17.normalTitle" = "Warlock";
 
-/* Class = "UILabel"; text = "Search By Health"; ObjectID = "NaL-ar-R77"; */
-"NaL-ar-R77.text" = "Search By Health";
+/* Class = "UILabel"; text = "Cardset"; ObjectID = "OSI-wJ-T66"; */
+"OSI-wJ-T66.text" = "Cardset";
+
+/* Class = "UILabel"; text = "Cost:"; ObjectID = "P1J-G0-WrD"; */
+"P1J-G0-WrD.text" = "Cost:";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "PNn-lK-kHZ"; */
+"PNn-lK-kHZ.text" = "0";
 
 /* Class = "UITextField"; placeholder = "Name of the card"; ObjectID = "QKV-Zh-9rG"; */
 "QKV-Zh-9rG.placeholder" = "Name of the card";
 
+/* Class = "UILabel"; text = "Rarity:"; ObjectID = "QWj-gl-kTB"; */
+"QWj-gl-kTB.text" = "Rarity:";
+
+/* Class = "UILabel"; text = "Cards By Name"; ObjectID = "QYX-yY-nPK"; */
+"QYX-yY-nPK.text" = "Cards By Name";
+
 /* Class = "UIButton"; normalTitle = "Shaman"; ObjectID = "QnI-du-yUb"; */
 "QnI-du-yUb.normalTitle" = "Shaman";
 
-/* Class = "UILabel"; text = "Search By Attack"; ObjectID = "U52-yy-WJK"; */
-"U52-yy-WJK.text" = "Search By Attack";
+/* Class = "UILabel"; text = "Durability:"; ObjectID = "ROO-yG-Q0t"; */
+"ROO-yG-Q0t.text" = "Durability:";
+
+/* Class = "UILabel"; text = "How to get:"; ObjectID = "RtI-K5-bEI"; */
+"RtI-K5-bEI.text" = "How to get:";
+
+/* Class = "UILabel"; text = "User's name"; ObjectID = "S3x-W3-4Cb"; */
+"S3x-W3-4Cb.text" = "User's name";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "UnU-gb-DKS"; */
+"UnU-gb-DKS.text" = "Language";
 
 /* Class = "UIButton"; normalTitle = "Priest"; ObjectID = "V0j-bY-cCD"; */
 "V0j-bY-cCD.normalTitle" = "Priest";
 
+/* Class = "UILabel"; text = "HowToGetGold"; ObjectID = "VGc-rj-GiB"; */
+"VGc-rj-GiB.text" = "HowToGetGold";
+
+/* Class = "UILabel"; text = "Search by cost"; ObjectID = "WgE-uC-0mr"; */
+"WgE-uC-0mr.text" = "Search by cost";
+
+/* Class = "UILabel"; text = "Search by health"; ObjectID = "X1s-p2-bYr"; */
+"X1s-p2-bYr.text" = "Search by health";
+
+/* Class = "UILabel"; text = "Cardset"; ObjectID = "XJY-Mm-fms"; */
+"XJY-Mm-fms.text" = "Cardset";
+
+/* Class = "UILabel"; text = "howToGet"; ObjectID = "XZ8-yT-dr1"; */
+"XZ8-yT-dr1.text" = "howToGet";
+
+/* Class = "UILabel"; text = "Rarity:"; ObjectID = "Xor-ju-ckU"; */
+"Xor-ju-ckU.text" = "Rarity:";
+
+/* Class = "UILabel"; text = "Artist"; ObjectID = "Xrb-ZV-cUw"; */
+"Xrb-ZV-cUw.text" = "Artist";
+
+/* Class = "UILabel"; text = "Cardback collection"; ObjectID = "Y0o-Vz-jJ8"; */
+"Y0o-Vz-jJ8.text" = "Cardback collection";
+
+/* Class = "UILabel"; text = "Search by attack"; ObjectID = "Y7I-PD-zMk"; */
+"Y7I-PD-zMk.text" = "Search by attack";
+
+/* Class = "UILabel"; text = "Cost:"; ObjectID = "ZE5-hA-fXt"; */
+"ZE5-hA-fXt.text" = "Cost:";
+
 /* Class = "UIButton"; normalTitle = "Paladin"; ObjectID = "ZhN-yS-lYM"; */
 "ZhN-yS-lYM.normalTitle" = "Paladin";
 
-/* Class = "UILabel"; text = "Search By Name"; ObjectID = "bwU-VM-d30"; */
-"bwU-VM-d30.text" = "Search By Name";
+/* Class = "UILabel"; text = "Search by type"; ObjectID = "Zmb-MR-d8E"; */
+"Zmb-MR-d8E.text" = "Search by type";
 
-/* Class = "UILabel"; text = "Search By Set"; ObjectID = "c4l-f6-RdO"; */
-"c4l-f6-RdO.text" = "Search By Set";
+/* Class = "UILabel"; text = "Class:"; ObjectID = "bh1-Fg-TqU"; */
+"bh1-Fg-TqU.text" = "Class:";
+
+/* Class = "UILabel"; text = "Cardset"; ObjectID = "cE2-J6-9TS"; */
+"cE2-J6-9TS.text" = "Cardset";
+
+/* Class = "UILabel"; text = "Get gold:"; ObjectID = "cPZ-0t-H3h"; */
+"cPZ-0t-H3h.text" = "Get gold:";
+
+/* Class = "UILabel"; text = "Cost  "; ObjectID = "cc5-hS-f1V"; */
+"cc5-hS-f1V.text" = "Cost  ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "cqd-1S-aLA"; */
+"cqd-1S-aLA.text" = "0";
 
 /* Class = "UIButton"; normalTitle = "Warrior"; ObjectID = "cuU-gj-n9q"; */
 "cuU-gj-n9q.normalTitle" = "Warrior";
 
+/* Class = "UILabel"; text = "Health:"; ObjectID = "dZp-8Q-rhA"; */
+"dZp-8Q-rhA.text" = "Health:";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "eaK-qG-JZb"; */
+"eaK-qG-JZb.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Mechanics"; ObjectID = "fS0-QQ-wOC"; */
+"fS0-QQ-wOC.text" = "Mechanics";
+
+/* Class = "UILabel"; text = "Attack:"; ObjectID = "ghR-qB-deW"; */
+"ghR-qB-deW.text" = "Attack:";
+
+/* Class = "UILabel"; text = "Cost"; ObjectID = "hHy-x6-yFV"; */
+"hHy-x6-yFV.text" = "Cost";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "hLJ-Jo-dg3"; */
+"hLJ-Jo-dg3.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Name of the card"; ObjectID = "i3q-nR-pSx"; */
+"i3q-nR-pSx.text" = "Name of the card";
+
+/* Class = "UILabel"; text = "Cardset:"; ObjectID = "iCv-Ze-npn"; */
+"iCv-Ze-npn.text" = "Cardset:";
+
+/* Class = "UILabel"; text = "Rarity"; ObjectID = "iGL-NB-Nuc"; */
+"iGL-NB-Nuc.text" = "Rarity";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "iHS-3G-2lQ"; */
+"iHS-3G-2lQ.text" = "Description";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "iXp-3D-JrH"; */
+"iXp-3D-JrH.text" = "0";
+
+/* Class = "UILabel"; text = "Artist"; ObjectID = "ing-Up-YGM"; */
+"ing-Up-YGM.text" = "Artist";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "jJv-ha-m6Z"; */
+"jJv-ha-m6Z.text" = "Description:";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "jP1-Js-MPu"; */
+"jP1-Js-MPu.text" = "Type";
+
+/* Class = "UILabel"; text = "Attack"; ObjectID = "jvC-7M-rJR"; */
+"jvC-7M-rJR.text" = "Attack";
+
 /* Class = "UILabel"; text = "Type"; ObjectID = "kW0-Sr-3CB"; */
 "kW0-Sr-3CB.text" = "Type";
+
+/* Class = "UILabel"; text = "Attack"; ObjectID = "lif-Kp-nS8"; */
+"lif-Kp-nS8.text" = "Attack";
+
+/* Class = "UILabel"; text = "Take a Moment and Share..."; ObjectID = "loo-fs-hol"; */
+"loo-fs-hol.text" = "Take a Moment and Share...";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "m4T-7p-Vib"; */
+"m4T-7p-Vib.text" = "Name";
+
+/* Class = "UILabel"; text = "Cost  "; ObjectID = "mct-BL-xyH"; */
+"mct-BL-xyH.text" = "Cost  ";
+
+/* Class = "UILabel"; text = "Manage Favourites"; ObjectID = "nQf-SE-5Sd"; */
+"nQf-SE-5Sd.text" = "Manage Favourites";
+
+/* Class = "UILabel"; text = "Rarity:"; ObjectID = "o9e-lc-upq"; */
+"o9e-lc-upq.text" = "Rarity:";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "oJ3-oO-uAD"; */
+"oJ3-oO-uAD.normalTitle" = "Search";
 
 /* Class = "UIButton"; normalTitle = "Rogue"; ObjectID = "oVF-0d-EHk"; */
 "oVF-0d-EHk.normalTitle" = "Rogue";
 
+/* Class = "UILabel"; text = "Health"; ObjectID = "ojF-Wb-n5Q"; */
+"ojF-Wb-n5Q.text" = "Health";
+
+/* Class = "UILabel"; text = "Cost:"; ObjectID = "pKw-4k-oA5"; */
+"pKw-4k-oA5.text" = "Cost:";
+
+/* Class = "UILabel"; text = "Search by name"; ObjectID = "phq-0a-IDZ"; */
+"phq-0a-IDZ.text" = "Search by name";
+
 /* Class = "UIButton"; normalTitle = "Mage"; ObjectID = "qAe-5v-1HF"; */
 "qAe-5v-1HF.normalTitle" = "Mage";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "qKy-hd-ALw"; */
+"qKy-hd-ALw.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Search by rarity"; ObjectID = "qQc-fe-kd7"; */
+"qQc-fe-kd7.text" = "Search by rarity";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "qcc-cv-7M3"; */
+"qcc-cv-7M3.text" = "Name";
+
+/* Class = "UILabel"; text = "Health:"; ObjectID = "qdD-KI-vbN"; */
+"qdD-KI-vbN.text" = "Health:";
+
+/* Class = "UILabel"; text = "Custom Search"; ObjectID = "qdX-Rx-iBT"; */
+"qdX-Rx-iBT.text" = "Custom Search";
+
+/* Class = "UILabel"; text = "HearthStone Beginners Guide"; ObjectID = "r5s-j8-OC8"; */
+"r5s-j8-OC8.text" = "HearthStone Beginners Guide";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "r6W-wy-k2a"; */
+"r6W-wy-k2a.text" = "Profile";
+
+/* Class = "UILabel"; text = "Cost:"; ObjectID = "rBl-qn-dXB"; */
+"rBl-qn-dXB.text" = "Cost:";
+
+/* Class = "UILabel"; text = "Durability:"; ObjectID = "rCS-D5-50Z"; */
+"rCS-D5-50Z.text" = "Durability:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rnI-WZ-oQb"; */
+"rnI-WZ-oQb.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "sHL-Ym-Qfb"; */
+"sHL-Ym-Qfb.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "description"; ObjectID = "sWc-ca-mLY"; */
+"sWc-ca-mLY.text" = "description";
+
+/* Class = "UILabel"; text = "How to get:"; ObjectID = "sgZ-kE-cHF"; */
+"sgZ-kE-cHF.text" = "How to get:";
+
+/* Class = "UIButton"; normalTitle = "Sig Pantalla Clau"; ObjectID = "srg-yo-KdH"; */
+"srg-yo-KdH.normalTitle" = "Sig Pantalla Clau";
+
+/* Class = "UILabel"; text = "Attack:"; ObjectID = "sy9-Fd-4TB"; */
+"sy9-Fd-4TB.text" = "Attack:";
+
+/* Class = "UILabel"; text = "Take moments"; ObjectID = "tCr-MW-6xg"; */
+"tCr-MW-6xg.text" = "Take moments";
+
+/* Class = "UILabel"; text = "HowToGet"; ObjectID = "tKM-sk-jFz"; */
+"tKM-sk-jFz.text" = "HowToGet";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "tNn-Ri-nii"; */
+"tNn-Ri-nii.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Cardset:"; ObjectID = "ups-8a-5aT"; */
+"ups-8a-5aT.text" = "Cardset:";
+
+/* Class = "UILabel"; text = "Get gold:"; ObjectID = "v6e-8K-bCZ"; */
+"v6e-8K-bCZ.text" = "Get gold:";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "vCC-47-aE4"; */
+"vCC-47-aE4.text" = "Type:";
+
+/* Class = "UILabel"; text = "HowToGetGold"; ObjectID = "vX4-8p-w03"; */
+"vX4-8p-w03.text" = "HowToGetGold";
+
+/* Class = "UILabel"; text = "Search by set"; ObjectID = "vdR-FE-jWa"; */
+"vdR-FE-jWa.text" = "Search by set";
+
+/* Class = "UILabel"; text = "HowToGet"; ObjectID = "w7H-Me-a4n"; */
+"w7H-Me-a4n.text" = "HowToGet";
+
+/* Class = "UILabel"; text = "Artist:"; ObjectID = "wFM-vA-aI2"; */
+"wFM-vA-aI2.text" = "Artist:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "wYT-Oh-Fdy"; */
+"wYT-Oh-Fdy.text" = "Name:";
+
+/* Class = "UILabel"; text = "Mechanics"; ObjectID = "xLg-yg-If7"; */
+"xLg-yg-If7.text" = "Mechanics";
+
+/* Class = "UILabel"; text = "HowToGet"; ObjectID = "xU1-WG-OKD"; */
+"xU1-WG-OKD.text" = "HowToGet";
+
+/* Class = "UILabel"; text = "Artist:"; ObjectID = "zob-qf-dsj"; */
+"zob-qf-dsj.text" = "Artist:";
+
+/* Class = "UILabel"; text = "Mechanics:"; ObjectID = "zuj-Jd-wnN"; */
+"zuj-Jd-wnN.text" = "Mechanics:";
