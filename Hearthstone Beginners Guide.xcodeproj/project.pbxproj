@@ -416,6 +416,7 @@
 		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
 			isa = PBXGroup;
 			children = (
+				2A3291881C41C62D004EC3D1 /* Diagrams */,
 				2940C47A1C3AE66A00E6155E /* Fonts */,
 				2A709FB31C19EA750091E08F /* Consts */,
 				2A8BF6231C15E9E000300E39 /* Enums */,
@@ -466,6 +467,13 @@
 				2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A3291881C41C62D004EC3D1 /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Diagrams;
 			sourceTree = "<group>";
 		};
 		2A6457D11C3A1E17002BCCC3 /* Facebook */ = {

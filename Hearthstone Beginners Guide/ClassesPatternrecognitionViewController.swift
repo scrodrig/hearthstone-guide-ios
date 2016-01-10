@@ -55,7 +55,6 @@ class ClassesPatternrecognitionViewController: UIViewController, UIImagePickerCo
     
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        print("Got an image")
         if let pickedImage:UIImage = (info[UIImagePickerControllerOriginalImage]) as? UIImage {
             let selectorToCall = Selector("imageWasSavedSuccessfully:didFinishSavingWithError:context:")
             UIImageWriteToSavedPhotosAlbum(pickedImage, self, selectorToCall, nil)            
@@ -88,12 +87,6 @@ class ClassesPatternrecognitionViewController: UIViewController, UIImagePickerCo
     }
     
     
-    func postAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message,
-            preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-    }
     
     
     
