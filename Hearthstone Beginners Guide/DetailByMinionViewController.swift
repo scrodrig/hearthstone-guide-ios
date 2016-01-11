@@ -35,8 +35,6 @@ class DetailByMinionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         // Do any additional setup after loading the view.
         if let cardModel:Card = card {
             self.nameLabel.text = cardModel.name;

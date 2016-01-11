@@ -25,28 +25,7 @@ class DetailByCardBackViewController: UIViewController {
             self.titleLabel.text = cardbackModel.name;
             self.howToGetLabel.text = cardbackModel.howToGet;
             self.descriptionLabel.text = cardbackModel.p_description;
-            
-//            if let text:String = cardbackModel.howToGet {
-//                let attrStr = try! NSAttributedString(
-//                    data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-//                    options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-//                    documentAttributes: nil);
-//                self.howToGetLabel.attributedText = attrStr;
-//            }else{
-//                self.howToGetLabel.text = nil;
-//            }
-            
-//            if let text:String = cardbackModel.description {
-//                let attrStr = try! NSAttributedString(
-//                    data: text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-//                    options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-//                    documentAttributes: nil);
-//                self.descriptionLabel.attributedText = attrStr;
-//            }else{
-//                self.descriptionLabel.text = nil;
-//            }
-            
-            
+                        
             if let imageString = cardbackModel.img {
                 
                 if let imageUrl = NSURL(string: imageString){

@@ -416,7 +416,6 @@
 		2A2545A81C1216F900089CC9 /* Hearthstone Beginners Guide */ = {
 			isa = PBXGroup;
 			children = (
-				2A3291881C41C62D004EC3D1 /* Diagrams */,
 				2940C47A1C3AE66A00E6155E /* Fonts */,
 				2A709FB31C19EA750091E08F /* Consts */,
 				2A8BF6231C15E9E000300E39 /* Enums */,
@@ -427,7 +426,7 @@
 				2A2545A91C1216F900089CC9 /* AppDelegate.swift */,
 				2A2545AD1C1216F900089CC9 /* Main.storyboard */,
 				2A2545B01C1216F900089CC9 /* Assets.xcassets */,
-				2AD72B781C1F09F8007D98E3 /* Views */,
+				2AD72B781C1F09F8007D98E3 /* Controllers */,
 				2AD72B641C1F06BE007D98E3 /* Images */,
 				2A2545B21C1216F900089CC9 /* LaunchScreen.storyboard */,
 				2A2545B51C1216F900089CC9 /* Info.plist */,
@@ -467,13 +466,6 @@
 				2A8045BB1C3DECF2001BB0B5 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2A3291881C41C62D004EC3D1 /* Diagrams */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Diagrams;
 			sourceTree = "<group>";
 		};
 		2A6457D11C3A1E17002BCCC3 /* Facebook */ = {
@@ -676,7 +668,7 @@
 			name = Heroes;
 			sourceTree = "<group>";
 		};
-		2AD72B781C1F09F8007D98E3 /* Views */ = {
+		2AD72B781C1F09F8007D98E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2A6457CD1C39F151002BCCC3 /* PortalViewController.swift */,
@@ -705,7 +697,7 @@
 				2A8F40F91C3CB58900B97723 /* CustomSearchViewController.swift */,
 				2A360A021C3E1A9500C66BFC /* LanguageViewController.swift */,
 			);
-			name = Views;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
